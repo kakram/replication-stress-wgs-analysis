@@ -7,3 +7,7 @@ data/*
 !data/annotation/
 logs/
 literature/
+thesis/
+instructions/
+discussions/
+misc/
