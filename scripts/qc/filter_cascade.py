@@ -9,7 +9,7 @@ Ts/Tv rises toward the ~2.0 expected of genuine variants as it does.
 
 Tiers
 -----
-  T0  ALL     every record in the VCF
+  T0  ALL     every record in the VCF (on the selected contig set)
   T1  PASS    caller FILTER == PASS
   T2  DEPTH   T1 + DP >= 20 in the tumour AND, for paired call sets, DP >= 20
               in the matched normal. This equalises calling power across
@@ -25,17 +25,30 @@ the matched normal among T4 variants -- the clonal-bottleneck diagnostic.
 A variant with alt reads in the wild-type at good depth pre-existed the
 knockout and cannot be attributed to loss of the gene.
 
+Contig policy (2026-09-09)
+--------------------------
+By default only records on the primary assembly (chr1-22, chrX, chrY,
+chrM) are counted; records on other contigs are tallied as
+`records_nonprimary` and otherwise ignored. Results go to
+results/cascade_primary/. Pass --all-contigs to reproduce the original
+behaviour (results/cascade/). The two directories never overwrite each
+other.
+
 Usage
 -----
   python3 scripts/qc/filter_cascade.py <sample.vcf.gz>
   python3 scripts/qc/filter_cascade.py --all      # any not yet done
   python3 scripts/qc/filter_cascade.py --table
+  python3 scripts/qc/filter_cascade.py --all --force   # redo everything
 """
 import argparse, glob, gzip, json, os, re, sys
 
 REPO = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 DATA = os.path.join(REPO, 'data')
-OUT = os.path.join(REPO, 'results', 'cascade')
+OUT_PRIMARY = os.path.join(REPO, 'results', 'cascade_primary')
+OUT_ALL = os.path.join(REPO, 'results', 'cascade')
+
+PRIMARY = {f'chr{i}' for i in range(1, 23)} | {'chrX', 'chrY', 'chrM'}
 
 TRANSITIONS = {('A', 'G'), ('G', 'A'), ('C', 'T'), ('T', 'C')}
 TIERS = ['T0_ALL', 'T1_PASS', 'T2_DEPTH', 'T3_VAF', 'T4_POP', 'T5_PRIVATE']
@@ -44,6 +57,13 @@ MIN_DP = 20
 MIN_VAF = 0.05
 MIN_ALT_READS = 3
 MIN_POPAF = 3.0          # population AF <= 1e-3
+
+
+def is_primary(chrom):
+    c = chrom[3:] if chrom[:3].lower() == 'chr' else chrom
+    if c.upper() in ('M', 'MT'):
+        return True
+    return ('chr' + c) in PRIMARY
 
 
 def new_bucket():
@@ -93,14 +113,15 @@ def parse_sample(fmt_keys, field):
 POPAF_RE = re.compile(r'(?:^|;)POPAF=([^;]+)')
 
 
-def run(vcf_path):
+def run(vcf_path, out_dir, primary_only=True):
     name = os.path.basename(vcf_path).replace('_somatic.vcf.gz', '')
-    dest = os.path.join(OUT, f'{name}_cascade.json')
+    dest = os.path.join(out_dir, f'{name}_cascade.json')
 
     buckets = {t: new_bucket() for t in TIERS}
     normal_support = {'0': 0, '1': 0, '2': 0, '3+': 0}
     paired = None
     dropped_by_depth = 0
+    nonprimary = 0
 
     with gzip.open(vcf_path, 'rt') as fh:
         for line in fh:
@@ -110,6 +131,9 @@ def run(vcf_path):
                 paired = len(line.rstrip('\n').split('\t')) > 10
                 continue
             c = line.rstrip('\n').split('\t')
+            if primary_only and not is_primary(c[0]):
+                nonprimary += 1
+                continue
             ref, alt, filt, info, fmt = c[3], c[4].split(',')[0], c[6], c[7], c[8]
             fmt_keys = fmt.split(':')
 
@@ -153,19 +177,22 @@ def run(vcf_path):
     rec = {
         'sample': name,
         'paired': paired,
+        'contig_set': 'primary' if primary_only else 'all',
+        'records_nonprimary': nonprimary,
         'tiers': buckets,
         'pass_dropped_by_depth': dropped_by_depth,
         'normal_alt_support_at_T4': normal_support if paired else None,
         'thresholds': dict(min_dp=MIN_DP, min_vaf=MIN_VAF,
                            min_alt_reads=MIN_ALT_READS, min_popaf=MIN_POPAF),
     }
-    os.makedirs(OUT, exist_ok=True)
+    os.makedirs(out_dir, exist_ok=True)
     with open(dest, 'w') as fh:
         json.dump(rec, fh, indent=2)
     t = buckets
     print(f"  [done] {name:<14} ALL={t['T0_ALL']['n']:>9,}  PASS={t['T1_PASS']['n']:>8,}"
           f"  DEPTH={t['T2_DEPTH']['n']:>8,}  VAF={t['T3_VAF']['n']:>8,}"
-          f"  POP={t['T4_POP']['n']:>8,}  PRIV={t['T5_PRIVATE']['n']:>8,}", flush=True)
+          f"  POP={t['T4_POP']['n']:>8,}  PRIV={t['T5_PRIVATE']['n']:>8,}"
+          f"  excl={nonprimary:,}", flush=True)
     return rec
 
 
@@ -173,23 +200,25 @@ ORDER = ['WTUN', 'WTAPH', 'B4UN', 'B4APH',
          'WT-U_cleaned', 'WT-A_cleaned', 'G3-U_cleaned', 'G3-A_cleaned']
 
 
-def table():
+def table(out_dir):
     recs = []
-    for p in glob.glob(os.path.join(OUT, '*_cascade.json')):
+    for p in glob.glob(os.path.join(out_dir, '*_cascade.json')):
         with open(p) as fh:
             recs.append(json.load(fh))
     if not recs:
-        print('Nothing computed yet.')
+        print(f'Nothing computed yet in {out_dir}.')
         return
     recs.sort(key=lambda r: ORDER.index(r['sample'])
               if r['sample'] in ORDER else 99)
 
+    print(f'\n[{os.path.relpath(out_dir, REPO)}]')
     print('\n=== VARIANT COUNT BY TIER ===')
-    hdr = f"{'sample':<15}" + ''.join(f'{t.split("_")[1]:>11}' for t in TIERS)
+    hdr = f"{'sample':<15}" + ''.join(f'{t.split("_")[1]:>11}' for t in TIERS) + f"{'excl':>11}"
     print(hdr); print('-' * len(hdr))
     for r in recs:
         print(f"{r['sample']:<15}" +
-              ''.join(f"{r['tiers'][t]['n']:>11,}" for t in TIERS))
+              ''.join(f"{r['tiers'][t]['n']:>11,}" for t in TIERS) +
+              f"{r.get('records_nonprimary', 0):>11,}")
 
     print('\n=== Ts/Tv BY TIER ===')
     print(hdr); print('-' * len(hdr))
@@ -220,12 +249,28 @@ def table():
         print(f"{r['sample']:<15}{ns['0']:>10,}{ns['1']:>8,}{ns['2']:>8,}"
               f"{ns['3+']:>8,}{100*sup/tot if tot else 0:>15.2f}%")
 
+    # machine-readable companion for the table builders
+    tsv = os.path.join(out_dir, 'cascade_summary.tsv')
+    with open(tsv, 'w') as fh:
+        fh.write('sample\tpaired\tcontig_set\trecords_nonprimary\t' +
+                 '\t'.join(t for t in TIERS) + '\t' +
+                 '\t'.join(f'tstv_{t}' for t in TIERS) +
+                 '\tnormal_alt_0\tnormal_alt_1\tnormal_alt_2\tnormal_alt_3plus\n')
+        for r in recs:
+            ns = r.get('normal_alt_support_at_T4') or {}
+            fh.write(f"{r['sample']}\t{r['paired']}\t{r.get('contig_set','all')}\t"
+                     f"{r.get('records_nonprimary', 0)}\t" +
+                     '\t'.join(str(r['tiers'][t]['n']) for t in TIERS) + '\t' +
+                     '\t'.join(str(r['tiers'][t]['tstv']) for t in TIERS) + '\t' +
+                     f"{ns.get('0','')}\t{ns.get('1','')}\t{ns.get('2','')}\t{ns.get('3+','')}\n")
+    print(f"\nWrote {os.path.relpath(tsv, REPO)}")
 
-def pending():
+
+def pending(out_dir, force=False):
     out = []
     for p in sorted(glob.glob(os.path.join(DATA, '*', '*', '*_somatic.vcf.gz'))):
         name = os.path.basename(p).replace('_somatic.vcf.gz', '')
-        if not os.path.exists(os.path.join(OUT, f'{name}_cascade.json')):
+        if force or not os.path.exists(os.path.join(out_dir, f'{name}_cascade.json')):
             out.append(p)
     return out
 
@@ -235,12 +280,17 @@ if __name__ == '__main__':
     ap.add_argument('vcf', nargs='?')
     ap.add_argument('--all', action='store_true')
     ap.add_argument('--table', action='store_true')
+    ap.add_argument('--force', action='store_true')
+    ap.add_argument('--all-contigs', action='store_true',
+                    help='count every contig (original behaviour)')
     ap.add_argument('--limit', type=int, default=99)
     a = ap.parse_args()
+    primary_only = not a.all_contigs
+    out_dir = OUT_PRIMARY if primary_only else OUT_ALL
     if a.table:
-        table()
+        table(out_dir)
     elif a.all:
-        for p in pending()[:a.limit]:
-            run(p)
+        for p in pending(out_dir, a.force)[:a.limit]:
+            run(p, out_dir, primary_only)
     elif a.vcf:
-        run(a.vcf)
+        run(a.vcf, out_dir, primary_only)

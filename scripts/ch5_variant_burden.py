@@ -6,17 +6,23 @@ sample paths and condition labels, invokes the shared analytical core,
 applies MCF-7-specific output paths and table captions, and prints the
 WT-vs-B4 ratio diagnostic the §5.3 prose is built on.
 
-Outputs:
+Contig policy (2026-09-09): counts are restricted to the primary assembly
+(chr1-22, chrX, chrY, chrM) by default. Pass --all-contigs to reproduce
+the original all-contig numbers; outputs then carry an `_allcontigs`
+suffix so the two never overwrite each other.
+
+Outputs (default, primary contigs):
   outputs/ch5_variant_burden.csv
   outputs/ch5_variant_burden_thesis_table.tex
   outputs/ch5_variant_burden_summary.md
 
 Usage:
-  python3 scripts/ch5_variant_burden.py
+  python3 scripts/ch5_variant_burden.py [--all-contigs]
 """
 
 from __future__ import annotations
 
+import argparse
 import sys
 from pathlib import Path
 
@@ -45,94 +51,91 @@ MCF7_SAMPLES = [
 DATA_DIR = REPO / "data" / "mcf7"
 OUT_DIR = REPO / "outputs"
 
-CSV_OUT = OUT_DIR / "ch5_variant_burden.csv"
-TEX_OUT = OUT_DIR / "ch5_variant_burden_thesis_table.tex"
-MD_OUT = OUT_DIR / "ch5_variant_burden_summary.md"
-
 CAPTION = (
-    "Table 5.3.1. Genome-wide somatic variant burden across four MCF-7 "
-    "conditions. Total variants, PASS-filtered counts, filter-class "
-    "breakdown, coding consequence distribution, SIFT predictions, "
-    "gnomAD novelty, and tumour mutational burden (TMB) are shown for "
-    "each sample. Filter labels follow GATK/Mutect2 conventions; rows "
-    "carrying multiple filter terms increment each matching filter "
-    "column once, so column sums may exceed (total $-$ PASS)."
+    "Table 5.X. Genome-wide somatic small-variant burden across four MCF-7 "
+    "conditions. Wild-type samples were called in tumour-only mode and B4 "
+    "samples in paired tumour--normal mode against the treatment-matched "
+    "wild-type, so counts are comparable within, but not between, "
+    "genotypes. Counts are restricted to the primary assembly (chr1--22, "
+    "X, Y, M); records on unplaced, alternate, decoy and HLA contigs are "
+    "excluded and their number is shown. Total variants, PASS-filtered "
+    "counts, filter-class breakdown, coding consequence distribution, SIFT "
+    "predictions and gnomAD novelty are shown for each sample. Filter "
+    "labels follow GATK/Mutect2 conventions; rows carrying multiple filter "
+    "terms increment each matching filter column once, so column sums may "
+    "exceed (total $-$ PASS)."
 )
 LABEL = "tab:ch5-variant-burden"
 
 
 def diagnostic_paragraph(results_by_name: dict[str, SampleResult]) -> str:
-    """One-paragraph interpretation of the WT-vs-B4 asymmetry pattern,
-    derived purely from the numbers we just computed."""
+    """One-paragraph interpretation of the WT-vs-B4 pattern, derived from
+    the numbers just computed. Rewritten 2026-09-09 to the calling-design
+    explanation established in the 2026-09-02 verification report; the
+    earlier clonal-heterogeneity wording is superseded."""
     wt_u, wt_a = results_by_name["WTUN"], results_by_name["WTAPH"]
     b4_u, b4_a = results_by_name["B4UN"], results_by_name["B4APH"]
 
     def ratio(a, b):
         return a / b if b else float("nan")
 
-    r_un_pass = ratio(wt_u.pass_variants, b4_u.pass_variants)
-    r_aph_pass = ratio(wt_a.pass_variants, b4_a.pass_variants)
-    r_un_tmb = ratio(wt_u.tmb_mut_per_mb, b4_u.tmb_mut_per_mb)
-    r_aph_tmb = ratio(wt_a.tmb_mut_per_mb, b4_a.tmb_mut_per_mb)
+    r_un = ratio(wt_u.pass_variants, b4_u.pass_variants)
+    r_aph = ratio(wt_a.pass_variants, b4_a.pass_variants)
+    d_wt = 100.0 * (wt_a.pass_variants - wt_u.pass_variants) / wt_u.pass_variants
+    d_b4 = 100.0 * (b4_a.pass_variants - b4_u.pass_variants) / b4_u.pass_variants
 
-    # Compare the untreated and aphidicolin-treated ratios. If they are
-    # within ±20 % of each other the asymmetry is treatment-independent;
-    # otherwise APH modulates the WT-vs-B4 gap.
     def rel(a, b):
-        if a is None or b is None or a != a or b != b:  # NaN check
-            return float("inf")
         return abs(a - b) / ((a + b) / 2) if (a + b) else float("inf")
 
-    consistent = rel(r_un_pass, r_aph_pass) <= 0.20
+    invariant = rel(r_un, r_aph) <= 0.20
 
-    direction_u = "WT > B4" if r_un_pass > 1 else "B4 > WT"
-    direction_a = "WT > B4" if r_aph_pass > 1 else "B4 > WT"
-
-    if consistent:
-        verdict = (
-            f"The WT-vs-B4 asymmetry is **consistent across treatment**: "
-            f"the PASS-variant ratio is {r_un_pass:.2f} untreated vs "
-            f"{r_aph_pass:.2f} aphidicolin-treated (within ±20 %), and "
-            f"the TMB ratio shows the same pattern ({r_un_tmb:.2f} vs "
-            f"{r_aph_tmb:.2f}). This is the signature of a **baseline-"
-            f"burden / clonal-heterogeneity effect** rather than a "
-            f"genotype × treatment interaction: the WT and B4 lines "
-            f"differ in their somatic-variant load irrespective of "
-            f"aphidicolin exposure. Plausible causes include the WT "
-            f"line being a polyclonal MCF-7 stock against which the B4 "
-            f"single-cell-derived ZFP36L1$^{{-/-}}$ clone is a "
-            f"bottlenecked subline (so 'WT > B4' may simply reflect "
-            f"pre-existing clonal diversity), or systematic differences "
-            f"in coverage / variant-calling sensitivity between the two "
-            f"line states. The §5.3 prose should foreground this "
-            f"clonality caveat before claiming any aphidicolin or "
-            f"ZFP36L1-loss effect from these counts."
-        )
-    else:
-        verdict = (
-            f"The WT-vs-B4 ratio **changes with aphidicolin treatment**: "
-            f"PASS-variant ratio shifts from {r_un_pass:.2f} ({direction_u}) "
-            f"untreated to {r_aph_pass:.2f} ({direction_a}) treated; TMB "
-            f"ratio shifts from {r_un_tmb:.2f} to {r_aph_tmb:.2f}. This "
-            f"pattern is consistent with a **genotype $\\times$ treatment "
-            f"interaction**: the magnitude (and possibly direction) of "
-            f"the WT-vs-B4 burden difference depends on whether the cells "
-            f"have been exposed to replication stress, which is the "
-            f"biologically informative outcome for the §5.3 narrative. "
-            f"Note however that single replicates make any interaction "
-            f"claim provisional — the §5.3 prose should flag this and "
-            f"recommend technical replication before quantitative claims."
-        )
-    return verdict
+    lines = [
+        f"WT-to-B4 PASS ratio: {r_un:.2f} untreated, {r_aph:.2f} "
+        f"aphidicolin-treated"
+        + (" (within 20% of each other: treatment-invariant)." if invariant
+           else " (differ by more than 20%: check before interpreting)."),
+        "",
+        "The gap is a property of the calling design, not of the biology. "
+        "B4 sets were called in paired mode against the treatment-matched "
+        "wild-type and contain only variants private to the clone; wild-type "
+        "sets were called tumour-only with no matched normal and no panel of "
+        "normals, and retain the cell line's full complement of variation "
+        "not modelled as germline by gnomAD. The polyclonal architecture of "
+        "the wild-type stock and the monoclonal origin of B4 are additional "
+        "contributors that these data cannot separate. WT-vs-B4 burden must "
+        "not be interpreted as an effect of ZFP36L1 loss.",
+        "",
+        f"Within-genotype treatment contrast (the only valid burden "
+        f"comparison here): WT {wt_u.pass_variants:,} -> "
+        f"{wt_a.pass_variants:,} ({d_wt:+.1f}%); B4 {b4_u.pass_variants:,} "
+        f"-> {b4_a.pass_variants:,} ({d_b4:+.1f}%). B4UN was sequenced at "
+        f"44.78x and B4APH at 34.33x; see the depth-matched filter cascade "
+        f"(results/cascade_primary) before reading any B4 change as a "
+        f"treatment effect.",
+    ]
+    return "\n".join(lines)
 
 
 def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--all-contigs", action="store_true",
+                    help="count every contig (original behaviour); outputs "
+                         "get an _allcontigs suffix")
+    args = ap.parse_args()
+    primary_only = not args.all_contigs
+    suffix = "" if primary_only else "_allcontigs"
+
+    csv_out = OUT_DIR / f"ch5_variant_burden{suffix}.csv"
+    tex_out = OUT_DIR / f"ch5_variant_burden_thesis_table{suffix}.tex"
+    md_out = OUT_DIR / f"ch5_variant_burden_summary{suffix}.md"
+
     if not DATA_DIR.exists():
         raise SystemExit(f"FATAL: {DATA_DIR} not found. Copy MCF-7 sample "
                          "files from the external drive first.")
 
     print("=" * 72)
-    print("Chapter 5 §5.3 — MCF-7 somatic variant burden")
+    print("Chapter 5 §5.3 — MCF-7 somatic variant burden "
+          f"[{'primary contigs' if primary_only else 'ALL contigs'}]")
     print("=" * 72)
 
     results: list[SampleResult] = []
@@ -140,7 +143,8 @@ def main() -> int:
     for sample, _label in MCF7_SAMPLES:
         sample_dir = DATA_DIR / sample
         try:
-            r = analyse_sample(sample, sample_dir, verbose=True)
+            r = analyse_sample(sample, sample_dir, verbose=True,
+                               primary_only=primary_only)
             results.append(r)
         except FileNotFoundError as e:
             issues.append(str(e))
@@ -153,25 +157,20 @@ def main() -> int:
 
     by_name = {r.sample: r for r in results}
 
-    # CSV
-    write_csv(results, CSV_OUT)
-    print(f"\nCSV   -> {CSV_OUT.relative_to(REPO)}")
+    write_csv(results, csv_out)
+    print(f"\nCSV   -> {csv_out.relative_to(REPO)}")
 
-    # LaTeX
-    write_latex_table(results, TEX_OUT, caption=CAPTION, label=LABEL)
-    print(f"LaTeX -> {TEX_OUT.relative_to(REPO)}")
+    write_latex_table(results, tex_out, caption=CAPTION, label=LABEL)
+    print(f"LaTeX -> {tex_out.relative_to(REPO)}")
 
-    # WT-vs-B4 ratio block + diagnostic
     ratio_lines: list[str] = []
     if {"WTUN", "B4UN"} <= by_name.keys():
         ratio_lines.append(
-            pair_ratio_block(by_name["WTUN"], by_name["B4UN"],
-                             "WT-U", "B4-U")
+            pair_ratio_block(by_name["WTUN"], by_name["B4UN"], "WT-U", "B4-U")
         )
     if {"WTAPH", "B4APH"} <= by_name.keys():
         ratio_lines.append(
-            pair_ratio_block(by_name["WTAPH"], by_name["B4APH"],
-                             "WT-A", "B4-A")
+            pair_ratio_block(by_name["WTAPH"], by_name["B4APH"], "WT-A", "B4-A")
         )
 
     print()
@@ -182,37 +181,38 @@ def main() -> int:
         print()
 
     per_sample_summary = (
-        f"{'Sample':<8}  {'PASS':>10}  {'Coding':>8}  {'Missense':>9}  "
-        f"{'SIFT-del':>9}  {'TMB':>6}\n"
+        f"{'Sample':<8}  {'Total':>10}  {'PASS':>10}  {'Excl.':>8}  "
+        f"{'Coding':>8}  {'Missense':>9}  {'SIFT-del':>9}\n"
     )
     for r in results:
         per_sample_summary += (
-            f"{r.sample:<8}  {r.pass_variants:>10,}  "
-            f"{r.coding_total:>8,}  {r.missense:>9,}  "
-            f"{r.sift_deleterious:>9,}  {r.tmb_mut_per_mb:>6.2f}\n"
+            f"{r.sample:<8}  {r.total_variants:>10,}  {r.pass_variants:>10,}  "
+            f"{r.vcf_records_nonprimary:>8,}  {r.coding_total:>8,}  "
+            f"{r.missense:>9,}  {r.sift_deleterious:>9,}\n"
         )
-    print("Per-sample summary")
+    print("Per-sample summary (Excl. = records on non-primary contigs)")
     print("-" * 72)
     print(per_sample_summary)
 
     diagnostic = diagnostic_paragraph(by_name) if len(by_name) == 4 else (
-        "Insufficient samples to compute the WT-vs-B4 × treatment "
-        "diagnostic (need all four samples)."
+        "Insufficient samples to compute the WT-vs-B4 diagnostic "
+        "(need all four samples)."
     )
     print("Diagnostic")
     print("-" * 72)
     print(diagnostic)
 
-    # Markdown summary
     md_lines: list[str] = []
     md_lines.append("# §5.3 MCF-7 Somatic Variant Burden — Summary\n")
     md_lines.append(
+        f"Contig set: **{'primary (chr1-22, X, Y, M)' if primary_only else 'all'}**. "
         "Source data: Sentieon TNhaplotyper2 + TNfilter somatic calls for "
-        "MCF-7 WT (parental) and B4 (CRISPR/Cas9 ZFP36L1$^{-/-}$ clone, "
-        "from Teotia 2024), each $\\pm$ aphidicolin. Files used per "
+        "MCF-7 WT (parental; tumour-only calling) and B4 (CRISPR/Cas9 "
+        "ZFP36L1$^{-/-}$ clone from Teotia 2024; paired calling against the "
+        "treatment-matched WT), each $\\pm$ aphidicolin. Files used per "
         "sample: `<SAMPLE>_somatic.vcf.gz` (FILTER classes), "
-        "`<SAMPLE>_somatic_vep_anno.maf.gz` (coding / SIFT / gnomAD), "
-        "`<SAMPLE>_tmb.tsv` (TMB).\n"
+        "`<SAMPLE>_somatic_vep_anno.maf.gz` (coding / SIFT / gnomAD). "
+        "Provider TMB is carried in the CSV but not reported.\n"
     )
     md_lines.append("## Numbers\n")
     md_lines.append(markdown_table(results) + "\n")
@@ -226,8 +226,8 @@ def main() -> int:
         md_lines.append("## Data issues\n")
         for it in issues:
             md_lines.append(f"- {it}\n")
-    MD_OUT.write_text("\n".join(md_lines), encoding="utf-8")
-    print(f"\nMD    -> {MD_OUT.relative_to(REPO)}")
+    md_out.write_text("\n".join(md_lines), encoding="utf-8")
+    print(f"\nMD    -> {md_out.relative_to(REPO)}")
     return 0
 
 

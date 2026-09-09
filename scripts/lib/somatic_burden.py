@@ -2,7 +2,7 @@
 Somatic variant burden analysis library.
 
 Shared analytical core for §5.3 (MCF-7, Sentieon TNhaplotyper2 + TNfilter)
-and any future somatic re-run of Chapter 6 (U2OS). Kept free of
+and the somatic re-run of Chapter 6 (U2OS). Kept free of
 cell-line-specific assumptions so the wrappers stay thin.
 
 Inputs per sample:
@@ -14,7 +14,20 @@ Inputs per sample:
                                     weak_evidence, clustered_events, etc.).
   - <SAMPLE>_somatic_vep_anno.maf.gz : source for coding consequences,
                                     SIFT, gnomAD novelty, gene counts.
-  - <SAMPLE>_tmb.tsv             : pre-computed TMB (mut/Mb).
+  - <SAMPLE>_tmb.tsv             : provider-computed TMB (mut/Mb). Read and
+                                    carried in the CSV for completeness but
+                                    NOT reported in any thesis table: the
+                                    provider's variant subset and denominator
+                                    are undocumented (decision 2026-09-09).
+
+Contig policy (added 2026-09-09):
+  By default every parser keeps only records on the primary assembly
+  (chr1-22, chrX, chrY, chrM). Records on unplaced, alternate, decoy and
+  HLA contigs are counted and reported as `*_records_nonprimary` but
+  excluded from all other tallies. Pass primary_only=False to reproduce the
+  original all-contig behaviour. Rationale: report §D2 (2026-09-04) found
+  ~10% of the wild-type tumour-only calls on non-primary contigs, where
+  variant calling is unreliable, against 3-4% in the paired knockout sets.
 
 Filter-counting policy: a multi-filter VCF row (e.g.
 'clustered_events;germline;weak_evidence') increments **each** matching
@@ -29,9 +42,30 @@ from __future__ import annotations
 import csv
 import gzip
 from collections import Counter
-from dataclasses import dataclass, field, fields as dc_fields
+from dataclasses import dataclass, fields as dc_fields
 from pathlib import Path
 from typing import Iterable, Sequence
+
+
+# ---------------------------- contig policy ------------------------------ #
+
+PRIMARY_CONTIGS: frozenset[str] = frozenset(
+    {f"chr{i}" for i in range(1, 23)} | {"chrX", "chrY", "chrM"}
+)
+
+
+def normalise_contig(chrom: str) -> str:
+    """Map 'chr1', '1', 'MT', 'chrMT', 'M' etc. onto the chrN convention."""
+    c = chrom.strip()
+    if c[:3].lower() == "chr":
+        c = c[3:]
+    if c.upper() in ("M", "MT"):
+        return "chrM"
+    return "chr" + c
+
+
+def is_primary(chrom: str) -> bool:
+    return normalise_contig(chrom) in PRIMARY_CONTIGS
 
 
 # MAF Variant_Classification values we treat as "coding".
@@ -76,7 +110,7 @@ GNOMAD_NOVEL_THRESHOLD = 0.001
 @dataclass
 class SampleResult:
     sample: str
-    # Whole-VCF counts
+    # Whole-VCF counts (primary contigs unless contig_set == "all")
     total_variants: int = 0
     pass_variants: int = 0
     filter_germline: int = 0
@@ -101,11 +135,16 @@ class SampleResult:
     sift_unknown: int = 0
     gnomad_known: int = 0
     gnomad_novel: int = 0
-    # External
+    # External (provider TMB; carried, not reported)
     tmb_mut_per_mb: float = 0.0
     # Gene reach
     genes_with_any_variant: int = 0
     genes_with_coding_variant: int = 0
+    # Contig policy provenance (appended 2026-09-09; new columns at the end
+    # so existing readers that select by name are unaffected)
+    contig_set: str = "primary"
+    vcf_records_nonprimary: int = 0
+    maf_records_nonprimary: int = 0
 
 
 CSV_COLUMNS: Sequence[str] = tuple(f.name for f in dc_fields(SampleResult))
@@ -113,7 +152,7 @@ CSV_COLUMNS: Sequence[str] = tuple(f.name for f in dc_fields(SampleResult))
 
 # ---------------------------- parsers ------------------------------------ #
 
-def parse_vcf_filters(vcf_path: Path) -> dict:
+def parse_vcf_filters(vcf_path: Path, primary_only: bool = True) -> dict:
     """Stream a bgzipped/gzipped VCF and tally filter classes."""
     counts = {
         "total_variants": 0,
@@ -123,14 +162,18 @@ def parse_vcf_filters(vcf_path: Path) -> dict:
         "filter_weak_evidence": 0,
         "filter_clustered": 0,
         "filter_other": 0,
+        "vcf_records_nonprimary": 0,
     }
     with gzip.open(str(vcf_path), "rt") as fh:
         for line in fh:
             if not line or line[0] == "#":
                 continue
-            # FILTER is column 7 (1-indexed).
+            # CHROM is column 1, FILTER is column 7 (1-indexed).
             parts = line.split("\t", 8)
             if len(parts) < 7:
+                continue
+            if primary_only and not is_primary(parts[0]):
+                counts["vcf_records_nonprimary"] += 1
                 continue
             counts["total_variants"] += 1
             filt = parts[6]
@@ -157,11 +200,12 @@ def parse_vcf_filters(vcf_path: Path) -> dict:
     return counts
 
 
-def parse_maf(maf_path: Path) -> dict:
+def parse_maf(maf_path: Path, primary_only: bool = True) -> dict:
     """Stream a MAF and tally consequence classes, SIFT, gnomAD, gene sets."""
     classes: Counter = Counter()
     sift_d = sift_t = sift_u = 0
     gnomad_known = gnomad_novel = 0
+    nonprimary = 0
     genes_any: set[str] = set()
     genes_coding: set[str] = set()
 
@@ -175,10 +219,19 @@ def parse_maf(maf_path: Path) -> dict:
                 header = raw.rstrip("\n").split("\t")
                 idx = {name: i for i, name in enumerate(header)}
                 header_seen = True
+                if primary_only and "Chromosome" not in idx:
+                    raise ValueError(
+                        f"{maf_path}: no 'Chromosome' column; cannot apply "
+                        "the primary-contig restriction"
+                    )
                 continue
             fields = raw.rstrip("\n").split("\t")
             if len(fields) < len(idx):
                 fields += [""] * (len(idx) - len(fields))
+
+            if primary_only and not is_primary(fields[idx["Chromosome"]]):
+                nonprimary += 1
+                continue
 
             sym = fields[idx["Hugo_Symbol"]] if "Hugo_Symbol" in idx else ""
             cls = fields[idx["Variant_Classification"]] \
@@ -218,6 +271,7 @@ def parse_maf(maf_path: Path) -> dict:
         "gnomad_novel": gnomad_novel,
         "genes_with_any_variant": len(genes_any),
         "genes_with_coding_variant": len(genes_coding),
+        "maf_records_nonprimary": nonprimary,
     }
     for cls_name, fld in CLASS_TO_FIELD.items():
         out[fld] = classes.get(cls_name, 0)
@@ -226,7 +280,7 @@ def parse_maf(maf_path: Path) -> dict:
 
 def parse_tmb(tmb_path: Path) -> float:
     """Read the Sentieon TMB tsv (4 cols: sample, target_size, count, TMB).
-    Returns TMB in mutations per Mb."""
+    Returns TMB in mutations per Mb. Carried in the CSV; not reported."""
     with tmb_path.open() as fh:
         rows = list(csv.DictReader(fh, delimiter="\t"))
     if not rows:
@@ -237,7 +291,8 @@ def parse_tmb(tmb_path: Path) -> float:
 # ---------------------------- per-sample driver -------------------------- #
 
 def analyse_sample(sample_name: str, sample_dir: Path,
-                   verbose: bool = True) -> SampleResult:
+                   verbose: bool = True,
+                   primary_only: bool = True) -> SampleResult:
     """Run all three parsers for one sample and return a SampleResult.
 
     `sample_dir` is the per-sample directory containing the three expected
@@ -254,26 +309,30 @@ def analyse_sample(sample_name: str, sample_dir: Path,
                 f"Missing required file for sample {sample_name}: {f}"
             )
 
-    result = SampleResult(sample=sample_name)
+    result = SampleResult(sample=sample_name,
+                          contig_set="primary" if primary_only else "all")
 
     if verbose:
         print(f"[{sample_name}] parsing VCF for filter classes "
-              f"({vcf.stat().st_size / 1024**2:.1f} MB) …")
-    for k, v in parse_vcf_filters(vcf).items():
+              f"({vcf.stat().st_size / 1024**2:.1f} MB, "
+              f"{'primary contigs' if primary_only else 'all contigs'}) …")
+    for k, v in parse_vcf_filters(vcf, primary_only=primary_only).items():
         setattr(result, k, v)
 
     if verbose:
         print(f"[{sample_name}] parsing MAF for coding / SIFT / gnomAD "
               f"({maf.stat().st_size / 1024**2:.1f} MB) …")
-    for k, v in parse_maf(maf).items():
+    for k, v in parse_maf(maf, primary_only=primary_only).items():
         setattr(result, k, v)
 
     result.tmb_mut_per_mb = parse_tmb(tmb)
 
     if verbose:
-        print(f"[{sample_name}] done: PASS={result.pass_variants:,}  "
+        print(f"[{sample_name}] done: total={result.total_variants:,}  "
+              f"PASS={result.pass_variants:,}  "
               f"coding={result.coding_total:,}  "
-              f"TMB={result.tmb_mut_per_mb}")
+              f"excluded non-primary: VCF {result.vcf_records_nonprimary:,}, "
+              f"MAF {result.maf_records_nonprimary:,}")
     return result
 
 
@@ -290,8 +349,10 @@ def write_csv(results: Iterable[SampleResult], csv_path: Path) -> None:
 
 
 # Pretty labels for the human-readable tables (LaTeX / markdown).
+# TMB deliberately absent (see module docstring).
 PRETTY_ROW_ORDER: Sequence[tuple[str, str]] = (
-    ("total_variants",            r"Total variants (VCF)"),
+    ("total_variants",            r"Total variants (primary contigs)"),
+    ("vcf_records_nonprimary",    r"\,\,Excluded: non-primary contigs"),
     ("pass_variants",             r"PASS variants"),
     ("filter_germline",           r"\,\,FILTER: germline"),
     ("filter_panel_of_normals",   r"\,\,FILTER: panel\_of\_normals"),
@@ -313,7 +374,6 @@ PRETTY_ROW_ORDER: Sequence[tuple[str, str]] = (
     ("sift_unknown",              r"SIFT unknown"),
     ("gnomad_known",              r"gnomAD known (AF > 0.001)"),
     ("gnomad_novel",              r"gnomAD novel (AF $\le$ 0.001)"),
-    ("tmb_mut_per_mb",            r"TMB (mut/Mb)"),
     ("genes_with_any_variant",    r"Genes with $\ge$1 variant"),
     ("genes_with_coding_variant", r"Genes with coding variant"),
 )
@@ -322,7 +382,7 @@ PRETTY_ROW_ORDER: Sequence[tuple[str, str]] = (
 def write_latex_table(results: Sequence[SampleResult], tex_path: Path,
                       caption: str, label: str) -> None:
     """Emit a thesis-ready transposed table: metrics as rows, samples as
-    columns. Used in §5.3 and re-usable for the future U2OS somatic run."""
+    columns."""
     tex_path = Path(tex_path)
     tex_path.parent.mkdir(parents=True, exist_ok=True)
     samples = [r.sample for r in results]
@@ -362,18 +422,16 @@ def markdown_table(results: Sequence[SampleResult]) -> str:
     lines = ["| Metric | " + " | ".join(samples) + " |"]
     lines.append("|" + "---|" * (len(samples) + 1))
 
-    # Markdown-friendly labels: strip LaTeX dashes and replace indentation.
-    def md_label(field_name: str, pretty_latex: str) -> str:
+    def md_label(pretty_latex: str) -> str:
         s = pretty_latex.replace(r"\,\,", "  ")
         s = s.replace(r"\_", "_")
-        s = s.replace(r"\le", "≤")
+        s = s.replace(r"$\le$", "≤").replace(r"\le", "≤")
         s = s.replace(r"$\ge$", "≥").replace(r"\ge", "≥")
         s = s.replace("$", "")
         return s
 
     for field_name, pretty in PRETTY_ROW_ORDER:
-        label = md_label(field_name, pretty)
-        row = [label]
+        row = [md_label(pretty)]
         for s in samples:
             v = getattr(by_sample[s], field_name)
             if isinstance(v, float):
@@ -394,13 +452,12 @@ def _safe_ratio(a: float, b: float) -> str:
 
 def pair_ratio_block(a: SampleResult, b: SampleResult,
                      a_label: str, b_label: str) -> str:
-    """Return a 4-line block of headline ratios between two samples."""
+    """Return a block of headline ratios between two samples.
+    The TMB ratio was removed on 2026-09-09 (provider TMB not reported)."""
     return (
         f"{a_label} vs {b_label}:\n"
         f"  PASS variants ratio   : {a.pass_variants:>8,} / "
         f"{b.pass_variants:>8,}  = {_safe_ratio(a.pass_variants, b.pass_variants)}\n"
         f"  Coding variants ratio : {a.coding_total:>8,} / "
-        f"{b.coding_total:>8,}  = {_safe_ratio(a.coding_total, b.coding_total)}\n"
-        f"  TMB ratio             : {a.tmb_mut_per_mb:>8.2f} / "
-        f"{b.tmb_mut_per_mb:>8.2f}  = {_safe_ratio(a.tmb_mut_per_mb, b.tmb_mut_per_mb)}"
+        f"{b.coding_total:>8,}  = {_safe_ratio(a.coding_total, b.coding_total)}"
     )
