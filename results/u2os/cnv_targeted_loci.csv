@@ -1,0 +1,25 @@
+gene,sample,locus,n_segments,log2_values,calls,dominant_call,wmean_log2
+FCGBP,WT-U,"chr19:39,872,500-39,966,000",2,"-0.020, 0.030","neutral, neutral",neutral,0.0274
+FCGBP,WT-A,"chr19:39,872,500-39,966,000",3,"-0.028, 0.542, -0.004","neutral, gain, neutral",neutral,0.1411
+FCGBP,G3-U,"chr19:39,872,500-39,966,000",2,"0.010, 0.054","neutral, neutral",neutral,0.0523
+FCGBP,G3-A,"chr19:39,872,500-39,966,000",1,0.033,neutral,neutral,0.033
+FAM8A1,WT-U,"chr6:17,602,000-17,673,000",1,-0.561,loss,loss,-0.5611
+FAM8A1,WT-A,"chr6:17,602,000-17,673,000",1,-0.548,loss,loss,-0.5481
+FAM8A1,G3-U,"chr6:17,602,000-17,673,000",1,-0.580,loss,loss,-0.5796
+FAM8A1,G3-A,"chr6:17,602,000-17,673,000",1,-0.574,loss,loss,-0.5745
+ZNF208,WT-U,"chr19:21,994,000-22,073,000",1,-0.885,loss,loss,-0.8852
+ZNF208,WT-A,"chr19:21,994,000-22,073,000",1,-0.902,loss,loss,-0.9024
+ZNF208,G3-U,"chr19:21,994,000-22,073,000",1,-0.900,loss,loss,-0.8997
+ZNF208,G3-A,"chr19:21,994,000-22,073,000",1,-0.908,loss,loss,-0.908
+FHIT,WT-U,"chr3:59,747,000-61,237,000",1,-0.315,loss,loss,-0.3154
+FHIT,WT-A,"chr3:59,747,000-61,237,000",1,-0.333,loss,loss,-0.3334
+FHIT,G3-U,"chr3:59,747,000-61,237,000",1,-0.033,neutral,neutral,-0.0334
+FHIT,G3-A,"chr3:59,747,000-61,237,000",3,"0.052, -0.124, 0.012","neutral, neutral, neutral",neutral,-0.1023
+ROBO2,WT-U,"chr3:75,907,852-77,651,517",1,-0.405,loss,loss,-0.4046
+ROBO2,WT-A,"chr3:75,907,852-77,651,517",1,-0.417,loss,loss,-0.4166
+ROBO2,G3-U,"chr3:75,907,852-77,651,517",1,-0.073,neutral,neutral,-0.0728
+ROBO2,G3-A,"chr3:75,907,852-77,651,517",2,"-0.232, 0.002","neutral, neutral",neutral,-0.2087
+ZFP36L1,WT-U,"chr14:68,792,000-68,797,000",1,0.775,gain,gain,0.7748
+ZFP36L1,WT-A,"chr14:68,792,000-68,797,000",1,0.768,gain,gain,0.7675
+ZFP36L1,G3-U,"chr14:68,792,000-68,797,000",1,0.431,gain,gain,0.431
+ZFP36L1,G3-A,"chr14:68,792,000-68,797,000",1,0.273,gain,gain,0.2726

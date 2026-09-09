@@ -1,0 +1,83 @@
+[
+  {
+    "subsection": "(chapter preamble)",
+    "claims": [
+      "Data from the 2019 Global Burden of disease (GBD) study indicate that there were more than 10 million deaths due to cancer compared to 5 million in 1990 – thus, there has been a twofold increase in the space of 20 years."
+    ]
+  },
+  {
+    "subsection": "1.1 Historical and emerging hallmarks of cancer",
+    "claims": [
+      "Cancer as a disease is a group of over 200 different types that have the attribute of uncontrolled cell growth and the ability to invade other parts of the body located away from the site of initiation - metastasis.",
+      "Carcinomas derived from epithelial cells are the starting point for 85% of cancers.",
+      "They also proposed that there are ‘emerging hallmarks’ of cancer; avoiding immune destruction, reprogramming energy metabolism, and well as enabling characteristics: tumour-promoting inflammation, genome instability and mutation."
+    ]
+  },
+  {
+    "subsection": "1.2 Breast Cancer",
+    "claims": [
+      "Having children early reduces the risk of breast cancer for women.",
+      "There is much evidence that alcohol is a carcinogen affecting the oesophagus, mouth, breast, colon, and the liver.",
+      "Alcohol was declared a carcinogen by the International Agency for Research on Cancer (IARC) in 1988 (the IARC is part of the World Health Organization (WHO) and is responsible for conducting research into the causes of cancer)."
+    ]
+  },
+  {
+    "subsection": "1.3 Animal Models of Breast Cancer",
+    "claims": [
+      "There are a wide range of models used for breast cancer research, including mice, rabbits, cats, and rats.",
+      "They found that the ketogenic diet induced lower serum insulin and that it could act as an anti-cancer means and that it could increase the effects of rapamycin.",
+      "Due to the evolutionary conservation of cancer affected programs between zebra fish and Homo Sapiens it is possible to extrapolate research garnered from zebrafish back to humans."
+    ]
+  },
+  {
+    "subsection": "1.5 CRISPR and the era of precisely engineered human disease models",
+    "claims": [
+      "The term CRISPR has dominated several areas of biomedical and biotechnology in recent times.",
+      "In 1987, in Japan, the first ever identification of the specific repeats was published based on analysis of the iap gene in Escherichia coli during investigation of the phosphate metabolism.",
+      "Ruud Jansen suggested that these structures were frequently found in archaea and bacterial chromosomes in multiple copies and could be mobile elements."
+    ]
+  },
+  {
+    "subsection": "1.6 CRISPR technology and Rare Diseases",
+    "claims": [
+      "Rare diseases present a unique problem because their aggregated impact is significant, but due to their individual rarity and low occurrence there is little research and therapeutic development due to lack of resourcing and expertise in any one single disease."
+    ]
+  },
+  {
+    "subsection": "1.7 CRISPR and Breast Cancer",
+    "claims": [
+      "CRISPR/Cas9 is used widely in cancer research, both for translational and basic research.",
+      "CRISPR/Cas9 has been used to downregulate MYC which is known to have higher expression in high grade BC.",
+      "MASTL kinase activity can be inhibited using CRISPR/Cas9 in human cell lines, which then reduces cell proliferation."
+    ]
+  },
+  {
+    "subsection": "1.9 Breast Cancer tumour evolution and clonal variations",
+    "claims": [
+      "In a study of 104 triple negative breast cancers (TNBCs) it was shown that there is significant variation in the frequencies of clones.",
+      "The subclones formed due to this somatic heterogeneity have a wide and differing range of biological attributes and capabilities, and subclones with certain advantages will thrive and expand in certain ecosystems, whereas less fit subclones (for that environment) will not survive."
+    ]
+  },
+  {
+    "subsection": "1.12 DNA replication and the human genome",
+    "claims": [
+      "The fact that genomic instability - a key determining factor of oncogenesis - can be induced by replication stress increases the necessity to understand its underlying mechanisms with more clarity.",
+      "When levels of cyclin E are elevated, this leads to the obstruction of MCM protein loading, which impedes the formation of pre-replication complexes and also impacts replication initiation in H.",
+      "More recent investigations suggest that the enrichment of yeast heterochromatic DSB marker H2A (H2AX) depends on replication."
+    ]
+  },
+  {
+    "subsection": "1.14 Whole Genome Sequencing and Genome Instability under Replication Stress",
+    "claims": [
+      "Although the technology is aiding science and research in immeasurable ways, one issue with WGS is that the sheer abundance of data can mean that certain discovered variants are poorly understood or not understood at all at the moment."
+    ]
+  },
+  {
+    "subsection": "1.15 WGS in Cancer Research",
+    "claims": [
+      "A major application of WGS in cancer research is the comprehensive assessment of mutational burden across the genome.",
+      "Driver mutations confer a selective advantage and contribute directly to tumor development or progression, whereas passenger mutations accumulate without directly influencing cellular fitness [1].",
+      "Large-scale WGS studies have identified characteristic patterns of driver mutations across cancer types, revealing both frequent alterations in canonical oncogenes and tumor suppressors, as well as unexpected drivers in non-coding regions and regulatory elements that influence cancer development [6]."
+    ]
+  }
+]

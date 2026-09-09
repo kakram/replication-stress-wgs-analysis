@@ -1,0 +1,15 @@
+[
+  {
+    "ref_surname": "Barrangou",
+    "ref_year": "2013",
+    "ref_title": "CRISPR-Cas systems",
+    "cand_surname": null,
+    "cand_year": null,
+    "cand_title": "Occurrence and applications of CRISPR-Cas systems in bifidobacteria.",
+    "source": "pubmed",
+    "has_abstract": true,
+    "flagged": true,
+    "flag_reason": "cand title diverges from ref short title (wrong paper)",
+    "cache_key": "4acfed3b4312bd24dc383162de2130789b3b4ae8fe5f70f95490d8bcd78fdceb"
+  }
+]

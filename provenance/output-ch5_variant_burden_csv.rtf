@@ -1,0 +1,482 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2820
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Bold;\f1\fmodern\fcharset0 Courier-Bold;\f2\froman\fcharset0 Times-Roman;
+\f3\froman\fcharset0 TimesNewRomanPS-BoldMT;\f4\fmodern\fcharset0 Courier;\f5\fnil\fcharset0 Menlo-Regular;
+\f6\fnil\fcharset0 AppleSymbols;\f7\froman\fcharset0 Times-Italic;\f8\fnil\fcharset128 HiraMinProN-W6;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red109\green109\blue109;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c50196\c50196\c50196;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid201\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid3}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww21200\viewh16560\viewkind0
+\deftab720
+\pard\pardeftab720\sa321\partightenfactor0
+
+\f0\b\fs48 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Provenance \'97 
+\f1\fs52 outputs/ch5_variant_burden.csv
+\f0\fs48 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f2\b0\fs24 \cf0 Traced and verified 15 June 2026. Every figure in Chapter 5 \'a75.3 (and \'a75.3.2) derives from this CSV. This document records the full lineage from the CSV back to the Azenta source files, how each column is computed, and one methodological issue surfaced during the trace.\
+\pard\pardeftab720\sa298\partightenfactor0
+
+\f0\b\fs36 \cf0 1. Lineage chain (CSV 
+\f3 \uc0\u8594 
+\f0  source)\
+\pard\pardeftab720\partightenfactor0
+
+\f4\b0\fs26 \cf0 Azenta WGS deliverable (project 40-1022750518, hg38/hs38DH)\
+        
+\f5 \uc0\u9474 
+\f4    Sentieon 202308.02: alignment 
+\f5 \uc0\u8594 
+\f4  BQSR 
+\f5 \uc0\u8594 
+\f4  TNhaplotyper2 
+\f5 \uc0\u8594 
+\f4  TNfilter 
+\f5 \uc0\u8594 
+\f4  VEP 
+\f5 \uc0\u8594 
+\f4  MAF\
+        
+\f5 \uc0\u9660 
+\f4 \
+data/mcf7/<SAMPLE>/\
+    <SAMPLE>_somatic.vcf.gz          (FILTER-class counts)\
+    <SAMPLE>_somatic_vep_anno.maf.gz (coding consequences, SIFT, gnomAD, gene sets)\
+    <SAMPLE>_tmb.tsv                  (pre-computed TMB)\
+        
+\f5 \uc0\u9474 
+\f4    parsed by scripts/lib/somatic_burden.py\
+        
+\f5 \uc0\u9474 
+\f4    driven by  scripts/ch5_variant_burden.py\
+        
+\f5 \uc0\u9660 
+\f4 \
+outputs/ch5_variant_burden.csv          
+\f5 \uc0\u8592 
+\f4  the analysis table\
+outputs/ch5_variant_burden_thesis_table.tex  (Table 5.3.1)\
+outputs/ch5_variant_burden_summary.md\
+        
+\f5 \uc0\u9474 
+\f4    read by hand\
+        
+\f5 \uc0\u9660 
+\f4 \
+Chapter 5 \'a75.3.1, \'a75.3.2 prose + Table 5.3.2\
+\pard\pardeftab720\sa240\partightenfactor0
+\cf0 <SAMPLE>
+\f2\fs24  
+\f6 \uc0\u8712 
+\f2  \{WTUN, WTAPH, B4UN, B4APH\}.\
+\pard\pardeftab720\sa298\partightenfactor0
+
+\f0\b\fs36 \cf0 2. The four source files per sample\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f2\b0\fs24 \cf0 All four sample directories under 
+\f4\fs26 data/mcf7/
+\f2\fs24  carry the same three files, all dated 11 May 2026 (date copied from the external drive, not the Azenta processing date).\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth4368\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth906\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth6780\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth2964\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+
+\f0\b \cf0 File\cell 
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+\cf0 Size (WTUN)\cell 
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+\cf0 Role\cell 
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+\cf0 Read by\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth4368\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth906\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth6780\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth2964\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f4\b0\fs26 \cf0 WTUN_somatic.vcf.gz
+\f2\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 65 MB\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Full Mutect2/TNfilter FILTER vocabulary (germline, panel_of_normals, weak_evidence, clustered_events). The MAF collapses FILTER to PASS/common_variant, so the VCF is the only source for filter-class counts.\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f4\fs26 \cf0 parse_vcf_filters()
+\f2\fs24 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth4368\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth906\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth6780\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth2964\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f4\fs26 \cf0 WTUN_somatic_vep_anno.maf.gz
+\f2\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 8.2 MB\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 VEP-annotated MAF: 
+\f4\fs26 Variant_Classification
+\f2\fs24 , 
+\f4\fs26 SIFT
+\f2\fs24 , 
+\f4\fs26 gnomAD_AF
+\f2\fs24 , 
+\f4\fs26 Hugo_Symbol
+\f2\fs24 .\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f4\fs26 \cf0 parse_maf()
+\f2\fs24 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth4368\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2160
+\clvertalc \clshdrawnil \clwWidth906\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth6780\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx6480
+\clvertalc \clshdrawnil \clwWidth2964\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f4\fs26 \cf0 WTUN_tmb.tsv
+\f2\fs24 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 53 B\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 Sentieon TMB: sample, target_size, count, TMB(mut/Mb).\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f4\fs26 \cf0 parse_tmb()
+\f2\fs24 \cell \lastrow\row
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f4\fs26 \cf0 .tbi
+\f2\fs24  files are tabix indices for the VCFs (not read by the analysis).\
+\pard\pardeftab720\sa298\partightenfactor0
+
+\f0\b\fs36 \cf0 3. Azenta pipeline, from the VCF headers\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f2\b0\fs24 \cf0 The 
+\f4\fs26 ##SentieonCommandLine
+\f2\fs24  headers inside each VCF record the exact processing. Verbatim, for WTUN:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0
+\f0\b \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Caller:
+\f2\b0  
+\f4\fs26 TNhaplotyper2
+\f2\fs24 , 
+\f4\fs26 sentieon-genomics-202308.02
+\f2\fs24 , dated 2024-07-24.\
+\ls1\ilvl0
+\f0\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Filter:
+\f2\b0  
+\f4\fs26 TNfilter
+\f2\fs24  (same version), using orientation-bias and contamination models.\
+\ls1\ilvl0
+\f0\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Reference:
+\f2\b0  
+\f4\fs26 /\'85/hg38/hs38DH/genome/genome.fa
+\f2\fs24  (GRCh38 + decoy, hs38DH).\
+\ls1\ilvl0
+\f0\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Germline resource:
+\f2\b0  
+\f4\fs26 af-only-gnomad.hg38.pass.vcf.gz
+\f2\fs24  (GATK gnomAD AF resource).\
+\ls1\ilvl0
+\f0\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Input:
+\f2\b0  
+\f4\fs26 WTUN.aln.bam
+\f2\fs24  + 
+\f4\fs26 WTUN_BQSR.table
+\f2\fs24 .\
+\ls1\ilvl0
+\f0\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Project:
+\f2\b0  
+\f4\fs26 40-1022750518
+\f2\fs24 .\
+\pard\pardeftab720\sa240\partightenfactor0
+\cf0 This confirms the MCF-7 pipeline stated in 
+\f4\fs26 CLAUDE.md
+\f2\fs24  (Sentieon TNseq, hg38/hs38DH).\
+\pard\pardeftab720\sa298\partightenfactor0
+
+\f0\b\fs36 \cf0 4. How each CSV column is computed\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f2\b0\fs24 \cf0 From 
+\f4\fs26 scripts/lib/somatic_burden.py
+\f2\fs24 :\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0
+\f0\b \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 total_variants, pass_variants, filter_*
+\f2\b0  \'97 streamed from the VCF FILTER column (field 7). A multi-filter row increments 
+\f7\i each
+\f2\i0  named bucket once (plus 
+\f4\fs26 filter_other
+\f2\fs24  for any unnamed token), so filter columns can sum to more than 
+\f4\fs26 total \uc0\u8722  PASS
+\f2\fs24  by design.\
+\ls2\ilvl0
+\f0\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 coding_total, missense, synonymous (= MAF "Silent"), nonsense, frameshift_*, in_frame_*, splice_*
+\f2\b0  \'97 counted from the MAF 
+\f4\fs26 Variant_Classification
+\f2\fs24  column. "Coding" = the 11 classes in 
+\f4\fs26 CODING_CLASSES
+\f2\fs24 .\
+\ls2\ilvl0
+\f0\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 sift_deleterious / tolerated / unknown
+\f2\b0  \'97 MAF 
+\f4\fs26 SIFT
+\f2\fs24  prefix match ("deleterious\'85" / "tolerated\'85" / else unknown). Non-missense rows have no SIFT score and fall into 
+\f4\fs26 unknown
+\f2\fs24 , which is why 
+\f4\fs26 sift_unknown
+\f2\fs24  \uc0\u8776  total MAF rows.\
+\ls2\ilvl0
+\f0\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 gnomad_known / novel
+\f2\b0  \'97 MAF 
+\f4\fs26 gnomAD_AF
+\f2\fs24 ; AF > 0.001 = known, else novel (
+\f4\fs26 GNOMAD_NOVEL_THRESHOLD
+\f2\fs24 ).\
+\ls2\ilvl0
+\f0\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 genes_with_any_variant / coding_variant
+\f2\b0  \'97 unique 
+\f4\fs26 Hugo_Symbol
+\f2\fs24  sets.\
+\ls2\ilvl0
+\f0\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\uc0\u8226 	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 tmb_mut_per_mb
+\f2\b0  \'97 read directly from 
+\f4\fs26 <SAMPLE>_tmb.tsv
+\f2\fs24  (target_size 978,354,808 bp for all four; counts 409/346/66/49).\
+\pard\pardeftab720\sa298\partightenfactor0
+
+\f0\b\fs36 \cf0 5. Reproducibility \'97 verified\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f2\b0\fs24 \cf0 Regenerated on 15 June 2026 by running 
+\f4\fs26 python3 scripts/ch5_variant_burden.py
+\f2\fs24  against 
+\f4\fs26 data/mcf7/
+\f2\fs24 . The output was 
+\f0\b byte-identical
+\f2\b0  to the committed 
+\f4\fs26 outputs/ch5_variant_burden.csv
+\f2\fs24  (
+\f4\fs26 diff
+\f2\fs24  reported no differences). The pipeline is pure-Python (gzip + csv), no external bioinformatics tools required to reproduce the table from the Azenta files.\
+\pard\pardeftab720\partightenfactor0
+
+\f4\fs26 \cf0 python3 scripts/ch5_variant_burden.py\
+diff outputs/ch5_variant_burden.csv <committed copy>   # identical\
+\pard\pardeftab720\sa298\partightenfactor0
+
+\f0\b\fs36 \cf0 6. 
+\f8 \uc0\u9888 
+\f0  Methodological issue surfaced during the trace \'97 the two genotypes were called differently\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f2\b0\fs24 \cf0 The 
+\f4\fs26 ##SentieonCommandLine.TNhaplotyper2
+\f2\fs24  headers and the 
+\f4\fs26 #CHROM
+\f2\fs24  sample columns show that the four samples were 
+\f0\b not
+\f2\b0  processed with an identical comparison scheme:\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth834\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx1440
+\clvertalc \clshdrawnil \clwWidth1480\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth1586\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth1619\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth2240\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx7200
+\clvertalc \clshdrawnil \clwWidth7099\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+
+\f0\b \cf0 Sample\cell 
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+\cf0 tumor_sample\cell 
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+\cf0 normal_sample\cell 
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+\cf0 VCF sample cols\cell 
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+\cf0 MAF matched-norm\cell 
+\pard\intbl\itap1\pardeftab720\qc\partightenfactor0
+\cf0 Meaning of its variants\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth834\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx1440
+\clvertalc \clshdrawnil \clwWidth1480\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth1586\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth1619\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth2240\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx7200
+\clvertalc \clshdrawnil \clwWidth7099\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f2\b0 \cf0 WTUN\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 WTUN\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f7\i \cf0 (none)
+\f2\i0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 WTUN\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 NORMAL (placeholder)\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 tumour-only: variants vs hg38 reference, germline-subtracted by gnomAD AF\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth834\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx1440
+\clvertalc \clshdrawnil \clwWidth1480\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth1586\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth1619\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth2240\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx7200
+\clvertalc \clshdrawnil \clwWidth7099\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 WTAPH\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 WTAPH\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f7\i \cf0 (none)
+\f2\i0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 WTAPH\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 NORMAL (placeholder)\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 tumour-only: vs hg38 reference\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth834\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx1440
+\clvertalc \clshdrawnil \clwWidth1480\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth1586\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth1619\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth2240\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx7200
+\clvertalc \clshdrawnil \clwWidth7099\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 B4UN\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 B4UN\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f0\b \cf0 WTUN
+\f2\b0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 B4UN, WTUN\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 WTUN\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 tumour\'96normal: variants in B4UN 
+\f0\b not present in WTUN
+\f2\b0 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalc \clshdrawnil \clwWidth834\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx1440
+\clvertalc \clshdrawnil \clwWidth1480\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx2880
+\clvertalc \clshdrawnil \clwWidth1586\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx4320
+\clvertalc \clshdrawnil \clwWidth1619\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx5760
+\clvertalc \clshdrawnil \clwWidth2240\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx7200
+\clvertalc \clshdrawnil \clwWidth7099\clftsWidth3 \clmart10 \clmarl10 \clmarb10 \clmarr10 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt20 \clpadl20 \clpadb20 \clpadr20 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 B4APH\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 B4APH\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f0\b \cf0 WTAPH
+\f2\b0 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 B4APH, WTAPH\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 WTAPH\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf0 tumour\'96normal: variants in B4APH 
+\f0\b not present in WTAPH
+\f2\b0 \cell \lastrow\row
+\pard\pardeftab720\sa240\partightenfactor0
+\cf0 This means the WT and B4 counts are 
+\f0\b not the same kind of measurement
+\f2\b0 . The WT call set is "everything that differs from the reference genome"; the B4 call set is "what is private to B4 after subtracting its matched WT parent". Because the B4 clone is 
+\f7\i derived from
+\f2\i0  MCF-7 WT, a B4-vs-WT paired call removes by construction the large pool of variants the two share \'97 which is most of them.\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\b \cf0 Consequence for the thesis.
+\f2\b0  The 6\'968\'d7 WT-vs-B4 burden gap reported in \'a75.3.1 is therefore driven substantially by this asymmetric calling design, not solely by the polyclonal-vs-monoclonal clonal architecture currently given as the explanation. The two explanations are entangled and the present data cannot fully separate them. This needs to be:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls3\ilvl0
+\f0\b \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	1	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Documented in Methods (Chapter 3)
+\f2\b0  \'97 state explicitly that WT was called tumour-only and B4 tumour\'96normal against matched WT, with the Sentieon command lines as evidence.\
+\ls3\ilvl0
+\f0\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	2	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Reframed in \'a75.3.1
+\f2\b0  \'97 the absolute cross-genotype burden gap is partly a pipeline artefact; cross-genotype 
+\f7\i absolute
+\f2\i0  counts are not directly comparable. Within-genotype contrasts (WT-UN vs WT-APH; B4-UN vs B4-APH) and 
+\f7\i proportional
+\f2\i0  analyses remain valid.\
+\ls3\ilvl0
+\f0\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	3	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Flagged in \'a75.3.2
+\f2\b0  \'97 the coding-consequence 
+\f7\i proportions
+\f2\i0  are more robust to this than the absolute counts, but the populations compared are still different in kind (B4-private somatic vs WT-vs-reference).\
+\ls3\ilvl0
+\f0\b \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	4	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Carried into the Chapter 7 parity discussion
+\f2\b0  alongside the existing MCF-7 (somatic) vs U2OS (germline) caveat.\
+\pard\pardeftab720\sa240\partightenfactor0
+\cf0 This resolves the open question previously logged ("which sample served as normal in the MCF-7 TNseq pairings"): 
+\f0\b WTUN/WTAPH had no matched normal (tumour-only); B4UN/B4APH used WTUN/WTAPH respectively as the matched normal.
+\f2\b0 \
+\pard\pardeftab720\sa298\partightenfactor0
+
+\f0\b\fs36 \cf0 7. Version-control gap\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f2\b0\fs24 \cf0 As of the trace, the following are 
+\f0\b untracked
+\f2\b0  in git (
+\f4\fs26 git ls-files
+\f2\fs24  returns nothing for them): 
+\f4\fs26 data/mcf7/
+\f2\fs24 , 
+\f4\fs26 scripts/ch5_variant_burden.py
+\f2\fs24 , 
+\f4\fs26 scripts/lib/somatic_burden.py
+\f2\fs24 , 
+\f4\fs26 outputs/ch5_variant_burden.csv
+\f2\fs24 .\
+The analysis is reproducible only because the inputs happen to be present on disk. Committing the scripts (and recording the source-file SHA-256s, since the large 
+\f4\fs26 data/
+\f2\fs24  files may stay out of git) would make the \'a75.3 chain auditable independent of the working tree.\
+}

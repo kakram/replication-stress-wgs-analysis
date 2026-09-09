@@ -1,0 +1,521 @@
+{
+  "generated_at": "2026-05-11T02:26:42",
+  "intermediate_path": "/Users/akramk/Documents/dev/replication-stress-wgs-analysis/outputs/_pilot_annotations_intermediate.json",
+  "notes_path": "/Users/akramk/Documents/dev/replication-stress-wgs-analysis/outputs/relevance_notes.json",
+  "offset": 49,
+  "limit": 50,
+  "regenerate": false,
+  "themes": [
+    "ZFP36L1 / RNA-binding protein biology",
+    "Replication stress, aphidicolin, DNA damage response",
+    "Common fragile sites, FRA3B, FHIT, FRA14C",
+    "MCF-7 / U2OS / breast cancer / osteosarcoma biology",
+    "Whole-genome sequencing, mutational burden, variant interpretation",
+    "CRISPR/Cas9 genome editing methodology",
+    "Clonal evolution, tumour heterogeneity"
+  ],
+  "note_length_words": "60-100",
+  "incremental_flush_every": 25,
+  "entries": [
+    {
+      "cache_key": "d1391d581b935d8d007672d0d675c0c2df9a53136134db3a23e34e6d37c685e9",
+      "surname": "Caldon",
+      "year": "2014",
+      "title_fragment": "Estrogen signaling and the DNA damage response in hormone dependent breast cancers",
+      "journal_fragment": "Frontiers in oncology",
+      "doi": "10.3389/fonc.2014.00106",
+      "source": "pubmed",
+      "abstract": "Estrogen is necessary for the normal growth and development of breast tissue, but high levels of estrogen are a major risk factor for breast cancer. One mechanism by which estrogen could contribute to breast cancer is via the induction of DNA damage. This perspective discusses the mechanisms by which estrogen alters the DNA damage response (DDR) and DNA repair through the regulation of key effector proteins including ATM, ATR, CHK1, BRCA1, and p53 and the feedback on estrogen receptor signaling from these proteins. We put forward the hypothesis that estrogen receptor signaling converges to suppress effective DNA repair and apoptosis in favor of proliferation. This is important in hormone-dependent breast cancer as it will affect processing of estrogen-induced DNA damage, as well as other genotoxic insults. DDR and DNA repair proteins are frequently mutated or altered in estrogen responsive breast cancer, which will further change the processing of DNA damage. Finally, the action of estrogen signaling on DNA damage is also relevant to the therapeutic setting as the suppression of a DDR by estrogen has the potential to alter the response of cancers to anti-hormone treatment or chemotherapy that induces DNA damage."
+    },
+    {
+      "cache_key": "cb43daec9d0847600e18ce9ff18b2a1aed5c7319b3d2e8ea030014afb98b53ea",
+      "surname": "Cao",
+      "year": "2020",
+      "title_fragment": "The role of MDM2–p53 axis dysfunction in the hepatocellular carcinoma transformation",
+      "journal_fragment": "Cell Death Discovery",
+      "doi": "10.1038/s41420-020-0287-y",
+      "source": "crossref",
+      "abstract": "Abstract Liver cancer is the second most frequent cause of cancer-related death globally. The main histological subtype is hepatocellular carcinoma (HCC), which is derived from hepatocytes. According to the epidemiologic studies, the most important risk factors of HCC are chronic viral infections (HBV, HCV, and HIV) and metabolic disease (metabolic syndrome). Interestingly, these carcinogenic factors that contributed to HCC are associated with MDM2–p53 axis dysfunction, which presented with inactivation of p53 and overactivation of MDM2 (a transcriptional target and negative regulator of p53). Mechanically, the homeostasis of MDM2–p53 feedback loop plays an important role in controlling the initiation and progression of HCC, which has been found to be dysregulated in HCC tissues. To maintain long-term survival in hepatocytes, hepatitis viruses have lots of ways to destroy the defense strategies of hepatocytes by inducing TP53 mutation and silencing, promoting MDM2 overexpression, accelerating p53 degradation, and stabilizing MDM2. As a result, genetic instability, chronic ER stress, oxidative stress, energy metabolism switch, and abnormalities in antitumor genes can be induced, all of which might promote hepatocytes’ transformation into hepatoma cells. In addition, abnormal proliferative hepatocytes and precancerous cells cannot be killed, because of hepatitis viruses-mediated exhaustion of Kupffer cells and hepatic stellate cells (HSCs) and CD4 + T cells by disrupting their MDM2–p53 axis. Moreover, inefficiency of hepatic immune response can be further aggravated when hepatitis viruses co-infected with HIV. Unlike with chronic viral infections, MDM2–p53 axis might play a dual role in glucolipid metabolism of hepatocytes, which presented with enhancing glucolipid catabolism, but promoting hepatocyte injury at the early and late stages of glucolipid metabolism disorder. Oxidative stress, fatty degeneration, and abnormal cell growth can be detected in hepatocytes that were suffering from glucolipid metabolism disorder, and all of which could contribute to HCC initiation. In this review, we focus on the current studies of the MDM2–p53 axis in HCC, and specifically discuss the impact of MDM2–p53 axis dysfunction by viral infection and metabolic disease in the transformation of normal hepatocytes into hepatoma cells. We also discuss the therapeutic avenues and potential targets that are being developed to normalize the MDM2–p53 axis in HCC."
+    },
+    {
+      "cache_key": "36595a1938e8f6e01a8ac89bc9cfa08891e18991ba25c3549417e2b0dcb629ba",
+      "surname": "Casamassimi",
+      "year": "2023",
+      "title_fragment": "Transcriptional regulation and its misregulation in human diseases",
+      "journal_fragment": "International Journal of Molecular Sciences",
+      "doi": "10.3390/ijms24108640",
+      "source": "crossref",
+      "abstract": "Transcriptional regulation is a critical biological process that allows the cell or an organism to respond to a variety of intra- and extracellular signals, to define cell identity during development, to maintain it throughout its lifetime, and to coordinate cellular activity [...]"
+    },
+    {
+      "cache_key": "9f1d6cdc92c6e67116d8c1892fe4f02779af4d8132c3e1ea9861dfb803b9aa43",
+      "surname": "Cassandri",
+      "year": "2017",
+      "title_fragment": "Zinc-finger proteins in health and disease",
+      "journal_fragment": "Cell death discovery",
+      "doi": "10.1038/cddiscovery.2017.71",
+      "source": "crossref",
+      "abstract": "Abstract Zinc-finger proteins (ZNFs) are one of the most abundant groups of proteins and have a wide range of molecular functions. Given the wide variety of zinc-finger domains, ZNFs are able to interact with DNA, RNA, PAR (poly-ADP-ribose) and other proteins. Thus, ZNFs are involved in the regulation of several cellular processes. In fact, ZNFs are implicated in transcriptional regulation, ubiquitin-mediated protein degradation, signal transduction, actin targeting, DNA repair, cell migration, and numerous other processes. The aim of this review is to provide a comprehensive summary of the current state of knowledge of this class of proteins. Firstly, we describe the actual classification of ZNFs, their structure and functions. Secondly, we focus on the biological role of ZNFs in the development of organisms under normal physiological and pathological conditions."
+    },
+    {
+      "cache_key": "98390883ddd18c761d5663fae3b573a2434c3d67e7c57d6335c8f6dd0fb4f8b1",
+      "surname": "Cavalcante",
+      "year": "2022",
+      "title_fragment": "Mitochondria in tumour progression: a network of mtDNA variants in different types of cancer",
+      "journal_fragment": "BMC genomic data",
+      "doi": "10.1186/s12863-022-01032-2",
+      "source": "crossref",
+      "abstract": "Abstract Background Mitochondrial participation in tumorigenesis and metastasis has been studied for many years, but several aspects of this mechanism remain unclear, such as the association of mitochondrial DNA (mtDNA) with different cancers. Here, based on two independent datasets, we modelled an mtDNA mutation-cancer network by systematic integrative analysis including 37 cancer types to identify the mitochondrial variants found in common among them. Results Our network showed mtDNA associations between gastric cancer and other cancer types, particularly kidney, liver, and prostate cancers, which is suggestive of a potential role of such variants in the metastatic processes among these cancer types. A graph-based interactive web tool was made available at www2.lghm.ufpa.br/mtdna. We also highlighted that most shared variants were in the MT-ND4 , MT-ND5 and D-loop, and that some of these variants were nonsynonymous, indicating a special importance of these variants and regions regarding cancer progression, involving genomic and epigenomic alterations. Conclusions This study reinforces the importance of studying mtDNA in cancer and offers new perspectives on the potential involvement of different mitochondrial variants in cancer development and metastasis."
+    },
+    {
+      "cache_key": "f7adba327c2883c1a6b768d80003b7b390929c40827bd0bc66464b3dba55c4ca",
+      "surname": "Chai",
+      "year": "2022",
+      "title_fragment": "Regulation of the tumor suppressor PTEN in triple-negative breast cancer",
+      "journal_fragment": "Cancer Letters",
+      "doi": "10.1016/j.canlet.2021.12.003",
+      "source": "pubmed",
+      "abstract": "Triple-negative breast cancer (TNBC) is a subtype of breast cancer (BCa) in which estrogen receptor (ER), progesterone receptor (PR), and human epidermal growth factor receptor 2 (HER-2) are not expressed. Although TNBC cases account for approximately 15% of all BCa cases, TNBC patients' prognosis is poor compared with that of other BCa subtypes. Phosphatase and tensin homolog deleted on chromosome 10 (PTEN) plays an important role in cell proliferation and migration by negatively regulating the PI3K/Akt pathway. PTEN is one of the most commonly inactivated tumor suppressors in BCa. PTEN inactivity is associated with larger tumor sizes, multiple lymph node metastases, and an aggressive triple-negative phenotype. This review primarily focuses on two key points: (1) PTEN and its function. (2) The regulation of tumor suppressor PTEN in TNBC. We provide a summary of genomic alterations of PTEN in BCa. We further discuss the transcriptional regulation of PTEN and how PTEN is regulated by posttranscription and posttranslational modification, as well as by protein interactions. Finally, we discuss the perspectives of the PTEN protein in TNBC."
+    },
+    {
+      "cache_key": "87fb1a97257eed4f200d686dd1c7e58d99594a8664248be556f3c518605665bd",
+      "surname": "Chang",
+      "year": "2021",
+      "title_fragment": "Role of Alpelisib in the treatment of PIK3CA-mutated breast Cancer: patient selection and clinical perspectives",
+      "journal_fragment": "Therapeutics and clinical risk management",
+      "doi": "10.2147/tcrm.s251668",
+      "source": "pubmed",
+      "abstract": "The PI3K/AKT/mTOR pathway has long been known to play a major role in the growth and survival of cancer cells. Breast tumors often harbor PIK3CA gene alterations, which therefore constitute a rational drug target. However, it has taken many years to demonstrate clinically-relevant efficacy of PI3K inhibition and eventually attain regulatory approvals. As data on PI3K inhibitors continue to mature, this review updates and summarizes the current state of the science, including the prognostic role of PIK3CA alterations in breast cancer; the evolution of PI3K inhibitors; the clinical utility of the first-in-class oral selective PI3Kα inhibitor, alpelisib; PIK3CA mutation detection techniques; and adverse effect management. PIK3CA-mutated breast carcinomas predict survival benefit from PI3K inhibitor therapy. The pan-PI3K inhibitor, buparlisib and the beta-isoform-sparing PI3K inhibitor, taselisib, met efficacy endpoints in clinical trials, but pictilisib did not; moreover, poor tolerability of these three drugs abrogated further clinical trials. Alpelisib is better tolerated, with a more manageable toxicity profile; the principal adverse events, hyperglycemia, rash and diarrhea, can be mitigated by intensive monitoring and timely intervention, thereby enabling patients to remain adherent to clinically beneficial treatment. Alpelisib plus endocrine therapy shows promising efficacy for treating postmenopausal women with HR+/HER2- advanced breast cancer. Available evidence supporting using alpelisib after disease progression on first-line endocrine therapy with or without CDK4/6 inhibitors justifies PIK3CA mutation testing upon diagnosing HR+/HER2- advanced breast cancer, which can be done using either tumor tissue or circulating tumor DNA. With appropriate toxicity management and patient selection using validated testing methods, all eligible patients can potentially benefit from this new treatment. Further clinical trials to assess combinations of hormone therapy with PI3K, AKT, mTOR, or CDK 4/6 inhibitors, or studies in men and women with other breast subtypes are ongoing."
+    },
+    {
+      "cache_key": "57e800fbfdb87ac7d509d954df2c7100e134543823d5abfa26bf9c6b7a97415f",
+      "surname": "Charpentier",
+      "year": "2015",
+      "title_fragment": "Biogenesis pathways of RNA guides in archaeal and bacterial CRISPR-Cas adaptive immunity",
+      "journal_fragment": "FEMS microbiology reviews",
+      "doi": "10.1093/femsre/fuv023",
+      "source": "pubmed",
+      "abstract": "CRISPR-Cas is an RNA-mediated adaptive immune system that defends bacteria and archaea against mobile genetic elements. Short mature CRISPR RNAs (crRNAs) are key elements in the interference step of the immune pathway. A CRISPR array composed of a series of repeats interspaced by spacer sequences acquired from invading mobile genomes is transcribed as a precursor crRNA (pre-crRNA) molecule. This pre-crRNA undergoes one or two maturation steps to generate the mature crRNAs that guide CRISPR-associated (Cas) protein(s) to cognate invading genomes for their destruction. Different types of CRISPR-Cas systems have evolved distinct crRNA biogenesis pathways that implicate highly sophisticated processing mechanisms. In Types I and III CRISPR-Cas systems, a specific endoribonuclease of the Cas6 family, either standalone or in a complex with other Cas proteins, cleaves the pre-crRNA within the repeat regions. In Type II systems, the trans-acting small RNA (tracrRNA) base pairs with each repeat of the pre-crRNA to form a dual-RNA that is cleaved by the housekeeping RNase III in the presence of the protein Cas9. In this review, we present a detailed comparative analysis of pre-crRNA recognition and cleavage mechanisms involved in the biogenesis of guide crRNAs in the three CRISPR-Cas types."
+    },
+    {
+      "cache_key": "d59ab9aec492b3bf15ef6490d63ac362168024b66cd5b383ae02aa090ea85e11",
+      "surname": "Chen",
+      "year": "2019",
+      "title_fragment": "New insights into mechanisms of cisplatin resistance: from tumor cell to microenvironment",
+      "journal_fragment": "International journal of molecular sciences",
+      "doi": "10.3390/ijms20174136",
+      "source": "crossref",
+      "abstract": "Although cisplatin has been a pivotal chemotherapy drug in treating patients with various types of cancer for decades, drug resistance has been a major clinical impediment. In general, cisplatin exerts cytotoxic effects in tumor cells mainly through the generation of DNA-platinum adducts and subsequent DNA damage response. Accordingly, considerable effort has been devoted to clarify the resistance mechanisms inside tumor cells, such as decreased drug accumulation, enhanced detoxification activity, promotion of DNA repair capacity, and inactivated cell death signaling. However, recent advances in high-throughput techniques, cell culture platforms, animal models, and analytic methods have also demonstrated that the tumor microenvironment plays a key role in the development of cisplatin resistance. Recent clinical successes in combination treatments with cisplatin and novel agents targeting components in the tumor microenvironment, such as angiogenesis and immune cells, have also supported the therapeutic value of these components in cisplatin resistance. In this review, we summarize resistance mechanisms with respect to a single tumor cell and crucial components in the tumor microenvironment, particularly focusing on favorable results from clinical studies. By compiling emerging evidence from preclinical and clinical studies, this review may provide insights into the development of a novel approach to overcome cisplatin resistance."
+    },
+    {
+      "cache_key": "94d395b52ea4e521d0383f47c1e87866764d95c2cc38d1a347927dab6d5e24ca",
+      "surname": "Chen",
+      "year": "2020",
+      "title_fragment": "ZFP36 binds with PRC1 to inhibit tumor growth and increase 5-Fu chemosensitivity of hepatocellular carcinoma",
+      "journal_fragment": "Frontiers in molecular biosciences",
+      "doi": "10.3389/fmolb.2020.00126",
+      "source": "crossref",
+      "abstract": "Hepatocellular carcinoma (HCC) is the fifth common cause of tumor-related death worldwide. ZFP36, a RNA-binding protein, decreases in many cancers and its role in HCC remains unclear. This study aimed to investigate the underlying mechanisms by which ZFP36 inhibited HCC progression and increased fluorouracil (5-Fu) sensitivity. We found that ZFP36 was downregulated and PRC1 was upregulated in HCC tissues compared with adjacent non-tumor tissues. In vitro investigation presented that ZFP36 acted as a tumor suppressor, while overexpression of PRC1 increased cell proliferation, colony formation and invasion. Further investigations demonstrated that overexpression of ZFP36 inhibited tumor growth and promoted 5-Fu sensitivity in xenograft tumor mice model, which could be reversed when PRC1 overexpressed simultaneously. Luciferase reporter assays and Ribonucleoprotein immunoprecipitation analysis indicated that ZFP36 could bind to adenylate uridylate-rich elements located in PRC1 mRNA 3′UTR to downregulate PRC1 expression. Taken together, our findings identified that ZFP36 regulated PRC1 to exert anti-tumor effect, which suggested a potential therapeutic strategy for treating HCC by exploiting ZFP36/PRC1 axis."
+    },
+    {
+      "cache_key": "fcff8a60fd1980c69b03b8687a7bb53ec9a1477df3236b06c0a07ff20c338ee6",
+      "surname": "Chiang",
+      "year": "2022",
+      "title_fragment": "Mechanism and modeling of human disease-associated near-exon intronic variants that perturb RNA splicing",
+      "journal_fragment": "Nature Structural & Molecular Biology",
+      "doi": "10.1038/s41594-022-00844-1",
+      "source": "pubmed",
+      "abstract": "It is estimated that 10%-30% of disease-associated genetic variants affect splicing. Splicing variants may generate deleteriously altered gene product and are potential therapeutic targets. However, systematic diagnosis or prediction of splicing variants is yet to be established, especially for the near-exon intronic splice region. The major challenge lies in the redundant and ill-defined branch sites and other splicing motifs therein. Here, we carried out unbiased massively parallel splicing assays on 5,307 disease-associated variants that overlapped with branch sites and collected 5,884 variants across the 5' splice region. We found that strong splice sites and exonic features preserve splicing from intronic sequence variation. Whereas the splice-altering mechanism of the 3' intronic variants is complex, that of the 5' is mainly splice-site destruction. Statistical learning combined with these molecular features allows precise prediction of altered splicing from an intronic variant. This statistical model provides the identity and ranking of biological features that determine splicing, which serves as transferable knowledge and out-performs the benchmarking predictive tool. Moreover, we demonstrated that intronic splicing variants may associate with disease risks in the human population. Our study elucidates the mechanism of splicing response of intronic variants, which classify disease-associated splicing variants for the promise of precision medicine."
+    },
+    {
+      "cache_key": "a9d8a6a251aef6c54426b6418054638676d6941f07dc8758f4e9a6ee491950c3",
+      "surname": "Choi",
+      "year": "2016",
+      "title_fragment": "Hornerin is involved in breast cancer progression",
+      "journal_fragment": "Journal of breast cancer",
+      "doi": "10.4048/jbc.2016.19.2.142",
+      "source": "pubmed",
+      "abstract": "PURPOSE: The S100 gene family, which comprises over 20 members, including S100A1, S100A2, S100A8, S100A9, profilaggrin, and hornerin encodes low molecular weight calcium-binding proteins with physiological and pathological roles in keratinization. Recent studies have suggested a link between S100 proteins and human cancer progression. The purpose of the present study was to determine the expression levels of hornerin, S100A8, and S100A9 and evaluate their roles in the progression of invasive ductal carcinoma (IDC). METHODS: Seventy cases of ductal carcinoma in situ (DCIS), IDC, and metastatic carcinoma in lymph nodes (MCN) were included. Tissue microarrays were constructed from lesions of DCIS, IDC, and MCN from the same patients. Expression of hornerin, S100A8, and S100A9 was analyzed using immunohistochemistry. RESULTS: The expression of hornerin was associated with the estrogen receptor-negative (p=0.003) and the human epidermal growth factor receptor 2-positive (p=0.002) groups. The expression of S100A8 was associated with a higher pT stage (p=0.017). A significant (p<0.001) correlation between the expression of S100A9 and S100A8 was also found. The mean percentages of hornerin-positive tumor cells in DCIS, IDC, and MCN were 1.0%±3.3% (mean±standard deviation), 12.0%±24.0%, and 75.3%± 27.6%, respectively. The expression of hornerin significantly (p<0.001) increased with the progression of carcinoma. The mean levels of S100A8 and S100A9 in DCIS, IDC, and MCN were not significantly (p>0.050) different. The expression of hornerin increased in a stepwise manner (DCIS<IDC<MCN). CONCLUSION: Our data suggest that hornerin is involved in breast cancer progression and malignant transformation from preinvasive lesions."
+    },
+    {
+      "cache_key": "bbc48fec6e85fbda71836de8f010f335458422da5ce2280c06515451194dc7c8",
+      "surname": "Choudhury",
+      "year": "2016",
+      "title_fragment": "CRISPR-dCas9 mediated TET1 targeting for selective DNA demethylation at BRCA1 promoter",
+      "journal_fragment": "Oncotarget",
+      "doi": "10.18632/oncotarget.10234",
+      "source": "pubmed",
+      "abstract": "DNA hypermethylation at the promoter of tumour-suppressor genes is tightly correlated with their transcriptional repression and recognized as the hallmark of majority of cancers. Epigenetic silencing of tumour suppressor genes impairs their cellular functions and activates a cascade of events driving cell transformation and cancer progression. Here, we examine site-specific and spatiotemporal alteration in DNA methylation at a target region in BRCA1 gene promoter, a model tumour suppressor gene. We have developed a programmable CRISPR-Cas9 based demethylase tool containing the deactivated Cas9 (dCas9) fused to the catalytic domain (CD) of Ten-Eleven Translocation (TET) dioxygenase1 (TET1CD). The fusion protein selectively demethylates targeted regions within BRCA1 promoter as directed by the designed single-guide RNAs (sgRNA), leading to the transcriptional up-regulation of the gene. We also noticed the increment in 5-hydroxymethylation content (5-hmC) at the target DNA site undergoing the most profound demethylation. It confirms the catalytic activity of TET1 in TET1-dCas9 fusion proteins-mediated demethylation at these target sequences. The modular design of the fusion constructs presented here allows for the selective substitution of other chromatin or DNA modifying enzymes and for loci-specific targeting to uncover epigenetic regulatory pathways at gene promoters and other selected genomic regions."
+    },
+    {
+      "cache_key": "8c19c7355c166cf5b032804cea7a9b216f133df29a540275a9adc8a51c0eed72",
+      "surname": "Chudasama",
+      "year": "2018",
+      "title_fragment": "Integrative genomic and transcriptomic analysis of leiomyosarcoma",
+      "journal_fragment": "Nature communications",
+      "doi": "10.1038/s41467-017-02602-0",
+      "source": "crossref",
+      "abstract": "Abstract Leiomyosarcoma (LMS) is an aggressive mesenchymal malignancy with few therapeutic options. The mechanisms underlying LMS development, including clinically actionable genetic vulnerabilities, are largely unknown. Here we show, using whole-exome and transcriptome sequencing, that LMS tumors are characterized by substantial mutational heterogeneity, near-universal inactivation of TP53 and RB1 , widespread DNA copy number alterations including chromothripsis, and frequent whole-genome duplication. Furthermore, we detect alternative telomere lengthening in 78% of cases and identify recurrent alterations in telomere maintenance genes such as ATRX , RBL2 , and SP100 , providing insight into the genetic basis of this mechanism. Finally, most tumors display hallmarks of “BRCAness”, including alterations in homologous recombination DNA repair genes, multiple structural rearrangements, and enrichment of specific mutational signatures, and cultured LMS cells are sensitive towards olaparib and cisplatin. This comprehensive study of LMS genomics has uncovered key biological features that may inform future experimental research and enable the design of novel therapies."
+    },
+    {
+      "cache_key": "c23f66bfb770f5c73810d82a6439d05cf4ccaf0a1702e7e22d55d89452cb5c61",
+      "surname": "Cicchetto",
+      "year": "2023",
+      "title_fragment": "ZFP36-mediated mRNA decay regulates metabolism",
+      "journal_fragment": "Cell reports",
+      "doi": "10.1016/j.celrep.2023.112411",
+      "source": "pubmed",
+      "abstract": "Cellular metabolism is tightly regulated by growth factor signaling, which promotes metabolic rewiring to support growth and proliferation. While growth factor-induced transcriptional and post-translational modes of metabolic regulation have been well defined, whether post-transcriptional mechanisms impacting mRNA stability regulate this process is less clear. Here, we present the ZFP36/L1/L2 family of RNA-binding proteins and mRNA decay factors as key drivers of metabolic regulation downstream of acute growth factor signaling. We quantitatively catalog metabolic enzyme and nutrient transporter mRNAs directly bound by ZFP36 following growth factor stimulation-many of which encode rate-limiting steps in metabolic pathways. Further, we show that ZFP36 directly promotes the mRNA decay of Enolase 2 (Eno2), altering Eno2 protein expression and enzymatic activity, and provide evidence of a ZFP36/Eno2 axis during VEGF-stimulated developmental retinal angiogenesis. Thus, ZFP36-mediated mRNA decay serves as an important mode of metabolic regulation downstream of growth factor signaling within dynamic cell and tissue states."
+    },
+    {
+      "cache_key": "51178ff8f80773bfad25c1922475a443b749a872371fe7b92a8b332480ab4a40",
+      "surname": "Claps",
+      "year": "2021",
+      "title_fragment": "Novel expanding renal cell carcinoma biomarkers",
+      "journal_fragment": "Société Internationale d’Urologie Journal",
+      "doi": "10.48083/xlqz8269",
+      "source": "crossref",
+      "abstract": "Identification of reliable molecular biomarkers that can complement clinical practice represents a fascinating challenge in any cancer field. Renal tumors are usually asymptomatic and incidentally identified during imaging studies undertaken for unrelated causes. However, in 25% to 30% of patients the first diagnosis is accompanied by symptoms and associated with distant metastasis. Thus, early diagnosis may reduce the risk of disease progression also avoiding side effects of inadequate treatments. Moreover, the ability to categorize patients' risk of recurrence after radical treatment, or even predict benefit from a target therapy, represents a compelling challenge. Here we review the current state-of-the-art on RCC biomarkers, particularly focusing on the new approaches of genomics, liquid biopsy, proteomics, and metabolomics."
+    },
+    {
+      "cache_key": "7d2d0d1e1d8ea70c5cc9fce7fead4c258895b5b317540fc6c4c94df7c8f2b259",
+      "surname": "Clarke",
+      "year": "2021",
+      "title_fragment": "Experimental models of endocrine responsive breast cancer: Strengths, limitations, and use",
+      "journal_fragment": "Cancer Drug Resistance",
+      "doi": "10.20517/cdr.2021.33",
+      "source": "pubmed",
+      "abstract": "Breast cancers characterized by expression of estrogen receptor-alpha; ESR1) represent approximately 70% of all new cases and comprise the largest molecular subtype of this disease. Despite this high prevalence, the number of adequate experimental models of ER+ breast cancer is relatively limited. Nonetheless, these models have proved very useful in advancing understanding of how cells respond to and resist endocrine therapies, and how the ER acts as a transcription factor to regulate cell fate signaling. We discuss the primary experimental models of ER+ breast cancer including 2D and 3D cultures of established cell lines, cell line- and patient-derived xenografts, and chemically induced rodent models, with a consideration of their respective general strengths and limitations. What can and cannot be learned easily from these models is also discussed, and some observations on how these models may be used more effectively are provided. Overall, despite their limitations, the panel of models currently available has enabled major advances in the field, and these models remain central to the ability to study mechanisms of therapy action and resistance and for hypothesis testing that would otherwise be intractable or unethical in human subjects."
+    },
+    {
+      "cache_key": "1d8d794ed051fb56152e3fda3000b4febd8a1808e7e67cd2dd93720b3cb5d846",
+      "surname": "Colditz",
+      "year": "2012",
+      "title_fragment": "Applying what we know to accelerate cancer prevention",
+      "journal_fragment": "Science translational medicine",
+      "doi": "10.1126/scitranslmed.3003218",
+      "source": "crossref",
+      "abstract": "Research says we already know how to prevent half of all cancers; now we need to put knowledge into action."
+    },
+    {
+      "cache_key": "5092f4fb3ff4039394c2d2377fe9b008aae17699c002997aa81525e5c2a4f0fa",
+      "surname": "Coller",
+      "year": "2007",
+      "title_fragment": "Tethered function assays: an adaptable approach to study RNA regulatory proteins",
+      "journal_fragment": "In Methods in enzymology (Vol. 429",
+      "doi": "10.1016/s0076-6879(07)29014-7",
+      "source": "pubmed",
+      "abstract": "Proteins and protein complexes that regulate mRNA metabolism must possess two activities. They bind the mRNA, and then elicit some function, that is, regulate mRNA splicing, transport, localization, translation, or stability. These two activities can often reside in different proteins in a complex, or in different regions of a single polypeptide. Much can be learned about the function of the protein or complex once it is stripped of the constraints imposed by RNA binding. With this in mind, we developed a \"tethered function\" assay, in which the mRNA regulatory protein is brought to the 3' UTR of an mRNA reporter through a heterologous RNA-protein interaction. In this manner, the functional activity of the protein can be studied independent of its intrinsic ability to recognize and bind to RNA. This simple assay has proven useful in dissecting numerous proteins involved in posttranscriptional regulation. We discuss the basic assay, consider technical issues, and present case studies that exemplify the strengths and limitations of the approach."
+    },
+    {
+      "cache_key": "33475f0118f6f051273b6c8211ed0796bf8e2135c84fed6f353e0cd1b8d35545",
+      "surname": "Common",
+      "year": "2019",
+      "title_fragment": "CRISPR-Cas immunity leads to a coevolutionary arms race between Streptococcus thermophilus and lytic phage",
+      "journal_fragment": "Philosophical Transactions of the Royal Society B",
+      "doi": "10.1098/rstb.2018.0098",
+      "source": "crossref",
+      "abstract": "CRISPR-Cas is an adaptive prokaryotic immune system that prevents phage infection. By incorporating phage-derived ‘spacer’ sequences into CRISPR loci on the host genome, future infections from the same phage genotype can be recognized and the phage genome cleaved. However, the phage can escape CRISPR degradation by mutating the sequence targeted by the spacer, allowing them to re-infect previously CRISPR-immune hosts, and theoretically leading to coevolution. Previous studies have shown that phage can persist over long periods in populations of Streptococcus thermophilus that can acquire CRISPR-Cas immunity, but it has remained less clear whether this coexistence was owing to coevolution, and if so, what type of coevolutionary dynamics were involved. In this study, we performed highly replicated serial transfer experiments over 30 days with S. thermophilus and a lytic phage. Using a combination of phenotypic and genotypic data, we show that CRISPR-mediated resistance and phage infectivity coevolved over time following an arms race dynamic, and that asymmetry between phage infectivity and host resistance within this system eventually causes phage extinction. This work provides further insight into the way CRISPR-Cas systems shape the population and coevolutionary dynamics of bacteria–phage interactions. This article is part of a discussion meeting issue ‘The ecology and evolution of prokaryotic CRISPR-Cas adaptive immune systems’."
+    },
+    {
+      "cache_key": "c2bff12db617b3e3ffc990c621898ab04bfe1d92b3f0155d58830e9a71c84d68",
+      "surname": "Comşa",
+      "year": "2015",
+      "title_fragment": "The story of MCF-7 breast cancer cell line: 40 years of experience in research",
+      "journal_fragment": "Anticancer research",
+      "doi": null,
+      "source": "pubmed",
+      "abstract": "Breast cancer is the most frequent malignancy in females. Due to its major impact on population, this disease represents a critical public health problem that requires further research at the molecular level in order to define its prognosis and specific treatment. Basic research is required to accomplish this task and this involves cell lines as they can be widely used in many aspects of laboratory research and, particularly, as in vitro models in cancer research. MCF-7 is a commonly used breast cancer cell line, that has been promoted for more than 40 years by multiple research groups but its characteristics have never been gathered in a consistent review article. The current paper provides a broad description of the MCF-7 cell line, including the molecular profile, proliferation, migration, invasion, spheroid formation, its involvement in angiogenesis and lymphangiogenesis and its interaction with the mesenchymal stem cells."
+    },
+    {
+      "cache_key": "51566af80029e271b0109e2817770877caf7afee340511c5151c56e100b5db23",
+      "surname": "Couch",
+      "year": "2015",
+      "title_fragment": "Inherited mutations in 17 breast cancer susceptibility genes among a large triple-negative breast cancer cohort unselected for family history of breast cancer",
+      "journal_fragment": "Journal of clinical oncology",
+      "doi": "10.1200/jco.2014.57.1414",
+      "source": "crossref",
+      "abstract": "Purpose Recent advances in DNA sequencing have led to the development of breast cancer susceptibility gene panels for germline genetic testing of patients. We assessed the frequency of mutations in 17 predisposition genes, including BRCA1 and BRCA2, in a large cohort of patients with triple-negative breast cancer (TNBC) unselected for family history of breast or ovarian cancer to determine the utility of germline genetic testing for those with TNBC. Patients and Methods Patients with TNBC (N = 1,824) unselected for family history of breast or ovarian cancer were recruited through 12 studies, and germline DNA was sequenced to identify mutations. Results Deleterious mutations were identified in 14.6% of all patients. Of these, 11.2% had mutations in the BRCA1 (8.5%) and BRCA2 (2.7%) genes. Deleterious mutations in 15 other predisposition genes were detected in 3.7% of patients, with the majority observed in genes involved in homologous recombination, including PALB2 (1.2%) and BARD1, RAD51D, RAD51C, and BRIP1 (0.3% to 0.5%). Patients with TNBC with mutations were diagnosed at an earlier age (P < .001) and had higher-grade tumors (P = .01) than those without mutations. Conclusion Deleterious mutations in predisposition genes are present at high frequency in patients with TNBC unselected for family history of cancer. Mutation prevalence estimates suggest that patients with TNBC, regardless of age at diagnosis or family history of cancer, should be considered for germline genetic testing of BRCA1 and BRCA2. Although mutations in other predisposition genes are observed among patients with TNBC, better cancer risk estimates are needed before these mutations are used for clinical risk assessment in relatives."
+    },
+    {
+      "cache_key": "405aabdf5c95c79d54d1c712c40344d23ad63fa96df61827cab3cb56e85158da",
+      "surname": "Curtis",
+      "year": "2012",
+      "title_fragment": "The genomic and transcriptomic architecture of 2,000 breast tumours reveals novel subgroups",
+      "journal_fragment": "Nature",
+      "doi": "10.1038/nature10983",
+      "source": "pubmed",
+      "abstract": "The elucidation of breast cancer subgroups and their molecular drivers requires integrated views of the genome and transcriptome from representative numbers of patients. We present an integrated analysis of copy number and gene expression in a discovery and validation set of 997 and 995 primary breast tumours, respectively, with long-term clinical follow-up. Inherited variants (copy number variants and single nucleotide polymorphisms) and acquired somatic copy number aberrations (CNAs) were associated with expression in ~40% of genes, with the landscape dominated by cis- and trans-acting CNAs. By delineating expression outlier genes driven in cis by CNAs, we identified putative cancer genes, including deletions in PPP2R2A, MTAP and MAP2K4. Unsupervised analysis of paired DNA–RNA profiles revealed novel subgroups with distinct clinical outcomes, which reproduced in the validation cohort. These include a high-risk, oestrogen-receptor-positive 11q13/14 cis-acting subgroup and a favourable prognosis subgroup devoid of CNAs. Trans-acting aberration hotspots were found to modulate subgroup-specific gene networks, including a TCR deletion-mediated adaptive immune response in the ‘CNA-devoid’ subgroup and a basal-specific chromosome 5 deletion-associated mitotic network. Our results provide a novel molecular stratification of the breast cancer population, derived from the impact of somatic CNAs on the transcriptome."
+    },
+    {
+      "cache_key": "6e41efc088f44eef3f7fab778490bdbe3af07db45d367f44fc8ca6402bffa28f",
+      "surname": "Czajkowski",
+      "year": "2022",
+      "title_fragment": "Impact of DNA damage response defects in cancer cells on response to immunotherapy and radiotherapy",
+      "journal_fragment": "Journal of Medical Imaging and Radiation Oncology",
+      "doi": "10.1111/1754-9485.13413",
+      "source": "crossref",
+      "abstract": "Abstract The DNA damage response (DDR) is a complex set of downstream pathways triggered in response to DNA damage to maintain genomic stability. Many tumours exhibit mutations which inactivate components of the DDR, making them prone to the accumulation of DNA defects. These can both facilitate the development of tumours and provide potential targets for novel therapeutic interventions. The inhibition of the DDR has been shown to induce radiosensitivity in certain cancers, rendering them susceptible to treatment with radiotherapy and improving the therapeutic window. Moreover, DDR defects are a strong predictor of patient response to immune checkpoint inhibition (ICI). The ability to target the DDR selectively has the potential to expand the tumour neoantigen repertoire, thus increasing tumour immunogenicity and facilitating a CD8+ T and NK cell response against cancer cells. Combinatorial approaches, which seek to integrate DDR inhibition with radiotherapy and immunotherapy, have shown promise in early trials. Further studies are necessary to understand these synergies and establish reliable biomarkers."
+    },
+    {
+      "cache_key": "dc1db04e5adc8af1e7f7f3cf5ff2349b3a11f3ccd775934bca7aae1bfa129f51",
+      "surname": "Czarnecka",
+      "year": "2020",
+      "title_fragment": "Molecular biology of osteosarcoma",
+      "journal_fragment": "Cancers",
+      "doi": "10.3390/cancers12082130",
+      "source": "crossref",
+      "abstract": "Osteosarcoma (OS) is the most frequent primary bone cancer in children and adolescents and the third most frequent in adults. Many inherited germline mutations are responsible for syndromes that predispose to osteosarcomas including Li Fraumeni syndrome, retinoblastoma syndrome, Werner syndrome, Bloom syndrome or Diamond–Blackfan anemia. TP53 is the most frequently altered gene in osteosarcoma. Among other genes mutated in more than 10% of OS cases, c-Myc plays a role in OS development and promotes cell invasion by activating MEK–ERK pathways. Several genomic studies showed frequent alterations in the RB gene in pediatric OS patients. Osteosarcoma driver mutations have been reported in NOTCH1, FOS, NF2, WIF1, BRCA2, APC, PTCH1 and PRKAR1A genes. Some miRNAs such as miR-21, -34a, -143, -148a, -195a, -199a-3p and -382 regulate the pathogenic activity of MAPK and PI3K/Akt-signaling pathways in osteosarcoma. CD133+ osteosarcoma cells have been shown to exhibit stem-like gene expression and can be tumor-initiating cells and play a role in metastasis and development of drug resistance. Although currently osteosarcoma treatment is based on adriamycin chemoregimens and surgery, there are several potential targeted therapies in development. First of all, activity and safety of cabozantinib in osteosarcoma were studied, as well as sorafenib and pazopanib. Finally, novel bifunctional molecules, of potential imaging and osteosarcoma targeting applications may be used in the future."
+    },
+    {
+      "cache_key": "0da6489f22c12531f155ce5656bb2dda78784192a8b8138f200966b7ce494f76",
+      "surname": "Darido",
+      "year": "2016",
+      "title_fragment": "The role of barrier genes in epidermal malignancy",
+      "journal_fragment": "Oncogene",
+      "doi": "10.1038/onc.2016.84",
+      "source": "pubmed",
+      "abstract": "The outermost layer of the mammalian skin, the epidermis, forms a protective barrier against pathogenic microbes and tissue dehydration. This barrier is formed and maintained by complex genetic networks that connect cellular differentiation processes, enzymatic activities and cellular junctions. Disruption in these networks affects the balance between keratinocyte proliferation and differentiation resulting in barrier function impairment, epidermal hyperproliferation and in some cases, squamous cell carcinoma (SCC). Recent studies in wound-induced inflammation-mediated cancers in mice have identified dysregulation of core barrier components as tumor drivers. We therefore propose a hypothesis in which loss of key barrier genes, induce barrier dysfunction, and promote inflammation-driven epidermal hyperplasia and carcinogenesis over time. This emerging vision suggests that under specific genetic circumstances, localized barrier impairment could be considered as a hallmark of initiating lesions in epidermal SCC."
+    },
+    {
+      "cache_key": "33d944a0f9edee04b3c3c102ed0066ee878f1f99465c55bd2a5a71fd6375cadb",
+      "surname": "De",
+      "year": "2020",
+      "title_fragment": "Clinical outcome of breast cancer in carriers of BRCA1 and BRCA2 mutations according to molecular subtypes",
+      "journal_fragment": "Scientific reports",
+      "doi": "10.1038/s41598-020-63759-1",
+      "source": "crossref",
+      "abstract": "Abstract BRCA1/BRCA2 genes play a central role in DNA repair and their mutations increase sensitivity to DNA-damaging agents. There are conflicting data regarding the prognostic value of BRCA germline mutations in breast cancer (BC) patients. We collected clinical, pathological and genetic data of a cohort 925 BC patients preselected for genetic screening and treated with neoadjuvant or adjuvant chemotherapy, of whom 266 were BRCA carriers. Overall, 171 women carried a BRCA1 mutation, 95 carried a BRCA2 mutation, and 659 were non-carriers. In the entire cohort, there was a prolonged disease-free survival (DFS) for BRCA carriers (hazard ratio (HR) = 0.63; 95% confidence interval (CI), 0.44–0.90 for BRCA1; HR = 0.72; 95%CI, 0.47–1.1 for BRCA2 ; p = 0.020) and a trend toward prolonged disease-specific survival (DSS; HR = 0.65; 95%CI, 0.40–1.1 for BRCA1 ; HR = 0.78; 95%CI, 0.44–1.38 for BRCA2 ; p = 0.19) though not statistically significant. In the TNBC group, BRCA carriers had prolonged DFS (adjusted HR = 0.50; 95%CI, 0.28–0.89 for BRCA1; adjusted HR = 0.37; 95%CI, 0.11–1.25, for BRCA2; p = 0.034) and DSS (adjusted HR = 0.42; 95%CI, 0.21–0.82 for BRCA1; adjusted HR = 0.45; 95%CI, 0.11–1.9 for BRCA2; p = 0.023). In the non-TNBC group, the BRCA1 or BRCA2 mutations did not have any impact on survival. These results suggest that BRCA1/BRCA2 germline mutations are associated with prolonged survival only if women were diagnosed with TNBC."
+    },
+    {
+      "cache_key": "fed3fbd3680aaa1310f855bd632381dbfc0481de147248e139b8d17da4024008",
+      "surname": "Dedrick",
+      "year": "2017",
+      "title_fragment": "Prophage-mediated defence against viral attack and viral counter-defence",
+      "journal_fragment": "Nature microbiology",
+      "doi": "10.1038/nmicrobiol.2016.251",
+      "source": "pubmed",
+      "abstract": "Temperate phages are common, and prophages are abundant residents of sequenced bacterial genomes. Mycobacteriophages are viruses that infect mycobacterial hosts including Mycobacterium tuberculosis and Mycobacterium smegmatis, encompass substantial genetic diversity and are commonly temperate. Characterization of ten Cluster N temperate mycobacteriophages revealed at least five distinct prophage-expressed viral defence systems that interfere with the infection of lytic and temperate phages that are either closely related (homotypic defence) or unrelated (heterotypic defence) to the prophage. Target specificity is unpredictable, ranging from a single target phage to one-third of those tested. The defence systems include a single-subunit restriction system, a heterotypic exclusion system and a predicted (p)ppGpp synthetase, which blocks lytic phage growth, promotes bacterial survival and enables efficient lysogeny. The predicted (p)ppGpp synthetase coded by the Phrann prophage defends against phage Tweety infection, but Tweety codes for a tetrapeptide repeat protein, gp54, which acts as a highly effective counter-defence system. Prophage-mediated viral defence offers an efficient mechanism for bacterial success in host-virus dynamics, and counter-defence promotes phage co-evolution."
+    },
+    {
+      "cache_key": "565523b9c10cfa630202ffc0e5971cea3f1cb72b7ef8e03622021e357f168631",
+      "surname": "Denecker",
+      "year": "2022",
+      "title_fragment": "Omics Analyses: How to Navigate Through a Constant Data Data Deluge",
+      "journal_fragment": "In Yeast Functional Genomics: Methods and Protocols (pp. 457-471). New York",
+      "doi": "10.1007/978-1-0716-2257-5_25",
+      "source": "crossref",
+      "abstract": "Abstract Omics data are very valuable for researchers in biology, but the work required to develop a solid expertise in their analysis contrasts with the rapidity with which the omics technologies evolve. Data accumulate in public databases, and despite significant advances in bioinformatics softwares to integrate them, data analysis remains a burden for those who perform experiments. Beyond the issue of dealing with a very large number of results, we believe that working with omics data requires a change in the way scientific problems are solved. In this chapter, we explain pitfalls and tips we found during our functional genomics projects in yeasts. Our main lesson is that, if applying a protocol does not guarantee a successful project, following simple rules can help to become strategic and intentional, thus avoiding an endless drift into an ocean of possibilities."
+    },
+    {
+      "cache_key": "288a7ebcb75b7ac2d8e6a9f4fddb81d174e8d46da1605860bc15db08bed3dfca",
+      "surname": "Deshpande",
+      "year": "2022",
+      "title_fragment": "Error-prone repair of stalled replication forks drives mutagenesis and loss of heterozygosity in haploinsufficient BRCA1 cells",
+      "journal_fragment": "Molecular cell",
+      "doi": "10.1016/j.molcel.2022.08.017",
+      "source": "pubmed",
+      "abstract": "Germline mutations in the BRCA genes are associated with a higher risk of carcinogenesis, which is linked to an increased mutation rate and loss of the second unaffected BRCA allele (loss of heterozygosity, LOH). However, the mechanisms triggering mutagenesis are not clearly understood. The BRCA genes contain high numbers of repetitive DNA sequences. We detected replication forks stalling, DNA breaks, and deletions at these sites in haploinsufficient BRCA cells, thus identifying the BRCA genes as fragile sites. Next, we found that stalled forks are repaired by error-prone pathways, such as microhomology-mediated break-induced replication (MMBIR) in haploinsufficient BRCA1 breast epithelial cells. We detected MMBIR mutations in BRCA1 tumor cells and noticed deletions-insertions (>50 bp) at the BRCA1 genes in BRCA1 patients. Altogether, these results suggest that under stress, error-prone repair of stalled forks is upregulated and induces mutations, including complex genomic rearrangements at the BRCA genes (LOH), in haploinsufficient BRCA1 cells."
+    },
+    {
+      "cache_key": "c6d5cdf7ae7179f97d2a0d0666409e3544c1f57660c699e67f664c694b092a4d",
+      "surname": "Dinges",
+      "year": "2019",
+      "title_fragment": "Cancer metabolomic markers in urine: Evidence, techniques and recommendations",
+      "journal_fragment": "Nature reviews urology",
+      "doi": "10.1038/s41585-019-0185-3",
+      "source": "pubmed",
+      "abstract": "Urinary tests have been used as noninvasive, cost-effective tools for screening, diagnosis and monitoring of diseases since ancient times. As we progress through the 21st century, modern analytical platforms have enabled effective measurement of metabolites, with promising results for both a deeper understanding of cancer pathophysiology and, ultimately, clinical translation. The first study to measure metabolomic urinary cancer biomarkers using NMR and mass spectrometry (MS) was published in 2006 and, since then, these techniques have been used to detect cancers of the urological system (kidney, prostate and bladder) and nonurological tumours including those of the breast, ovary, lung, liver, gastrointestinal tract, pancreas, bone and blood. This growing field warrants an assessment of the current status of research developments and recommendations to help systematize future research."
+    },
+    {
+      "cache_key": "3c4a073b37119aacb8bf4ec93c1614c8cd6a48d6d58356bcb0f50c1c6fdf8219",
+      "surname": "Donato",
+      "year": "2017",
+      "title_fragment": "S100A6 protein: functional roles",
+      "journal_fragment": "Cellular and Molecular Life Sciences",
+      "doi": "10.1007/s00018-017-2526-9",
+      "source": "pubmed",
+      "abstract": "S100A6 protein belongs to the A group of the S100 protein family of Ca2+-binding proteins. It is expressed in a limited number of cell types in adult normal tissues and in several tumor cell types. As an intracellular protein, S100A6 has been implicated in the regulation of several cellular functions, such as proliferation, apoptosis, the cytoskeleton dynamics, and the cellular response to different stress factors. S100A6 can be secreted/released by certain cell types which points to extracellular effects of the protein. RAGE (receptor for advanced glycation endproducts) and integrin β1 transduce some extracellular S100A6's effects. Dosage of serum S100A6 might aid in diagnosis in oncology."
+    },
+    {
+      "cache_key": "f69f65ea69bda8bc7db3c75816dfcab508a56e75fb3b41aa346ae842b7e62c89",
+      "surname": "Dufner",
+      "year": "2015",
+      "title_fragment": "The ubiquitin-specific protease USP8 is critical for the development and homeostasis of T cells",
+      "journal_fragment": "Nature immunology",
+      "doi": "10.1038/ni.3230",
+      "source": "pubmed",
+      "abstract": "The modification of proteins by ubiquitin has a major role in cells of the immune system and is counteracted by various deubiquitinating enzymes (DUBs) with poorly defined functions. Here we identified the ubiquitin-specific protease USP8 as a regulatory component of the T cell antigen receptor (TCR) signalosome that interacted with the adaptor Gads and the regulatory molecule 14-3-3β. Caspase-dependent processing of USP8 occurred after stimulation of the TCR. T cell-specific deletion of USP8 in mice revealed that USP8 was essential for thymocyte maturation and upregulation of the gene encoding the cytokine receptor IL-7Rα mediated by the transcription factor Foxo1. Mice with T cell-specific USP8 deficiency developed colitis that was promoted by disturbed T cell homeostasis, a predominance of CD8(+) γδ T cells in the intestine and impaired regulatory T cell function. Collectively, our data reveal an unexpected role for USP8 as an immunomodulatory DUB in T cells."
+    },
+    {
+      "cache_key": "58665806fa424791eba29e0aeee0fc661a2ce40cf64d06ac2df387d9a69f11c2",
+      "surname": "Duncan",
+      "year": "2021",
+      "title_fragment": "Unique variants in CLCN3, encoding an endosomal anion/proton exchanger, underlie a spectrum of neurodevelopmental disorders",
+      "journal_fragment": "The American Journal of Human Genetics",
+      "doi": "10.1016/j.ajhg.2021.06.003",
+      "source": "pubmed",
+      "abstract": "The genetic causes of global developmental delay (GDD) and intellectual disability (ID) are diverse and include variants in numerous ion channels and transporters. Loss-of-function variants in all five endosomal/lysosomal members of the CLC family of Cl- channels and Cl-/H+ exchangers lead to pathology in mice, humans, or both. We have identified nine variants in CLCN3, the gene encoding CIC-3, in 11 individuals with GDD/ID and neurodevelopmental disorders of varying severity. In addition to a homozygous frameshift variant in two siblings, we identified eight different heterozygous de novo missense variants. All have GDD/ID, mood or behavioral disorders, and dysmorphic features; 9/11 have structural brain abnormalities; and 6/11 have seizures. The homozygous variants are predicted to cause loss of ClC-3 function, resulting in severe neurological disease similar to the phenotype observed in Clcn3-/- mice. Their MRIs show possible neurodegeneration with thin corpora callosa and decreased white matter volumes. Individuals with heterozygous variants had a range of neurodevelopmental anomalies including agenesis of the corpus callosum, pons hypoplasia, and increased gyral folding. To characterize the altered function of the exchanger, electrophysiological analyses were performed in Xenopus oocytes and mammalian cells. Two variants, p.Ile607Thr and p.Thr570Ile, had increased currents at negative cytoplasmic voltages and loss of inhibition by luminal acidic pH. In contrast, two other variants showed no significant difference in the current properties. Overall, our work establishes a role for CLCN3 in human neurodevelopment and shows that both homozygous loss of ClC-3 and heterozygous variants can lead to GDD/ID and neuroanatomical abnormalities."
+    },
+    {
+      "cache_key": "b795ccedeb1830580c1d59e76485cbe985afa9f17c7965e7e0dfd41961a060f5",
+      "surname": "Durkin",
+      "year": "2007",
+      "title_fragment": "Chromosome fragile sites",
+      "journal_fragment": "Annu. Rev. Genet.",
+      "doi": "10.1146/annurev.genet.41.042007.165900",
+      "source": "crossref",
+      "abstract": "Chromosomal fragile sites are specific loci that preferentially exhibit gaps and breaks on metaphase chromosomes following partial inhibition of DNA synthesis. Their discovery has led to novel findings spanning a number of areas of genetics. Rare fragile sites are seen in a small proportion of individuals and are inherited in a Mendelian manner. Some, such as FRAXA in the FMR1 gene, are associated with human genetic disorders, and their study led to the identification of nucleotide-repeat expansion as a frequent mutational mechanism in humans. In contrast, common fragile sites are present in all individuals and represent the largest class of fragile sites. Long considered an intriguing component of chromosome structure, common fragile sites have taken on novel significance as regions of the genome that are particularly sensitive to replication stress and that are frequently rearranged in tumor cells. In recent years, much progress has been made toward understanding the genomic features of common fragile sites and the cellular processes that monitor and influence their stability. Their study has merged with that of cell cycle checkpoints and DNA repair, and common fragile sites have provided insight into understanding the consequences of replication stress on DNA damage and genome instability in cancer cells."
+    },
+    {
+      "cache_key": "efe98d5f589d65d16fca00853a86127e123ebd7ece807a323ab15b0252015f1e",
+      "surname": "Durkin",
+      "year": "2008",
+      "title_fragment": "Replication stress induces tumor-like microdeletions in FHIT/FRA3B",
+      "journal_fragment": "Proceedings of the National Academy of Sciences",
+      "doi": "10.1073/pnas.0708097105",
+      "source": "crossref",
+      "abstract": "Common fragile sites (CFSs) are loci that preferentially exhibit metaphase chromosome gaps and breaks after partial inhibition of DNA synthesis. The fragile site FRA3B, which lies within the FHIT tumor-suppressor gene, is a site of frequent heterozygous and homozygous deletions in many cancer cells and precancerous lesions. The great majority of FHIT and other CFS-associated gene rearrangements in tumors are submicroscopic, intralocus deletions of hundreds of kilobases that often result in inactivation of associated genes. Although CFS instability leads to chromosome gaps and breaks and translocations, there has been no direct evidence showing that CFS instability or replication stress can generate large submicroscopic deletions of the type seen in cancer cells. Here, we have produced FHIT/FRA3B deletions closely resembling those in tumors by exposing human–mouse chromosome 3 somatic hybrid cells to aphidicolin-mediated replication stress. Clonal cell populations were analyzed for deletions by using PCR, array comparative genomic hybridization (aCGH), and FISH. Thirteen percent to 23% of clones exhibited submicroscopic FHIT deletions spanning ≈200–600 kb within FRA3B. Chromosomes with FRA3B deletions exhibited significantly decreased fragility of this locus, with a 2- to 12-fold reduction in metaphase gaps and breaks compared with controls. Sequence analysis showed no regions of homology at breakpoints and suggests involvement of NHEJ in generating the deletions. Our results demonstrate that replication stress induces a remarkably high frequency of tumor-like microdeletions that reduce fragility at a CFS in cultured cells and suggests that similar conditions during tumor formation lead to intralocus deletion and inactivation of genes at CFSs and perhaps elsewhere in the genome."
+    },
+    {
+      "cache_key": "616b78de20742ea4755249c2dfd79f223603de5bc82768cc9d6a462f8f0ad296",
+      "surname": "Easton",
+      "year": "1995",
+      "title_fragment": "Breast and ovarian cancer incidence in BRCA1-mutation carriers",
+      "journal_fragment": "Breast Cancer Linkage Consortium. American journal of human genetics",
+      "doi": null,
+      "source": "pubmed",
+      "abstract": "BACKGROUND: Germline BRCA1 mutations confer a substantial lifetime risk of breast and ovarian cancer, but whether cancer at other sites is increased is less clear. To evaluate the risks of other cancers in BRCA1 mutation carriers, we conducted a cohort study of 11 847 individuals from 699 families segregating a BRCA1 mutation that were ascertained in 30 centers across Europe and North America. METHODS: The observed cancer incidence was compared with the expected cancer incidence based on population cancer rates. Relative risks (RRs) of each cancer type in BRCA1 carriers relative to risks for the general population were estimated by weighting individuals according to their estimated probability of being a mutation carrier. All statistical tests were two-sided. RESULTS: BRCA1 mutation carriers were at a statistically significantly increased risk for several cancers, including pancreatic cancer (RR = 2.26, 95% confidence interval [CI] = 1.26 to 4.06, P =.004) and cancer of the uterine body and cervix (uterine body RR = 2.65, 95% CI = 1.69 to 4.16, P<.001; cervix RR = 3.72, 95% CI = 2.26 to 6.10, P<.001). There was some evidence of an elevated risk of prostate cancer in mutation carriers younger than 65 years old (RR = 1.82, 95% CI = 1.01 to 3.29, P =.05) but not in those 65 years old or older (RR = 0.84, 95% CI = 0.53 to 1.33, P =.45). Overall, increases in the risk for cancer at sites other than the breast or ovary were small and evident in women (RR = 2.30, 95% CI = 1.93 to 2.75, P =.001) but not in men (RR = 0.95, 95% CI = 0.81 to 1.12, P =.58). CONCLUSIONS: In carriers of BRCA1 mutations, the overall increased risk of cancer at sites other than breast and ovary is small and is observed in women but generally not in men. BRCA1 mutations may confer increased risks of other abdominal cancers in women and increased risks of pancreatic cancer in men and women."
+    },
+    {
+      "cache_key": "44680de6096f3dfd06133f58e840b4ac9c5d7e5a42c0caff1468224e257e185d",
+      "surname": "Ecco",
+      "year": "2017",
+      "title_fragment": "KRAB zinc finger proteins",
+      "journal_fragment": "Development",
+      "doi": "10.1242/dev.132605",
+      "source": "crossref",
+      "abstract": "Krüppel-associated box domain zinc finger proteins (KRAB-ZFPs) are the largest family of transcriptional regulators in higher vertebrates. Characterized by an N-terminal KRAB domain and a C-terminal array of DNA-binding zinc fingers, they participate, together with their co-factor KAP1 (also known as TRIM28), in repression of sequences derived from transposable elements (TEs). Until recently, KRAB-ZFP/KAP1-mediated repression of TEs was thought to lead to irreversible silencing, and the evolutionary selection of KRAB-ZFPs was considered to be just the host component of an arms race against TEs. However, recent advances indicate that KRAB-ZFPs and their TE targets also partner up to establish species-specific regulatory networks. Here, we provide an overview of the KRAB-ZFP gene family, highlighting how its evolutionary history is linked to that of TEs, and how KRAB-ZFPs influence multiple aspects of development and physiology."
+    },
+    {
+      "cache_key": "c5c6876b2f1e05107ccb0f950241f617c8d3f906be19cd894a5167da2c90e650",
+      "surname": "Ekholm-Reed",
+      "year": "2004",
+      "title_fragment": "Deregulation of cyclin E in human cells interferes with prereplication complex assembly",
+      "journal_fragment": "The Journal of cell biology",
+      "doi": "10.1083/jcb.200404092",
+      "source": "crossref",
+      "abstract": "Deregulation of cyclin E expression has been associated with a broad spectrum of human malignancies. Analysis of DNA replication in cells constitutively expressing cyclin E at levels similar to those observed in a subset of tumor-derived cell lines indicates that initiation of replication and possibly fork movement are severely impaired. Such cells show a specific defect in loading of initiator proteins Mcm4, Mcm7, and to a lesser degree, Mcm2 onto chromatin during telophase and early G1 when Mcm2–7 are normally recruited to license origins of replication. Because minichromosome maintenance complex proteins are thought to function as a heterohexamer, loading of Mcm2-, Mcm4-, and Mcm7-depleted complexes is likely to underlie the S phase defects observed in cyclin E–deregulated cells, consistent with a role for minichromosome maintenance complex proteins in initiation of replication and fork movement. Cyclin E–mediated impairment of DNA replication provides a potential mechanism for chromosome instability observed as a consequence of cyclin E deregulation."
+    },
+    {
+      "cache_key": "99d6ee17629824ca236a8c7218cbd3506ac7ad374f6d25337510bf6782746ae0",
+      "surname": "El-Derby",
+      "year": "2024",
+      "title_fragment": "Plasma-derived extracellular matrix for xenofree and cost-effective organoid modeling for hepatocellular carcinoma",
+      "journal_fragment": "Journal of Translational Medicine",
+      "doi": "10.1186/s12967-024-05230-7",
+      "source": "crossref",
+      "abstract": "Abstract Background Hepatocellular carcinoma (HCC) causes significant cancer mortality worldwide. Cancer organoids can serve as useful disease models by high costs, complexity, and contamination risks from animal-derived products and extracellular matrix (ECM) that limit its applications. On the other hand, synthetic ECM alternatives also have limitations in mimicking native biocomplexity. This study explores the development of a physiologically relevant HCC organoid model using plasma-derived extracellular matrix as a scaffold and nutritive biomatrix with different cellularity components to better mimic the heterogenous HCC microenvironment. Plasma-rich platelet is recognized for its elevated levels of growth factors, which can promote cell proliferation. By employing it as a biomatrix for organoid culture there is a potential to enhance the quality and functionality of organoid models for diverse applications in biomedical research and regenerative medicine and to better replicate the heterogeneous microenvironment of HCC. Method To generate the liver cancer organoids, HUH-7 hepatoma cells were cultured alone (homogenous model) or with human bone marrow-derived mesenchymal stromal cells and human umbilical vein endothelial cells (heterogeneous model) in plasma-rich platelet extracellular matrix (ECM). The organoids were grown for 14 days and analyzed for cancer properties including cell viability, invasion, stemness, and drug resistance. Results HCC organoids were developed comprising HUH-7 hepatoma cells with or without human mesenchymal stromal and endothelial cells in plasma ECM scaffolds. Both homogeneous (HUH-7 only) and heterogeneous (mixed cellularity) organoids displayed viability, cancer hallmarks, and chemoresistance. The heterogeneous organoids showed enhanced invasion potential, cancer stem cell populations, and late-stage HCC genetic signatures versus homogeneous counterparts. Conclusion The engineered HCC organoids system offers a clinically relevant and cost-effective model to study liver cancer pathogenesis, stromal interactions, and drug resistance. The plasma ECM-based culture technique could enable standardized and reproducible HCC modeling. It could also provide a promising option for organoid culture and scaling up."
+    },
+    {
+      "cache_key": "03f91791fc4c63dbc141a8e3e8373bbb1c2e3f84ad01518589793348b1f41cda",
+      "surname": "Elias",
+      "year": "2017",
+      "title_fragment": "Long-lived unipotent Blimp1-positive luminal stem cells drive mammary gland organogenesis throughout adult life",
+      "journal_fragment": "Nature communications",
+      "doi": "10.1038/s41467-017-01971-w",
+      "source": "crossref",
+      "abstract": "Abstract The hierarchical relationships between various stem and progenitor cell subpopulations driving mammary gland morphogenesis and homoeostasis are poorly understood. Conditional inactivation experiments previously demonstrated that expression of the zinc finger transcriptional repressor Blimp1/PRDM1 is essential for the establishment of epithelial cell polarity and functional maturation of alveolar cells. Here we exploit a Prdm1.CreERT2-LacZ reporter allele for lineage tracing experiments. Blimp1 expression marks a rare subpopulation of unipotent luminal stem cells that initially appear in the embryonic mammary gland at around E17.5 coincident with the segregation of the luminal and basal compartments. Fate mapping at multiple time points in combination with whole-mount confocal imaging revealed these long-lived unipotent luminal stem cells survive consecutive involutions and retain their identity throughout adult life. Blimp1 + luminal stem cells give rise to Blimp1 − progeny that are invariably Elf5 + ERα − PR − . Thus, Blimp1 expression defines a mammary stem cell subpopulation with unique functional characteristics."
+    },
+    {
+      "cache_key": "6473e991db70ea765d00fa165ad254397e0fa3f89592e1abf1470e6c3b0b7db4",
+      "surname": "Ellis",
+      "year": "2013",
+      "title_fragment": "The genomic landscape of breast cancer as a therapeutic roadmap",
+      "journal_fragment": "Cancer discovery",
+      "doi": "10.1158/2159-8290.cd-12-0462",
+      "source": "crossref",
+      "abstract": "Abstract Summary: The application of high-throughput techniques to profile DNA, RNA, and protein in breast cancer samples from hundreds of patients has profoundly increased our knowledge of the disease. The etiologic events that drive breast cancer are finally coming into focus and should be used to set priorities for clinical trials. In this Prospective, we summarize some of the headline conclusions from 6 recent breast cancer “omics profiling” articles in Nature, with an emphasis on the implications for systemic therapy. Cancer Discov; 3(1); 27–34. ©2012 AACR."
+    },
+    {
+      "cache_key": "230ec29378d46fadd78f8a49fd4865377bc7220e3e55539c381c7c3abecbbacd",
+      "surname": "Elsayed",
+      "year": "2017",
+      "title_fragment": "Rutin as a novel c-Met inhibitory lead for the control of triple negative breast malignancies",
+      "journal_fragment": "Nutrition and cancer",
+      "doi": "10.1080/01635581.2017.1367936",
+      "source": "pubmed",
+      "abstract": "Triple negative breast cancer (TNBC) has high metastatic and mortality potential and lacks effective and selective therapeutic options. Aberrant dysregulation of the receptor tyrosine kinase c-Met promotes TNBC progression, motility and survival and therefore considered a valid therapeutic target. Among various identified anticancer agents, plant polyphenols (PPs) including flavonoids, have been shown to be safe and proven for their antitumor activity through modulating diverse macromolecular targets. This study reports the bioassay-guided identification of the common flavonol glycoside rutin as breast cancer cell proliferation, migration and invasion inhibitor. The cell free Z'-LYTE kinase assay, Western blot and in silico docking experiments uncovered, for the first time, c-Met kinase as a potential mechanistic target for rutin-mediated anticancer effects on TNBC cell lines. Likewise, the intraperitoneal injection of rutin at 30 mg/kg, 3X/week, significantly reduced the growth of the TNBC MDA-MB-231/GFP orthotopic xenograft in nude mouse model. These results clearly designate the functional dietary flavonoid rutin as a potential lead for the prevention and control of c-Met-dependent breast malignancies."
+    },
+    {
+      "cache_key": "0613cb09e725bcf7b9f21ba5c487e2e19b20aa242fe06fb523ae6e56f0ccfb4c",
+      "surname": "Emadi",
+      "year": "2009",
+      "title_fragment": "Cyclophosphamide and cancer: golden anniversary",
+      "journal_fragment": "Nature reviews Clinical oncology",
+      "doi": "10.1038/nrclinonc.2009.146",
+      "source": "pubmed",
+      "abstract": "Cyclophosphamide remains one of the most successful and widely utilized antineoplastic drugs. Moreover, it is also a potent immunosuppressive agent and the most commonly used drug in blood and marrow transplantation (BMT). It was initially synthesized to selectively target cancer cells, although the hypothesized mechanism of tumor specificity (activation by cancer cell phosphamidases) transpired to be irrelevant to its activity. Nevertheless, cyclophosphamide's unique metabolism and inactivation by aldehyde dehydrogenase is responsible for its distinct cytotoxic properties. Differential cellular expression of aldehyde dehydrogenase has an effect on the anticancer therapeutic index and immunosuppressive properties of cyclophosphamide. This Review highlights the chemistry, pharmacology, clinical toxic effects and current clinical applications of cyclophosphamide in cancer and autoimmune disorders. We also discuss the development of high-dose cyclophosphamide for BMT and the treatment of autoimmune diseases."
+    },
+    {
+      "cache_key": "ef533f866a945749c6853459628d4d95065785fe0398967a544071084ac881e8",
+      "surname": "Emerson",
+      "year": "2009",
+      "title_fragment": "Adaptive evolution in zinc finger transcription factors",
+      "journal_fragment": "PLoS genetics",
+      "doi": "10.1371/journal.pgen.1000325",
+      "source": "pubmed",
+      "abstract": "The majority of human genes are conserved among mammals, but some gene families have undergone extensive expansion in particular lineages. Here, we present an evolutionary analysis of one such gene family, the poly-zinc-finger (poly-ZF) genes. The human genome encodes approximately 700 members of the poly-ZF family of putative transcriptional repressors, many of which have associated KRAB, SCAN, or BTB domains. Analysis of the gene family across the tree of life indicates that the gene family arose from a small ancestral group of eukaryotic zinc-finger transcription factors through many repeated gene duplications accompanied by functional divergence. The ancestral gene family has probably expanded independently in several lineages, including mammals and some fishes. Investigation of adaptive evolution among recent paralogs using d(N)/d(S) analysis indicates that a major component of the selective pressure acting on these genes has been positive selection to change their DNA-binding specificity. These results suggest that the poly-ZF genes are a major source of new transcriptional repression activity in humans and other primates."
+    },
+    {
+      "cache_key": "ccb8caa4237cdda5ab40f95b02b2324a518dcbcbeae94792995639e998df3795",
+      "surname": "Engebraaten",
+      "year": "2013",
+      "title_fragment": "Triple-negative breast cancer and the need for new therapeutic targets",
+      "journal_fragment": "The American journal of pathology",
+      "doi": "10.1016/j.ajpath.2013.05.033",
+      "source": "pubmed",
+      "abstract": "Triple-negative breast cancers (TNBCs) are a diverse and heterogeneous group of tumors that by definition lack estrogen and progesterone receptors and amplification of the HER2 gene. The majority of the tumors classified as TNBCs are highly malignant, and only a subgroup responds to conventional chemotherapy with a favorable prognosis. Results from decades of research have identified important molecular characteristics that can subdivide this group of breast cancers further. High-throughput molecular analyses including sequencing, pathway analyses, and integrated analyses of alterations at the genomic and transcriptomic levels have improved our understanding of the molecular alterations involved in tumor development and progression. How this knowledge should be used for rational selection of therapy is a challenging task and the subject of numerous ongoing research programs. This review summarizes the current knowledge on the clinical characteristics and molecular alterations of TNBCs. Currently used conventional therapeutic strategies and targeted therapy studies are discussed, with references to recently published results on the molecular characterization of TNBCs."
+    },
+    {
+      "cache_key": "4cb89e57bc61990e04c6b180d81f277b3e1a8fe189f80c599bc5f0a47b265cb9",
+      "surname": "Engvall",
+      "year": "2021",
+      "title_fragment": "Case report: a novel mutation in the mitochondrial MT-ND5 gene is associated with Leber hereditary optic neuropathy (LHON)",
+      "journal_fragment": "Frontiers in Neurology",
+      "doi": "10.3389/fneur.2021.652590",
+      "source": "crossref",
+      "abstract": "Leber hereditary optic neuropathy (LHON) is a mitochondrial disease causing severe bilateral visual loss, typically in young adults. The disorder is commonly caused by one of three primary point mutations in mitochondrial DNA, but a number of other rare mutations causing or associated with the clinical syndrome of LHON have been reported. The mutations in LHON are almost exclusively located in genes encoding subunits of complex I in the mitochondrial respiratory chain. Here we report two patients, a mother and her son, with the typical LHON phenotype. Genetic investigations for the three common mutations were negative, instead we found a new and previously unreported mutation in mitochondrial DNA. This homoplasmic mutation, m.13345G>A, is located in the MT-ND5 gene, encoding a core subunit in complex I in the mitochondrial respiratory chain. Investigation of the patients mitochondrial respiratory chain in muscle found a mild defect in the combined activity of complex I+III. In the literature six other mutations in the MT-ND5 gene have been associated with LHON and by this report a new putative mutation in the MT-ND5 can be added."
+    },
+    {
+      "cache_key": "09afce8f79f1de18a777c9e450973183c094233328ada63ca630cbfccd8673e4",
+      "surname": "Epifane-de-Assunção",
+      "year": "2024",
+      "title_fragment": "Molecular alterations in Core subunits of mitochondrial complex I and their relation to Parkinson’s Disease",
+      "journal_fragment": "Molecular Neurobiology",
+      "doi": "10.1007/s12035-024-04526-5",
+      "source": "pubmed",
+      "abstract": "Among the myriad of neurodegenerative diseases, mitochondrial dysfunction represents a nexus regarding their pathogenic processes, in which Parkinson's disease (PD) is notable for inherent vulnerability of the dopaminergic pathway to energy deficits and oxidative stress. Underlying this dysfunction, the occurrence of defects in complex I (CI) derived from molecular alterations in its subunits has been described in the literature. However, the mechanistic understanding of the processes mediating the occurrence of mitochondrial dysfunction mediated by CI deficiency in PD remains uncertain and subject to some inconsistencies. Therefore, this review analyzed existing evidence that may explain the relationship between molecular alterations in the core subunits of CI, recognized for their direct contribution to its enzymatic performance, and the pathogenesis of PD. As a result, we discussed 47 genetic variants in the 14 core subunits of CI, which, despite some discordant results, were predominantly associated with varying degrees of deficiency in complex enzymatic activity, as well as defects in supercomplex biogenesis and CI itself. Finally, we hypothesized about the relationship of the described alterations with the pathogenesis of PD and offered some suggestions that may aid in the design of future studies aimed at elucidating the relationship between such alterations and PD."
+    },
+    {
+      "cache_key": "dc7011c98b2f41fafde284797342d23f74f67597244b46083bb621d4ffafe2bb",
+      "surname": "Eren",
+      "year": "2022",
+      "title_fragment": "DNA sequencing methods: from past to present",
+      "journal_fragment": "The Eurasian journal of medicine",
+      "doi": "10.5152/eurasianjmed.2022.22280",
+      "source": "crossref",
+      "abstract": "Next-generation sequencing (NGS) is a highly effective genetic diagnostic test used in disease diagnosis. Although the Sanger method is used as the traditional method in genome studies, the use of NGS methods has been increasing with the development of technology. The foundation of next-generation sequencing was laid with the methods developed by Allan Maxam–Walter Gilbert and 2 Nobel laureates, Frederick Sanger. Initially, first-generation sequencing methods completed a certain part of the DNA with great efforts in a few days, while in today's technology, the entire DNA of even the most complex organisms is sequenced in 1 day. Second- and third-generation sequencing methods have been developed with improvements in cost, time, and accuracy of sequencing. The data obtained from these methods are interpreted with bioinformatics and contributed to the development of next-generation sequencing technology. These developments have increased the interest in studies on the relationship between next-generation sequencing and DNA or RNA depending on diseases. In this review, past and present methods of next-generation sequencing technologies are mentioned in detail and the difficulties and conveniences of these methods are reviewed. Cite this article as: Eren K, Taktakoğlu N, Pirim I. DNA sequencing methods: From past to present. Eurasian J Med., 2022;54(Suppl. 1):S47-S56."
+    },
+    {
+      "cache_key": "7e1c054dbb85a00659076aa42eda8ff6e8d99c00e09fb9a7a863c5f9bc248d8b",
+      "surname": "Fan",
+      "year": "2021",
+      "title_fragment": "Establishment and characterization of a highly metastatic human osteosarcoma cell line from osteosarcoma lung metastases",
+      "journal_fragment": "Journal of Bone Oncology",
+      "doi": "10.1016/j.jbo.2021.100378",
+      "source": "pubmed",
+      "abstract": "OS (Osteosarcoma) is the most common malignant tumor in adolescents, and lung metastasis limits its therapeutic outcome. The present study aimed to establish a highly metastatic human OS cell line directly from lung metastases and characterize its biological functions. In this study, epithelioid tumor cells with large nucleo-cytoplasmic ratio and abundant organelles were obtained by the tissue mass adherent and repeated digestion adherent method and named ZOSL-1 cells. ZOSL-1 cells had the potential to proliferate in vitro with a doubling time of 39.28 ± 3.04 h and migrate with or without a matrix. ZOSL-1 cells were tumorigenic in vivo, and had the ability to develop lung metastasis after intratibial injection. ZOSL-1 cells expressed the osteogenic-related genes osteocalcin and osteopontin. In addition, the expression of ZOSL-1 in Fas cell surface death receptor (FAS), CD44 molecule (CD44), GNAS complex locus (GNAS), scavenger receptor class B member 1 (SCARB1), C-X-C motif chemokine receptor 4 (CXCR4), cadherin 11 (CDH11), neurofibromin 2 (NF2) and ezrin (EZR) genes may be related to its transfer efficiency. Taken together, these results indicated the high metastatic capability and important biological functions of ZOSL-1 cells. ZOSL-1 establishment provided a relevant model for the study of osteosarcoma lung metastasis."
+    }
+  ]
+}

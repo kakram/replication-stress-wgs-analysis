@@ -1,0 +1,475 @@
+{
+  "cosmic_version": "COSMIC v3.4 (GRCh38)",
+  "samples": {
+    "WTUN": {
+      "n_snv": 72175,
+      "cosine_similarity_of_fit": 0.9732,
+      "contributions_pct": {
+        "SBS5": 74.74,
+        "SBS8": 10.12,
+        "SBS39": 9.12,
+        "SBS1": 6.02
+      },
+      "contributions_ci95": {
+        "SBS1": [
+          5.8,
+          6.3
+        ],
+        "SBS5": [
+          28.6,
+          75.5
+        ],
+        "SBS8": [
+          0.0,
+          10.6
+        ],
+        "SBS39": [
+          8.4,
+          11.2
+        ]
+      },
+      "closest_single_signatures": [
+        [
+          "SBS5",
+          0.9355
+        ],
+        [
+          "SBS40c",
+          0.8968
+        ],
+        [
+          "SBS40a",
+          0.8372
+        ],
+        [
+          "SBS92",
+          0.8145
+        ],
+        [
+          "SBS3",
+          0.8079
+        ]
+      ]
+    },
+    "WTAPH": {
+      "n_snv": 65531,
+      "cosine_similarity_of_fit": 0.9728,
+      "contributions_pct": {
+        "SBS5": 75.07,
+        "SBS8": 9.94,
+        "SBS39": 8.93,
+        "SBS1": 6.06
+      },
+      "contributions_ci95": {
+        "SBS1": [
+          5.8,
+          6.4
+        ],
+        "SBS5": [
+          29.0,
+          76.0
+        ],
+        "SBS8": [
+          0.0,
+          10.4
+        ],
+        "SBS39": [
+          8.3,
+          11.2
+        ]
+      },
+      "closest_single_signatures": [
+        [
+          "SBS5",
+          0.9353
+        ],
+        [
+          "SBS40c",
+          0.8961
+        ],
+        [
+          "SBS40a",
+          0.8356
+        ],
+        [
+          "SBS92",
+          0.8158
+        ],
+        [
+          "SBS3",
+          0.8063
+        ]
+      ]
+    },
+    "B4UN": {
+      "n_snv": 10354,
+      "cosine_similarity_of_fit": 0.9865,
+      "contributions_pct": {
+        "SBS40a": 28.52,
+        "SBS92": 22.13,
+        "SBS93": 12.56,
+        "SBS18": 11.26,
+        "SBS39": 10.86,
+        "SBS40b": 8.16,
+        "SBS37": 6.51
+      },
+      "contributions_ci95": {
+        "SBS18": [
+          0.0,
+          16.6
+        ],
+        "SBS37": [
+          0.0,
+          8.6
+        ],
+        "SBS39": [
+          0.0,
+          15.9
+        ],
+        "SBS40a": [
+          0.0,
+          43.0
+        ],
+        "SBS40b": [
+          0.0,
+          35.8
+        ],
+        "SBS92": [
+          11.4,
+          39.3
+        ],
+        "SBS93": [
+          7.0,
+          19.4
+        ]
+      },
+      "closest_single_signatures": [
+        [
+          "SBS5",
+          0.8953
+        ],
+        [
+          "SBS40c",
+          0.8871
+        ],
+        [
+          "SBS40a",
+          0.8751
+        ],
+        [
+          "SBS3",
+          0.8629
+        ],
+        [
+          "SBS92",
+          0.8436
+        ]
+      ]
+    },
+    "B4APH": {
+      "n_snv": 7983,
+      "cosine_similarity_of_fit": 0.9866,
+      "contributions_pct": {
+        "SBS40a": 30.69,
+        "SBS92": 21.12,
+        "SBS93": 12.39,
+        "SBS18": 11.22,
+        "SBS39": 8.83,
+        "SBS37": 8.19,
+        "SBS3": 7.55
+      },
+      "contributions_ci95": {
+        "SBS3": [
+          0.0,
+          36.7
+        ],
+        "SBS18": [
+          8.9,
+          16.8
+        ],
+        "SBS37": [
+          0.0,
+          10.3
+        ],
+        "SBS39": [
+          0.0,
+          14.9
+        ],
+        "SBS40a": [
+          0.0,
+          35.8
+        ],
+        "SBS92": [
+          15.3,
+          35.3
+        ],
+        "SBS93": [
+          8.8,
+          19.8
+        ]
+      },
+      "closest_single_signatures": [
+        [
+          "SBS5",
+          0.8984
+        ],
+        [
+          "SBS40a",
+          0.8777
+        ],
+        [
+          "SBS40c",
+          0.8766
+        ],
+        [
+          "SBS3",
+          0.8637
+        ],
+        [
+          "SBS92",
+          0.8515
+        ]
+      ]
+    },
+    "WT-U_cleaned": {
+      "n_snv": 73510,
+      "cosine_similarity_of_fit": 0.9759,
+      "contributions_pct": {
+        "SBS5": 32.63,
+        "SBS40a": 27.27,
+        "SBS37": 10.01,
+        "SBS39": 9.9,
+        "SBS18": 9.02,
+        "SBS54": 6.01,
+        "SBS32": 5.16
+      },
+      "contributions_ci95": {
+        "SBS5": [
+          30.3,
+          66.5
+        ],
+        "SBS18": [
+          7.8,
+          9.5
+        ],
+        "SBS32": [
+          0.0,
+          5.7
+        ],
+        "SBS37": [
+          0.0,
+          10.8
+        ],
+        "SBS39": [
+          7.7,
+          10.5
+        ],
+        "SBS40a": [
+          16.6,
+          31.9
+        ],
+        "SBS54": [
+          0.0,
+          6.4
+        ]
+      },
+      "closest_single_signatures": [
+        [
+          "SBS5",
+          0.9375
+        ],
+        [
+          "SBS40c",
+          0.8957
+        ],
+        [
+          "SBS40a",
+          0.863
+        ],
+        [
+          "SBS3",
+          0.8134
+        ],
+        [
+          "SBS92",
+          0.813
+        ]
+      ]
+    },
+    "WT-A_cleaned": {
+      "n_snv": 74381,
+      "cosine_similarity_of_fit": 0.973,
+      "contributions_pct": {
+        "SBS5": 39.16,
+        "SBS40a": 31.08,
+        "SBS39": 8.97,
+        "SBS18": 8.03,
+        "SBS37": 7.53,
+        "SBS54": 5.24
+      },
+      "contributions_ci95": {
+        "SBS5": [
+          31.1,
+          65.6
+        ],
+        "SBS18": [
+          7.6,
+          9.0
+        ],
+        "SBS37": [
+          0.0,
+          10.5
+        ],
+        "SBS39": [
+          8.2,
+          10.6
+        ],
+        "SBS40a": [
+          17.1,
+          32.8
+        ],
+        "SBS54": [
+          0.0,
+          6.2
+        ]
+      },
+      "closest_single_signatures": [
+        [
+          "SBS5",
+          0.9365
+        ],
+        [
+          "SBS40c",
+          0.8959
+        ],
+        [
+          "SBS40a",
+          0.8632
+        ],
+        [
+          "SBS3",
+          0.8147
+        ],
+        [
+          "SBS92",
+          0.8091
+        ]
+      ]
+    },
+    "G3-U_cleaned": {
+      "n_snv": 5986,
+      "cosine_similarity_of_fit": 0.9687,
+      "contributions_pct": {
+        "SBS92": 33.48,
+        "SBS40b": 21.35,
+        "SBS18": 16.8,
+        "SBS39": 14.27,
+        "SBS93": 8.62,
+        "SBS36": 5.48
+      },
+      "contributions_ci95": {
+        "SBS18": [
+          8.0,
+          28.6
+        ],
+        "SBS36": [
+          0.0,
+          10.1
+        ],
+        "SBS39": [
+          0.0,
+          21.9
+        ],
+        "SBS40b": [
+          0.0,
+          32.8
+        ],
+        "SBS92": [
+          0.0,
+          35.9
+        ],
+        "SBS93": [
+          0.0,
+          18.8
+        ]
+      },
+      "closest_single_signatures": [
+        [
+          "SBS40a",
+          0.841
+        ],
+        [
+          "SBS5",
+          0.8285
+        ],
+        [
+          "SBS3",
+          0.8206
+        ],
+        [
+          "SBS40c",
+          0.8057
+        ],
+        [
+          "SBS92",
+          0.796
+        ]
+      ]
+    },
+    "G3-A_cleaned": {
+      "n_snv": 5861,
+      "cosine_similarity_of_fit": 0.9611,
+      "contributions_pct": {
+        "SBS92": 33.37,
+        "SBS18": 26.55,
+        "SBS39": 19.25,
+        "SBS93": 14.07,
+        "SBS37": 6.76
+      },
+      "contributions_ci95": {
+        "SBS18": [
+          16.5,
+          34.0
+        ],
+        "SBS37": [
+          0.0,
+          11.0
+        ],
+        "SBS39": [
+          0.0,
+          28.3
+        ],
+        "SBS92": [
+          0.0,
+          36.8
+        ],
+        "SBS93": [
+          0.0,
+          22.9
+        ]
+      },
+      "closest_single_signatures": [
+        [
+          "SBS40a",
+          0.831
+        ],
+        [
+          "SBS5",
+          0.8263
+        ],
+        [
+          "SBS3",
+          0.8104
+        ],
+        [
+          "SBS40c",
+          0.7987
+        ],
+        [
+          "SBS92",
+          0.7969
+        ]
+      ]
+    }
+  }
+}

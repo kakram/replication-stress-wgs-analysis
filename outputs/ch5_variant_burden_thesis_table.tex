@@ -1,0 +1,37 @@
+\begin{table}[ht]
+\centering
+\small
+\caption{Table 5.3.1. Genome-wide somatic variant burden across four MCF-7 conditions. Total variants, PASS-filtered counts, filter-class breakdown, coding consequence distribution, SIFT predictions, gnomAD novelty, and tumour mutational burden (TMB) are shown for each sample. Filter labels follow GATK/Mutect2 conventions; rows carrying multiple filter terms increment each matching filter column once, so column sums may exceed (total $-$ PASS).}
+\label{tab:ch5-variant-burden}
+\begin{tabular}{lrrrr}
+\hline
+Metric & WTUN & WTAPH & B4UN & B4APH \\
+\hline
+Total variants (VCF) & 1,198,693 & 1,153,726 & 249,482 & 212,078 \\
+PASS variants & 144,145 & 141,954 & 19,463 & 18,326 \\
+\,\,FILTER: germline & 509,461 & 489,428 & 26,801 & 27,322 \\
+\,\,FILTER: panel\_of\_normals & 0 & 0 & 0 & 0 \\
+\,\,FILTER: weak\_evidence & 173,415 & 174,906 & 96,761 & 85,782 \\
+\,\,FILTER: clustered\_events & 574,099 & 549,416 & 116,894 & 99,164 \\
+\,\,FILTER: other & 583,633 & 554,734 & 211,385 & 169,234 \\
+Coding variants (total) & 1,143 & 1,139 & 144 & 130 \\
+\,\,Missense & 613 & 600 & 71 & 61 \\
+\,\,Synonymous & 331 & 334 & 44 & 40 \\
+\,\,Nonsense & 35 & 35 & 7 & 9 \\
+\,\,Frameshift deletion & 12 & 10 & 0 & 1 \\
+\,\,Frameshift insertion & 10 & 11 & 1 & 0 \\
+\,\,In-frame deletion & 7 & 5 & 3 & 0 \\
+\,\,In-frame insertion & 9 & 8 & 0 & 2 \\
+\,\,Splice site & 13 & 10 & 4 & 10 \\
+\,\,Splice region & 111 & 124 & 14 & 7 \\
+SIFT deleterious & 213 & 197 & 36 & 32 \\
+SIFT tolerated & 381 & 385 & 35 & 29 \\
+SIFT unknown & 138,217 & 135,992 & 19,060 & 17,889 \\
+gnomAD known (AF > 0.001) & 315 & 323 & 25 & 37 \\
+gnomAD novel (AF $\le$ 0.001) & 138,496 & 136,251 & 19,106 & 17,913 \\
+TMB (mut/Mb) & 0.42 & 0.35 & 0.07 & 0.05 \\
+Genes with $\ge$1 variant & 21,080 & 20,972 & 6,738 & 6,334 \\
+Genes with coding variant & 815 & 816 & 129 & 116 \\
+\hline
+\end{tabular}
+\end{table}

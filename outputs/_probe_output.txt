@@ -1,0 +1,189 @@
+
+========== 1.2_alcohol_multi ==========
+  [1] Aktas 2019                [CITED]  Review of DNA-damage-response defects in breast cancer and the resulting therapeutic vulnerabilities (platinum, PARP inhibitors, immunotherapy). Relevant to Cha
+  [1] Fussell 2011              [CITED]  Demonstrates that catechol metabolites of endogenous oestrogens undergo redox cycling in MCF-7, MDA-MB-231 and MCF-10A cells, generating H₂O₂ and hydroxyl radic
+  [1] Kechagioglou 2014          Clinicopathological study of PTEN heterozygosity, mutation spectrum, and protein expression in 43 breast-cancer patients, finding truncating mutations and alter
+  [1] Li 2019                   [CITED]  Epidemiological analysis of global breast-cancer incidence, mortality, and DALYs across 195 countries from 1990–2017, identifying alcohol use, high BMI, and ele
+  [1] Rehm 2020                 [CITED]  This paper examines methodological biases in WHO alcohol consumption monitoring across ASEAN member states and has no relevance to this thesis. It does not addr
+  [1] Srikrishna 2009            Review of DAMP molecules (HMGB1, S100 proteins) and their roles in inflammation-driven carcinogenesis and tumour progression via pattern-recognition receptors. 
+  [1] Yue 2013                  [CITED]  Review of ER-dependent (ERα-driven proliferation, replicative-error accumulation) and ER-independent (genotoxic estrogen metabolites) mechanisms of breast-cance
+  [1] Zhao 2017                  Mechanistic study of alcohol-induced oxidative DNA damage and p53-dependent DDR in MCF-7 cells, using γH2AX foci, p53 reporter assays, and isogenic p53-knockdow
+
+========== 1.2_iarc_1988 ==========
+  [1] Li 2019                   [CITED]  Epidemiological analysis of global breast-cancer incidence, mortality, and DALYs across 195 countries from 1990–2017, identifying alcohol use, high BMI, and ele
+  [1] Rehm 2020                 [CITED]  This paper examines methodological biases in WHO alcohol consumption monitoring across ASEAN member states and has no relevance to this thesis. It does not addr
+  [1] Zhao 2017                  Mechanistic study of alcohol-induced oxidative DNA damage and p53-dependent DDR in MCF-7 cells, using γH2AX foci, p53 reporter assays, and isogenic p53-knockdow
+
+========== 1.3_animal_models ==========
+  [2] Attalla 2021              [CITED]  Reviews the MMTV-PyMT transgenic mouse as the most-used genetically engineered model of breast cancer, mapping its histological and molecular progression onto h
+  [1] Afzal 2022                 General review of breast-cancer biomarkers covering nucleic-acid, protein and cellular markers, including circRNAs and miRNAs as diagnostic candidates. Useful a
+  [1] Aguilera 2012             [CITED]  Foundational review reframing R loops from transcription byproducts to drivers of chromosome fragility and genome instability. Highly relevant to this thesis's 
+  [1] Ahmad 2023                 Mechanistic study showing the Polϵ proofreading exonuclease and CTF18 cofactor act with PARP1 to prevent replication-fork collapse at single-ended DSBs caused b
+  [1] Aktas 2019                [CITED]  Review of DNA-damage-response defects in breast cancer and the resulting therapeutic vulnerabilities (platinum, PARP inhibitors, immunotherapy). Relevant to Cha
+  [1] Ali 2023                   Argues that positive selection on zinc-finger proteins in undifferentiated stem cells shaped mammalian adaptive evolution, suggesting these proteins acquired ne
+  [1] Allgöwer 2020              Review of S100 calcium-binding proteins in cancer, covering their roles in proliferation, apoptosis, inflammation and links to breast cancer, lung cancer and me
+  [1] Amens 2021                 Review of antitumour and proinflammatory immune responses in breast cancer, including immunotherapy strategies. Tangential to this thesis's genomic-instability 
+
+========== 1.3_ketogenic ==========
+  [2] Zou 2020                  [CITED]  Preclinical study examining ketogenic diet and rapamycin/mTOR inhibition in a spontaneous mouse breast-cancer model, demonstrating reduced tumour growth and ext
+  [1] Sweeney 2017               This review addresses protein misfolding, proteostatic collapse, and therapeutic strategies in neurodegenerative disease. It has no meaningful relevance to this
+
+========== 1.3_zebrafish ==========
+  [1] Bell 2006                  Mouse-genetics paper showing Zfp36l1-/- embryos die mid-gestation with vascular and placental defects driven by elevated VEGF-A — and crucially, that ZFP36L1 co
+  [1] Britt 2020                [CITED]  Review of breast-cancer prevention strategies including population-level risk-factor reduction and precision prevention via validated risk-assessment models (po
+  [1] Chai 2022                  Reviews PTEN as a frequently inactivated tumour suppressor in triple-negative breast cancer, covering genomic alterations, transcriptional regulation and post-t
+  [1] Colditz 2012              [CITED]  Short Science Translational Medicine perspective arguing that half of all cancers could be prevented by translating existing knowledge of modifiable risk factor
+  [1] Czajkowski 2022           [CITED]  Review of how DDR defects in cancer cells shape responses to radiotherapy and immune-checkpoint inhibition, including the mechanism by which DDR disruption expa
+  [1] Hason 2019                [CITED]  Review of zebrafish as a cancer model, covering transgenic, transplantation, and xenograft approaches, chemical screening, and in vivo tumour visualisation. Rel
+  [1] Lei 2020                  [CITED]  This study investigates a VHL/miR-212/132 axis controlling angiogenesis in clear cell renal cell carcinoma, using zebrafish and HUVEC models. It has no meaningf
+  [1] Makino 2001                Foundational characterisation of hornerin (HRNR) as a profilaggrin-like cornified-envelope precursor expressed in stratified squamous epithelia, with posttransl
+
+========== 1.5_crispr_biomed ==========
+  [1] Beyaz 2022                [CITED]  In vitro / in vivo / in silico study of fullerene C60 nanoparticles on DMBA-induced rat mammary tumours, showing apoptosis induction (caspase-3 up, Bcl-2 down) 
+  [1] Bolotin 2005              [CITED]  Foundational paper showing that CRISPR spacer sequences in prokaryotes derive from extrachromosomal elements (mostly phages) and that S. thermophilus phage sens
+  [1] Britt 2020                [CITED]  Review of breast-cancer prevention strategies including population-level risk-factor reduction and precision prevention via validated risk-assessment models (po
+  [1] Charpentier 2015          [CITED]  Reviews crRNA biogenesis pathways across Type I, II and III CRISPR-Cas systems, including the tracrRNA / RNase III mechanism that distinguishes Type II (Cas9) s
+  [1] Choudhury 2016             Engineers a CRISPR-dCas9-TET1 fusion to drive locus-specific demethylation at the BRCA1 promoter, increasing 5-hydroxymethylcytosine and transcriptionally re-ac
+  [1] Common 2019               [CITED]  Experimental study of CRISPR-Cas / phage coevolution in Streptococcus thermophilus over 30 days, showing arms-race dynamics ending in phage extinction. Tangenti
+  [1] Dedrick 2017              [CITED]  Study of prophage-mediated viral-defence systems in mycobacteriophages, including a (p)ppGpp synthetase that blocks lytic-phage growth and a counter-defence tet
+  [1] Solaiman 2021             [CITED]  Solaiman generated the U2OS ZFP36L1-/- cellular system (and a truncated lead-in/first-ZF-domain variant) by CRISPR/Cas9 and showed that ZFP36L1 loss produces ch
+
+========== 1.5_ishino_iap ==========
+  [1] Bolotin 2005              [CITED]  Foundational paper showing that CRISPR spacer sequences in prokaryotes derive from extrachromosomal elements (mostly phages) and that S. thermophilus phage sens
+  [1] Charpentier 2015          [CITED]  Reviews crRNA biogenesis pathways across Type I, II and III CRISPR-Cas systems, including the tracrRNA / RNase III mechanism that distinguishes Type II (Cas9) s
+  [1] Ishino 2018                Concise historical account of CRISPR-Cas systems, tracing the 1987 discovery of the first CRISPR sequence in *E. coli* through to the development of Cas9-based 
+
+========== 1.5_jansen_mobile ==========
+  [1] Bolotin 2005              [CITED]  Foundational paper showing that CRISPR spacer sequences in prokaryotes derive from extrachromosomal elements (mostly phages) and that S. thermophilus phage sens
+  [1] Charpentier 2015          [CITED]  Reviews crRNA biogenesis pathways across Type I, II and III CRISPR-Cas systems, including the tracrRNA / RNase III mechanism that distinguishes Type II (Cas9) s
+  [1] Common 2019               [CITED]  Experimental study of CRISPR-Cas / phage coevolution in Streptococcus thermophilus over 30 days, showing arms-race dynamics ending in phage extinction. Tangenti
+  [1] Dedrick 2017              [CITED]  Study of prophage-mediated viral-defence systems in mycobacteriophages, including a (p)ppGpp synthetase that blocks lytic-phage growth and a counter-defence tet
+  [1] Grissa 2007               [CITED]  This 2007 bioinformatics paper describes CRISPRFinder and the CRISPRdb database, tools for identifying and cataloguing CRISPR repeat elements and spacers in pro
+  [1] Pourcel 2005              [CITED]  Early characterisation of CRISPR elements in *Yersinia pestis*, demonstrating that spacers derive predominantly from bacteriophage DNA and that the system funct
+
+========== 1.6_rare_diseases ==========
+  [1] Bolotin 2005              [CITED]  Foundational paper showing that CRISPR spacer sequences in prokaryotes derive from extrachromosomal elements (mostly phages) and that S. thermophilus phage sens
+  [1] Britt 2020                [CITED]  Review of breast-cancer prevention strategies including population-level risk-factor reduction and precision prevention via validated risk-assessment models (po
+  [1] Charpentier 2015          [CITED]  Reviews crRNA biogenesis pathways across Type I, II and III CRISPR-Cas systems, including the tracrRNA / RNase III mechanism that distinguishes Type II (Cas9) s
+  [1] Choudhury 2016             Engineers a CRISPR-dCas9-TET1 fusion to drive locus-specific demethylation at the BRCA1 promoter, increasing 5-hydroxymethylcytosine and transcriptionally re-ac
+  [1] Common 2019               [CITED]  Experimental study of CRISPR-Cas / phage coevolution in Streptococcus thermophilus over 30 days, showing arms-race dynamics ending in phage extinction. Tangenti
+  [1] Dedrick 2017              [CITED]  Study of prophage-mediated viral-defence systems in mycobacteriophages, including a (p)ppGpp synthetase that blocks lytic-phage growth and a counter-defence tet
+  [1] Solaiman 2021             [CITED]  Solaiman generated the U2OS ZFP36L1-/- cellular system (and a truncated lead-in/first-ZF-domain variant) by CRISPR/Cas9 and showed that ZFP36L1 loss produces ch
+  [1] Sidali 2023               [CITED]  Sidali extended the U2OS ZFP36L1 KO system into the chromatin and R-loop space. Using tetracycline-inducible CRISPR/Cas9 ablation in U-2OS T-REx cells (with gen
+
+========== 1.7_crispr_cancer ==========
+  [2] Britt 2020                [CITED]  Review of breast-cancer prevention strategies including population-level risk-factor reduction and precision prevention via validated risk-assessment models (po
+  [2] Charpentier 2015          [CITED]  Reviews crRNA biogenesis pathways across Type I, II and III CRISPR-Cas systems, including the tracrRNA / RNase III mechanism that distinguishes Type II (Cas9) s
+  [2] Choudhury 2016             Engineers a CRISPR-dCas9-TET1 fusion to drive locus-specific demethylation at the BRCA1 promoter, increasing 5-hydroxymethylcytosine and transcriptionally re-ac
+  [2] Dedrick 2017              [CITED]  Study of prophage-mediated viral-defence systems in mycobacteriophages, including a (p)ppGpp synthetase that blocks lytic-phage growth and a counter-defence tet
+  [2] Teotia 2024                Teotia generated the MCF-7 ZFP36L1-/- clone (B4) that this thesis sequences in Chapter 5, using CRISPR/Cas9 in luminal-A MCF-7 cells. The thesis showed that ZFP
+  [2] Faure 2019                 Focused on the evolutionary relationships between CRISPR–Cas systems and mobile genetic elements in prokaryotes, including partially inactivated CRISPR–Cas vari
+  [2] Gundry 2010                Methods protocol for bottom-up proteomics sample preparation, covering gel electrophoresis, liquid chromatography, affinity capture, enzymatic digestion, phosph
+  [2] Hage 2021                  This review of Leber hereditary optic neuropathy (LHON) — a maternally inherited mitochondrial disease affecting retinal ganglion cells — has no meaningful rele
+
+========== 1.7_crispr_myc ==========
+  [2] Dedrick 2017              [CITED]  Study of prophage-mediated viral-defence systems in mycobacteriophages, including a (p)ppGpp synthetase that blocks lytic-phage growth and a counter-defence tet
+  [2] Schuijers 2018            [CITED]  Mechanistic study of MYC transcriptional dysregulation via cancer-specific super-enhancers that dock onto a conserved CTCF site upstream of the MYC promoter; dC
+  [2] Srinivasan 2013           [CITED]  Mechanistic study showing that c-Myc deregulation increases early-origin firing density, elevates replication-fork stalling/collapse, and induces DNA damage via
+  [2] Wasinger 1995              This paper describes two-dimensional gel electrophoresis and MALDI-TOF peptide-mass fingerprinting for proteome mapping of *Mycoplasma genitalium*, coining the 
+  [1] Aktas 2019                [CITED]  Review of DNA-damage-response defects in breast cancer and the resulting therapeutic vulnerabilities (platinum, PARP inhibitors, immunotherapy). Relevant to Cha
+  [1] Allgöwer 2020              Review of S100 calcium-binding proteins in cancer, covering their roles in proliferation, apoptosis, inflammation and links to breast cancer, lung cancer and me
+  [1] Amens 2021                 Review of antitumour and proinflammatory immune responses in breast cancer, including immunotherapy strategies. Tangential to this thesis's genomic-instability 
+  [1] Attalla 2021              [CITED]  Reviews the MMTV-PyMT transgenic mouse as the most-used genetically engineered model of breast cancer, mapping its histological and molecular progression onto h
+
+========== 1.7_mastl ==========
+  [2] Álvarez-Fernández 2017     Partial relevance. This study of MASTL/Greatwall kinase in breast cancer touches on two themes present in this thesis: breast-cancer cell biology (MCF-7 context
+  [1] Allgöwer 2020              Review of S100 calcium-binding proteins in cancer, covering their roles in proliferation, apoptosis, inflammation and links to breast cancer, lung cancer and me
+  [1] Barrett 2014               Reviews how Ca2+ pumps and channels — including CFTR-related currents — contribute to tumorigenesis via mechanisms independent of bulk cytosolic Ca2+ transport.
+  [1] Bartek 2003                Concise review of Chk1 and Chk2 checkpoint kinases as signal transducers of genome-integrity surveillance, candidate tumour suppressors, and therapeutic targets
+  [1] Bartkova 2006             [CITED]  Companion paper to Bartkova 2005 showing that oncogene-induced senescence is mechanistically linked to replication-stress-induced DNA double-strand breaks, with
+  [1] Bolotin 2005              [CITED]  Foundational paper showing that CRISPR spacer sequences in prokaryotes derive from extrachromosomal elements (mostly phages) and that S. thermophilus phage sens
+  [1] Britt 2020                [CITED]  Review of breast-cancer prevention strategies including population-level risk-factor reduction and precision prevention via validated risk-assessment models (po
+  [1] Caldon 2014                Perspective arguing that oestrogen-receptor signalling in hormone-dependent breast cancer converges to suppress DDR effectiveness (ATM, ATR, CHK1, BRCA1, p53) i
+
+========== 1.9_n104_tnbc ==========
+  [2] McCart 2019                Review of advances in breast cancer genomics, classification (including mixed ductal–lobular and TNBC subtypes), gene-based diagnostics (MammaPrint, Oncotype Dx
+  [2] Nedeljković 2019           Review of TNBC chemoresistance mechanisms, covering tumour microenvironment, drug efflux, cancer stem cells, and clonal heterogeneity, with discussion of emergi
+  [2] Samanta 2014               Demonstrates that chemotherapy (paclitaxel, gemcitabine) induces HIF transcriptional activity in multiple breast-cancer lines, including MCF-7, enriching breast
+  [2] Shah 2012                 [CITED]  Landmark WGS-based study demonstrating that primary TNBCs display a continuous spectrum of clonal and mutational evolution at diagnosis, with clonal frequencies
+  [1] Aftimos 2021               AURORA's multi-omics profiling of 381 paired primary/metastatic breast tumours is directly relevant to this thesis: it documents enrichment of driver mutations 
+  [1] Avci 2025                 [CITED]  Recent review surveying precision-oncology methodologies — rapid sequencing, single-cell, spatial mapping, epigenetics, liquid biopsies — and their application 
+  [1] Banerjee 2020              Whole-exome sequencing of 206 multi-region samples from 68 colorectal cancers documents extreme intratumour heterogeneity with a Darwinian evolution pattern, di
+  [1] Banerji 2012              [CITED]  Whole-exome and whole-genome sequencing of 103 + 22 breast cancers (a landmark of the modern WGS-in-breast-cancer era) confirms PIK3CA / TP53 / AKT1 / GATA3 / M
+
+========== 1.9_subclone_fitness ==========
+  [2] Banerjee 2020              Whole-exome sequencing of 206 multi-region samples from 68 colorectal cancers documents extreme intratumour heterogeneity with a Darwinian evolution pattern, di
+  [2] Martelotto 2014            Review of intra-tumour heterogeneity in breast cancer, covering clonal evolution, cancer stem cell models, and massively parallel sequencing as a tool for detec
+  [2] Nowell 1976               [CITED]  Foundational paper proposing that tumours arise clonally and progress through sequential selection of genetically unstable sublines — the conceptual bedrock of 
+  [1] Ali 2023                   Argues that positive selection on zinc-finger proteins in undifferentiated stem cells shaped mammalian adaptive evolution, suggesting these proteins acquired ne
+  [1] Avci 2025                 [CITED]  Recent review surveying precision-oncology methodologies — rapid sequencing, single-cell, spatial mapping, epigenetics, liquid biopsies — and their application 
+  [1] Curtis 2012               [CITED]  METABRIC — integrated copy-number + expression analysis of ~2,000 primary breast tumours that defined the 10-subgroup IntClust classification, including a high-
+  [1] Emerson 2009               PLoS Genetics dN/dS analysis showing positive selection on the poly-zinc-finger gene family in humans and other primates, with rapid evolution driving DNA-bindi
+  [1] Gatti 2005                 Broad overview of tumour-cell chemoresistance mechanisms, covering reduced intracellular drug concentration, altered drug-target interactions, enhanced DNA-dama
+
+========== 1.12_RS_genomic_instability ==========
+  [2] Arentson 2002             [CITED]  Identifies CDT1, the DNA-replication licensing factor, as a candidate oncogene whose overexpression accelerates S-phase entry and is tumorigenic in NIH3T3 cells
+  [2] Arlt 2009                 [CITED]  Landmark study showing that aphidicolin-induced replication stress in normal human cells generates copy-number changes across the genome that mechanistically re
+  [2] Barlow 2013               [CITED]  Identifies a new class of fragile sites — early-replicating fragile sites (ERFSs) — distinct from classical late-replicating CFSs, co-localising with highly-exp
+  [2] Bartkova 2005             [CITED]  Landmark observation that early human precursor lesions (bladder, breast, lung, colon) constitutively activate an ATM/ATR-Chk2-p53 DNA-damage response, with the
+  [2] Bartkova 2006             [CITED]  Companion paper to Bartkova 2005 showing that oncogene-induced senescence is mechanistically linked to replication-stress-induced DNA double-strand breaks, with
+  [2] Bilousova 2005            [CITED]  Shows that impaired DNA replication in haematopoietic progenitors paradoxically promotes leukaemogenesis by giving Bcr-Abl- or mutant-p53-expressing cells a com
+  [2] Briu 2021                 [CITED]  Review of the three-way relationship between replication-timing programmes, replication stress and genomic instability, including in cancer. Highly relevant to 
+  [2] Durkin 2008               [CITED]  Direct experimental demonstration that aphidicolin-induced replication stress generates tumour-like submicroscopic deletions of 200-600 kb at the FHIT / FRA3B l
+
+========== 1.12_cyclin_e_mcm ==========
+  [2] Ekholm-Reed 2004           Mechanistic study showing that cyclin E overexpression in human cells impairs Mcm4 / Mcm7 (and partially Mcm2) loading onto chromatin during telophase / early G
+  [1] Ahmad 2023                 Mechanistic study showing the Polϵ proofreading exonuclease and CTF18 cofactor act with PARP1 to prevent replication-fork collapse at single-ended DSBs caused b
+  [1] Arentson 2002             [CITED]  Identifies CDT1, the DNA-replication licensing factor, as a candidate oncogene whose overexpression accelerates S-phase entry and is tumorigenic in NIH3T3 cells
+  [1] Pruitt 2007               [CITED]  Demonstrates that partial reduction of MCM2 — a core replication-licensing factor — is sufficient to cause chronic replication stress, stem/progenitor cell depl
+  [1] Seo 2005                  [CITED]  Demonstrates that overexpression of the replication-licensing factor Cdt1 drives genomic instability — including aneuploidy, double minutes, translocations and 
+
+========== 1.12_yeast_h2ax_replication ==========
+  [2] Sidali 2023               [CITED]  Sidali extended the U2OS ZFP36L1 KO system into the chromatin and R-loop space. Using tetracycline-inducible CRISPR/Cas9 ablation in U-2OS T-REx cells (with gen
+  [2] Taymaz-Nikerel 2018        Yeast-based systems-biology study of doxorubicin's transcriptional and metabolic effects, identifying oxidative-stress responses, Rad53 checkpoint activation, a
+  [2] Zhao 2017                  Mechanistic study of alcohol-induced oxidative DNA damage and p53-dependent DDR in MCF-7 cells, using γH2AX foci, p53 reporter assays, and isogenic p53-knockdow
+  [2] Zhu 2017                   Methodological study demonstrating that rare population-level variants in yeast can serve as proxies for new spontaneous mutations, yielding mutational spectra 
+  [1] Aftab 2021                 This in-silico analysis of CCND1 (Cyclin D1) SNPs identifies four missense variants potentially destabilising the protein and links high CCND1 expression to red
+  [1] Afzal 2022                 General review of breast-cancer biomarkers covering nucleic-acid, protein and cellular markers, including circRNAs and miRNAs as diagnostic candidates. Useful a
+  [1] Aguilera 2012             [CITED]  Foundational review reframing R loops from transcription byproducts to drivers of chromosome fragility and genome instability. Highly relevant to this thesis's 
+  [1] Ahmad 2023                 Mechanistic study showing the Polϵ proofreading exonuclease and CTF18 cofactor act with PARP1 to prevent replication-fork collapse at single-ended DSBs caused b
+
+========== 1.14_vus ==========
+  [2] Arumugam 2024              Reviews how variation in non-coding regions and DNA methylation regulates HLA Class I/II gene expression, with implications for immune-related disease. Limited 
+  [2] Chiang 2022                Systematic study of how near-exon intronic variants perturb mRNA splicing, with 5,884 variants assayed and a statistical model derived to predict splice-alterin
+  [2] Ferreira 2024              Partial relevance only. This review of mtDNA biology — covering heteroplasmy, copy-number variation, high mutation rate, and the analytical challenges these pos
+  [2] Foley 2015                [CITED]  Demonstrates the clinical application of WGS for identifying pathogenic and likely pathogenic variants across cancer-risk gene panels, highlighting the challeng
+  [2] Iñiguez-Muñoz 2024         Timely review of somatic and germline non-coding mutations in gene regulatory elements (enhancers, insulators, silencers, promoters) and their impact on transcr
+  [2] Jung 2021                  Pan-cancer WGS analysis (1,134 genomes) identifying 678 somatic intronic mis-splicing mutations, including deep-intronic variants activating cryptic splice site
+  [2] Kandoth 2013              [CITED]  Pan-Cancer analysis of somatic point mutations and indels across 3,281 tumours from 12 TCGA tumour types, cataloguing mutation frequencies, mutational contexts,
+  [2] Pagni 2022                 Broad review of non-coding regulatory elements (miRNAs, lncRNAs, promoters, enhancers) and their roles in human disease, with epilepsy as the primary case study
+
+========== 1.15_mutational_burden ==========
+  [2] Aftimos 2021               AURORA's multi-omics profiling of 381 paired primary/metastatic breast tumours is directly relevant to this thesis: it documents enrichment of driver mutations 
+  [2] Ferreira 2024              Partial relevance only. This review of mtDNA biology — covering heteroplasmy, copy-number variation, high mutation rate, and the analytical challenges these pos
+  [2] Fumet 2020                [CITED]  Tumour mutational burden (TMB) is reviewed here as a predictive biomarker for PD-1/PD-L1 immunotherapy response, covering methods of assessment, technical limit
+  [2] Hebert 2020                Proteomic characterisation of organ-specific ECM niches in MDA-MB-231 triple-negative breast cancer xenograft metastases. This thesis does not address ECM biolo
+  [2] Kandoth 2013              [CITED]  Pan-Cancer analysis of somatic point mutations and indels across 3,281 tumours from 12 TCGA tumour types, cataloguing mutation frequencies, mutational contexts,
+  [2] Kim 2024                  [CITED]  Prospective clinical study demonstrating WGS feasibility across 120 solid-tumour patients, reporting on therapeutic actionability, tumour mutational burden (TMB
+  [2] Kleensang 2016             Directly relevant to the MCF-7 experimental framework underpinning Chapters 5 and 7. This study demonstrates that a single ATCC-sourced MCF-7 batch can harbour 
+  [2] Lee 2016                   Comprehensive review of cancer genome instability mechanisms—covering single-nucleotide mutations through whole-chromosomal changes—as revealed by exome and WGS
+
+========== 1.15_driver_passenger ==========
+  [2] Aftimos 2021               AURORA's multi-omics profiling of 381 paired primary/metastatic breast tumours is directly relevant to this thesis: it documents enrichment of driver mutations 
+  [2] Aguilera 2012             [CITED]  Foundational review reframing R loops from transcription byproducts to drivers of chromosome fragility and genome instability. Highly relevant to this thesis's 
+  [2] Beroukhim 2010             Pan-cancer analysis of focal somatic copy-number alterations across 3,131 specimens identifying 158 recurrently altered regions, of which 122 lack a known cance
+  [2] Brecht 2015                Case report of Leigh syndrome caused by the MT-ND5 m.13513G>A mutation, presenting with WPW-like conduction defect, cardiomyopathy and hyponatraemia at 12 month
+  [2] Cavalcante 2022            Network analysis across 37 cancer types of recurrent mitochondrial DNA variants, highlighting MT-ND4, MT-ND5 and D-loop as shared variant hotspots across gastri
+  [2] Choi 2016                  Immunohistochemistry analysis of hornerin (HRNR), S100A8 and S100A9 in 70 invasive ductal carcinoma cases shows hornerin expression increases stepwise from DCIS
+  [2] Ellis 2013                [CITED]  Cancer Discovery prospective synthesising six concurrent breast-cancer omics-profiling papers (including Curtis 2012 METABRIC and Banerji 2012), drawing out the
+  [2] Teotia 2024                Teotia generated the MCF-7 ZFP36L1-/- clone (B4) that this thesis sequences in Chapter 5, using CRISPR/Cas9 in luminal-A MCF-7 cells. The thesis showed that ZFP
+
+========== 1.15_pancancer_noncoding ==========
+  [2] Beroukhim 2010             Pan-cancer analysis of focal somatic copy-number alterations across 3,131 specimens identifying 158 recurrently altered regions, of which 122 lack a known cance
+  [2] Cavalcante 2022            Network analysis across 37 cancer types of recurrent mitochondrial DNA variants, highlighting MT-ND4, MT-ND5 and D-loop as shared variant hotspots across gastri
+  [2] Claps 2021                 Review of emerging biomarkers for renal cell carcinoma covering genomics, liquid biopsy, proteomics and metabolomics. Tangential to this thesis's focus: disease
+  [2] Jung 2021                  Pan-cancer WGS analysis (1,134 genomes) identifying 678 somatic intronic mis-splicing mutations, including deep-intronic variants activating cryptic splice site
+  [2] Kandoth 2013              [CITED]  Pan-Cancer analysis of somatic point mutations and indels across 3,281 tumours from 12 TCGA tumour types, cataloguing mutation frequencies, mutational contexts,
+  [2] Simpson 2021               Directly relevant to the CFS theme underpinning Ch6 and Ch7. This review contextualises fragile-site structural variants within pan-cancer SV signatures derived
+  [2] Steele 2022                Foundational resource for the WGS and copy-number analysis chapters. This pan-cancer framework of 21 copy number signatures, derived from 9,873 TCGA tumours acr
+  [1] Aftab 2021                 This in-silico analysis of CCND1 (Cyclin D1) SNPs identifies four missense variants potentially destabilising the protein and links high CCND1 expression to red

@@ -3,3 +3,7 @@
 *.swp
 __pycache__/
 scripts/cache/
+data/*
+!data/annotation/
+logs/
+literature/

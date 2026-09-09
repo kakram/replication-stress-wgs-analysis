@@ -1,0 +1,103 @@
+{
+  "u2os_replicates": 3,
+  "u2os_replicate_pearson": [
+    [
+      1.0,
+      0.992496928453858,
+      0.9844031734626375
+    ],
+    [
+      0.992496928453858,
+      1.0,
+      0.9899191735691075
+    ],
+    [
+      0.9844031734626373,
+      0.9899191735691075,
+      1.0
+    ]
+  ],
+  "bin_bp": 50000,
+  "samples": {
+    "B4APH": {
+      "cell_line": "MCF7",
+      "n": 7663,
+      "rt_mean": 39.4023,
+      "rt_percentile_mean": 41.85,
+      "rt_percentile_median": 36.76,
+      "effect_vs_background": 0.1631,
+      "p": 2.1686680471917993e-119,
+      "pct_in_latest_quintile": 28.72
+    },
+    "B4UN": {
+      "cell_line": "MCF7",
+      "n": 10036,
+      "rt_mean": 39.0606,
+      "rt_percentile_mean": 41.35,
+      "rt_percentile_median": 36.48,
+      "effect_vs_background": 0.1729,
+      "p": 7.30977199276794e-169,
+      "pct_in_latest_quintile": 28.7
+    },
+    "WTAPH": {
+      "cell_line": "MCF7",
+      "n": 59673,
+      "rt_mean": 43.347,
+      "rt_percentile_mean": 47.42,
+      "rt_percentile_median": 45.47,
+      "effect_vs_background": 0.0516,
+      "p": 6.417463708391976e-53,
+      "pct_in_latest_quintile": 22.99
+    },
+    "WTUN": {
+      "cell_line": "MCF7",
+      "n": 66598,
+      "rt_mean": 43.1075,
+      "rt_percentile_mean": 47.08,
+      "rt_percentile_median": 45.28,
+      "effect_vs_background": 0.0584,
+      "p": 1.1158767341093448e-70,
+      "pct_in_latest_quintile": 23.49
+    },
+    "G3-A_cleaned": {
+      "cell_line": "U2OS",
+      "n": 5974,
+      "rt_mean": -0.8368,
+      "rt_percentile_mean": 45.78,
+      "rt_percentile_median": 42.93,
+      "effect_vs_background": 0.0845,
+      "p": 5.8054666907866395e-27,
+      "pct_in_latest_quintile": 25.31
+    },
+    "G3-U_cleaned": {
+      "cell_line": "U2OS",
+      "n": 6100,
+      "rt_mean": -0.8166,
+      "rt_percentile_mean": 45.98,
+      "rt_percentile_median": 43.18,
+      "effect_vs_background": 0.0805,
+      "p": 4.7209068903552e-25,
+      "pct_in_latest_quintile": 25.26
+    },
+    "WT-A_cleaned": {
+      "cell_line": "U2OS",
+      "n": 68368,
+      "rt_mean": -0.3847,
+      "rt_percentile_mean": 50.92,
+      "rt_percentile_median": 50.55,
+      "effect_vs_background": -0.0185,
+      "p": 1.7677433611212072e-08,
+      "pct_in_latest_quintile": 18.18
+    },
+    "WT-U_cleaned": {
+      "cell_line": "U2OS",
+      "n": 67235,
+      "rt_mean": -0.3882,
+      "rt_percentile_mean": 50.88,
+      "rt_percentile_median": 50.27,
+      "effect_vs_background": -0.0176,
+      "p": 9.407064206688659e-08,
+      "pct_in_latest_quintile": 18.29
+    }
+  }
+}

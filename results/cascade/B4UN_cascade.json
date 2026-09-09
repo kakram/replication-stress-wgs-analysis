@@ -1,0 +1,85 @@
+{
+  "sample": "B4UN",
+  "paired": true,
+  "tiers": {
+    "T0_ALL": {
+      "n": 249482,
+      "snv": 175753,
+      "ins": 19596,
+      "dele": 42598,
+      "mnv": 11535,
+      "ts": 92304,
+      "tv": 83449,
+      "tstv": 1.106,
+      "indel_frac": 0.2493
+    },
+    "T1_PASS": {
+      "n": 19463,
+      "snv": 17933,
+      "ins": 225,
+      "dele": 655,
+      "mnv": 650,
+      "ts": 8587,
+      "tv": 9346,
+      "tstv": 0.919,
+      "indel_frac": 0.0452
+    },
+    "T2_DEPTH": {
+      "n": 14519,
+      "snv": 13459,
+      "ins": 163,
+      "dele": 481,
+      "mnv": 416,
+      "ts": 6396,
+      "tv": 7063,
+      "tstv": 0.906,
+      "indel_frac": 0.0444
+    },
+    "T3_VAF": {
+      "n": 13119,
+      "snv": 12297,
+      "ins": 154,
+      "dele": 415,
+      "mnv": 253,
+      "ts": 5785,
+      "tv": 6512,
+      "tstv": 0.888,
+      "indel_frac": 0.0434
+    },
+    "T4_POP": {
+      "n": 11572,
+      "snv": 10862,
+      "ins": 129,
+      "dele": 328,
+      "mnv": 253,
+      "ts": 4946,
+      "tv": 5916,
+      "tstv": 0.836,
+      "indel_frac": 0.0395
+    },
+    "T5_PRIVATE": {
+      "n": 11362,
+      "snv": 10678,
+      "ins": 126,
+      "dele": 311,
+      "mnv": 247,
+      "ts": 4864,
+      "tv": 5814,
+      "tstv": 0.837,
+      "indel_frac": 0.0385
+    }
+  },
+  "pass_dropped_by_depth": 4944,
+  "normal_alt_support_at_T4": {
+    "0": 11362,
+    "1": 181,
+    "2": 21,
+    "3+": 8
+  },
+  "thresholds": {
+    "min_dp": 20,
+    "min_vaf": 0.05,
+    "min_alt_reads": 3,
+    "min_popaf": 3.0
+  }
+}

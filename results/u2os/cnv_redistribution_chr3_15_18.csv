@@ -1,0 +1,4 @@
+chromosome,WT-U_log2,WT-A_log2,WT_mean_log2,G3-U_log2,G3-A_log2,G3_mean_log2,delta_log2,verdict
+chr3,0.0245,0.0205,0.0225,-0.04,-0.0449,-0.0425,-0.065,no clear CNV difference
+chr15,-0.0076,-0.0065,-0.007,-0.0651,-0.0652,-0.0652,-0.0581,no clear CNV difference
+chr18,-0.2968,-0.2925,-0.2947,-0.307,-0.3034,-0.3052,-0.0105,no clear CNV difference

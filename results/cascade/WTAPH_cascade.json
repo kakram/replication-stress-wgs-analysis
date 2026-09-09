@@ -1,0 +1,80 @@
+{
+  "sample": "WTAPH",
+  "paired": false,
+  "tiers": {
+    "T0_ALL": {
+      "n": 1153726,
+      "snv": 738922,
+      "ins": 192676,
+      "dele": 189853,
+      "mnv": 32275,
+      "ts": 407222,
+      "tv": 331700,
+      "tstv": 1.228,
+      "indel_frac": 0.3316
+    },
+    "T1_PASS": {
+      "n": 141954,
+      "snv": 112034,
+      "ins": 14251,
+      "dele": 10698,
+      "mnv": 4971,
+      "ts": 62960,
+      "tv": 49074,
+      "tstv": 1.283,
+      "indel_frac": 0.1758
+    },
+    "T2_DEPTH": {
+      "n": 88674,
+      "snv": 75917,
+      "ins": 5124,
+      "dele": 4237,
+      "mnv": 3396,
+      "ts": 43257,
+      "tv": 32660,
+      "tstv": 1.324,
+      "indel_frac": 0.1056
+    },
+    "T3_VAF": {
+      "n": 87562,
+      "snv": 74957,
+      "ins": 5102,
+      "dele": 4201,
+      "mnv": 3302,
+      "ts": 42783,
+      "tv": 32174,
+      "tstv": 1.33,
+      "indel_frac": 0.1062
+    },
+    "T4_POP": {
+      "n": 85965,
+      "snv": 73491,
+      "ins": 5032,
+      "dele": 4140,
+      "mnv": 3302,
+      "ts": 41788,
+      "tv": 31703,
+      "tstv": 1.318,
+      "indel_frac": 0.1067
+    },
+    "T5_PRIVATE": {
+      "n": 0,
+      "snv": 0,
+      "ins": 0,
+      "dele": 0,
+      "mnv": 0,
+      "ts": 0,
+      "tv": 0,
+      "tstv": null,
+      "indel_frac": null
+    }
+  },
+  "pass_dropped_by_depth": 53280,
+  "normal_alt_support_at_T4": null,
+  "thresholds": {
+    "min_dp": 20,
+    "min_vaf": 0.05,
+    "min_alt_reads": 3,
+    "min_popaf": 3.0
+  }
+}

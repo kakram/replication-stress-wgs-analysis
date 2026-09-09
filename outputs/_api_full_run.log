@@ -1,0 +1,327 @@
+Start: 11:04:17
+Intermediate: 490 entries (407 resolved, with abstracts).
+Existing notes: 112.
+Batch window: offset=109, limit=None, regenerate=False.
+Entries needing a note in this batch: 298.
+ANTHROPIC_API_KEY: set (len=108).
+  [  1/298] Foulkes                2013  -> 81w  in=224+cr=0 out=153  t=4.9s
+  [  2/298] Friedenreich           2021  -> 85w  in=483+cr=2312 out=143  t=30.0s
+  [  3/298] Fumet                  2020  -> 92w  in=313+cr=2312 out=173  t=45.4s
+  [  4/298] Fussell                2011  -> 81w  in=573+cr=2312 out=180  t=61.8s
+  [  5/298] Gaillard               2015  -> 84w  in=238+cr=2312 out=159  t=77.0s
+  [  6/298] Garcia-Martinez        2021  -> 81w  in=211+cr=2312 out=164  t=83.5s
+  [  7/298] Gatti                  2005  -> 79w  in=325+cr=2312 out=149  t=90.2s
+  [  8/298] Ghosh                  2019  -> 67w  in=356+cr=2312 out=125  t=97.0s
+  [  9/298] Golan                  2014  -> 83w  in=470+cr=2312 out=175  t=103.6s
+  [ 10/298] Goswami                2025  -> 69w  in=341+cr=2312 out=135  t=111.7s
+  [ 11/298] Gosztyla               2024  -> 85w  in=324+cr=2312 out=174  t=117.7s
+  [ 12/298] Grissa                 2007  -> 84w  in=537+cr=2312 out=169  t=124.1s
+  [ 13/298] Grissa                 2008  -> 81w  in=346+cr=2312 out=191  t=130.5s
+  [ 14/298] Gu                     2020  -> 84w  in=335+cr=2312 out=161  t=136.5s
+  [ 15/298] Gu                     2020  -> 84w  in=653+cr=2312 out=171  t=142.8s
+  [ 16/298] Gum                    2003  -> 72w  in=522+cr=2312 out=146  t=148.3s
+  [ 17/298] Gundry                 2010  -> 76w  in=294+cr=2312 out=140  t=154.3s
+  [ 18/298] Gupta                  2019  -> 76w  in=237+cr=2312 out=160  t=160.2s
+  [ 19/298] Hafezi                 2021  -> 79w  in=360+cr=2312 out=142  t=167.0s
+  [ 20/298] Hage                   2021  -> 82w  in=384+cr=2312 out=153  t=173.3s
+  [ 21/298] Hanahan                2022  -> 83w  in=346+cr=2312 out=169  t=179.6s
+  [ 22/298] Hannafon               2019  -> 88w  in=433+cr=2312 out=200  t=186.1s
+  [ 23/298] Hantaweepant           2023  -> 70w  in=547+cr=2312 out=141  t=191.8s
+  [ 24/298] Haronikova             2021  -> 76w  in=328+cr=2312 out=156  t=197.7s
+  [ 25/298] Hason                  2019  -> 80w  in=449+cr=2312 out=149  t=203.6s
+  [flush] saved 137 notes to relevance_notes.json
+  [ 26/298] Hassan                 2020  -> 85w  in=441+cr=2312 out=157  t=209.3s
+  [ 27/298] Heather                2016  -> 78w  in=212+cr=2312 out=139  t=214.8s
+  [ 28/298] Hebert                 2020  -> 85w  in=388+cr=2312 out=165  t=220.9s
+  [ 29/298] Heijink                2022  -> 84w  in=3+cr=2312 out=189  t=281.3s
+  [ 30/298] Helleboid              2019  -> 81w  in=354+cr=2312 out=172  t=287.5s
+  [ 31/298] Helmrich               2006  -> 78w  in=380+cr=2312 out=162  t=293.7s
+  [ 32/298] Henry                  2011  -> 83w  in=580+cr=2312 out=153  t=299.8s
+  [ 33/298] Hills                  2014  -> 83w  in=251+cr=2312 out=167  t=306.3s
+  [ 34/298] Hirose                 2019  -> 91w  in=352+cr=2312 out=172  t=313.1s
+  [ 35/298] Holthaus               2024  -> 87w  in=431+cr=2312 out=158  t=319.5s
+  [ 36/298] Hong                   2015  -> 76w  in=241+cr=2312 out=166  t=325.7s
+  [ 37/298] Howard                 2015  -> 76w  in=360+cr=2312 out=135  t=331.8s
+  [ 38/298] Hrdlickova             2017  -> 84w  in=316+cr=2312 out=154  t=337.6s
+  [ 39/298] Hu                     2007  -> 82w  in=396+cr=2312 out=174  t=343.4s
+  [ 40/298] Hu                     2020  -> 56w  in=524+cr=2312 out=116  t=348.5s
+  [ 41/298] Huang                  2019  -> 75w  in=354+cr=2312 out=136  t=354.4s
+  [ 42/298] Huang                  2020  -> 86w  in=592+cr=2312 out=164  t=360.3s
+  [ 43/298] Huntley                2006  -> 81w  in=459+cr=2312 out=169  t=366.5s
+  [ 44/298] Iacopetta              2023  -> 82w  in=254+cr=2312 out=145  t=372.6s
+  [ 45/298] Ilari                  2008  -> 54w  in=244+cr=2312 out=102  t=377.2s
+  [ 46/298] Iliakis                1982  -> 87w  in=487+cr=2312 out=165  t=383.2s
+  [ 47/298] Imani                  2021  -> 71w  in=343+cr=2312 out=152  t=389.1s
+  [ 48/298] Ipoutcha               2019  -> 82w  in=677+cr=2312 out=167  t=395.3s
+  [ 49/298] Ishino                 1987  -> 83w  in=282+cr=2312 out=152  t=401.3s
+  [ 50/298] Ishino                 2018  -> 76w  in=431+cr=2312 out=163  t=407.7s
+  [flush] saved 162 notes to relevance_notes.json
+  [ 51/298] Iuchi                  2001  -> 82w  in=297+cr=2312 out=170  t=414.1s
+  [ 52/298] Iyengar                2011  -> 81w  in=398+cr=2312 out=163  t=419.9s
+  [ 53/298] Iñiguez-Muñoz          2024  -> 83w  in=315+cr=2312 out=165  t=425.9s
+  [ 54/298] Jang                   2024  -> 86w  in=280+cr=2312 out=151  t=431.7s
+  [ 55/298] Jansen                 2002  -> 75w  in=438+cr=2312 out=139  t=437.5s
+  [ 56/298] Ji                     2022  -> 89w  in=305+cr=2312 out=161  t=444.3s
+  [ 57/298] Jiang                  2009  -> 81w  in=393+cr=2312 out=172  t=450.6s
+  [ 58/298] Jobling                2019  -> 64w  in=337+cr=2312 out=116  t=456.0s
+  [ 59/298] Jones                  2012  -> 81w  in=305+cr=2312 out=159  t=462.4s
+  [ 60/298] Jung                   2021  -> 82w  in=436+cr=2312 out=179  t=468.6s
+  [ 61/298] Kamiloglu              2020  -> 76w  in=731+cr=2312 out=157  t=475.0s
+  [ 62/298] Kandoth                2013  -> 87w  in=412+cr=2312 out=180  t=481.7s
+  [ 63/298] Karn                   2022  -> 85w  in=324+cr=2312 out=169  t=487.8s
+  [ 64/298] Kashyap                2022  -> 78w  in=284+cr=2312 out=145  t=493.3s
+  [ 65/298] Kavarthapu             2021  -> 74w  in=573+cr=2312 out=166  t=498.7s
+  [ 66/298] Kechagioglou           2014  -> 81w  in=453+cr=2312 out=149  t=504.5s
+  [ 67/298] Kessenbrock            2010  -> 73w  in=238+cr=2312 out=139  t=510.9s
+  [ 68/298] Khalef                 2024  -> 92w  in=381+cr=2312 out=159  t=517.1s
+  [ 69/298] Khan                   2024  -> 84w  in=676+cr=2312 out=158  t=523.2s
+  [ 70/298] Kiełbowski             2024  -> 68w  in=295+cr=2312 out=137  t=528.6s
+  [ 71/298] Kim                    2022  -> 90w  in=228+cr=2312 out=168  t=534.5s
+  [ 72/298] Kim                    2023  -> 59w  in=476+cr=2312 out=110  t=539.5s
+  [ 73/298] Kim                    2024  -> 85w  in=425+cr=2312 out=158  t=545.2s
+  [ 74/298] Kleensang              2016  -> 85w  in=373+cr=2312 out=165  t=551.6s
+  [ 75/298] Kleibl                 2016  -> 80w  in=454+cr=2312 out=174  t=558.3s
+  [flush] saved 187 notes to relevance_notes.json
+  [ 76/298] Kockler                2021  -> 90w  in=305+cr=2312 out=158  t=564.4s
+  [ 77/298] Kotsantis              2016  -> 88w  in=321+cr=2312 out=187  t=571.4s
+  [ 78/298] Kotsantis              2018  -> 83w  in=315+cr=2312 out=167  t=577.3s
+  [ 79/298] Kovarik                2021  -> 80w  in=391+cr=2312 out=172  t=583.9s
+  [ 80/298] Koźmiński              2020  -> 67w  in=219+cr=2312 out=133  t=589.8s
+  [ 81/298] Krokan                 1981  -> 84w  in=299+cr=2312 out=149  t=595.9s
+  [ 82/298] Kuo                    2017  -> 77w  in=772+cr=2312 out=161  t=601.5s
+  [ 83/298] Kweon                  2020  -> 84w  in=331+cr=2312 out=182  t=607.7s
+  [ 84/298] Kypriotou              2012  -> 103w  in=516+cr=2312 out=200  t=614.5s
+  [ 85/298] Lai                    2014  -> 83w  in=452+cr=2312 out=176  t=620.9s
+  [ 86/298] Laikova                2019  -> 64w  in=335+cr=2312 out=142  t=626.1s
+  [ 87/298] Lang                   2005  -> 82w  in=605+cr=2312 out=152  t=632.3s
+  [ 88/298] Lee                    2016  -> 80w  in=274+cr=2312 out=170  t=638.9s
+  [ 89/298] Lee                    2021  -> 83w  in=297+cr=2312 out=179  t=645.3s
+  [ 90/298] Lehen'Kyi              2011  -> 79w  in=287+cr=2312 out=154  t=651.4s
+  [ 91/298] Lei                    2020  -> 76w  in=466+cr=2312 out=155  t=657.4s
+  [ 92/298] Levine                 2018  -> 81w  in=209+cr=2312 out=148  t=663.4s
+  [ 93/298] Li                     2018  -> 85w  in=395+cr=2312 out=187  t=670.1s
+  [ 94/298] Li                     2019  -> 83w  in=480+cr=2312 out=141  t=675.6s
+  [ 95/298] Li                     2020  -> 82w  in=328+cr=2312 out=152  t=681.9s
+  [ 96/298] Li                     2020  -> 78w  in=244+cr=2312 out=160  t=688.2s
+  [ 97/298] Li                     2022  -> 84w  in=326+cr=2312 out=158  t=694.2s
+  [ 98/298] Li                     2025  -> 90w  in=420+cr=2312 out=195  t=701.2s
+  [ 99/298] Lin                    2020  -> 83w  in=370+cr=2312 out=148  t=707.0s
+  [100/298] Lin                    2021  -> 79w  in=585+cr=2312 out=139  t=712.7s
+  [flush] saved 212 notes to relevance_notes.json
+  [101/298] Lin                    2023  -> 78w  in=511+cr=2312 out=173  t=719.3s
+  [102/298] Lincoln                2015  -> 91w  in=394+cr=2312 out=172  t=725.5s
+  [103/298] Lipsa                  2019  -> 80w  in=490+cr=2312 out=165  t=731.2s
+  [104/298] Liu                    2013  -> 73w  in=612+cr=2312 out=151  t=737.1s
+  [105/298] Liu                    2013  -> 76w  in=407+cr=2312 out=174  t=743.4s
+  [106/298] Liu                    2023  -> 85w  in=383+cr=2312 out=148  t=749.3s
+  [107/298] Liu                    2024  -> 68w  in=321+cr=2312 out=135  t=754.9s
+  [108/298] Lloyd                  1996  -> 80w  in=390+cr=2312 out=157  t=761.6s
+  [109/298] Lokanga                2021  -> 86w  in=538+cr=2312 out=193  t=768.1s
+  [110/298] Lorenz                 2015  -> 86w  in=560+cr=2312 out=203  t=775.2s
+  [111/298] Lowe                   2017  -> 88w  in=377+cr=2312 out=162  t=781.3s
+  [112/298] Lu                     2016  -> 69w  in=385+cr=2312 out=123  t=786.5s
+  [113/298] Lu                     2021  -> 87w  in=287+cr=2312 out=154  t=792.4s
+  [114/298] Lu                     2023  -> 70w  in=381+cr=2312 out=154  t=798.2s
+  [115/298] Lubamba                2012  -> 46w  in=292+cr=2312 out=106  t=802.8s
+  [116/298] Lundberg               2019  -> 76w  in=334+cr=2312 out=139  t=808.2s
+  [117/298] Luo                    2016  -> 83w  in=463+cr=2312 out=153  t=813.7s
+  [118/298] Luscombe               2001  -> 67w  in=377+cr=2312 out=129  t=819.3s
+  [119/298] Lüönd                  2021  -> 81w  in=390+cr=2312 out=177  t=825.4s
+  [120/298] Macheret               2015  -> 84w  in=290+cr=2312 out=160  t=831.6s
+  [121/298] Macheret               2020  -> 84w  in=355+cr=2312 out=172  t=838.0s
+  [122/298] Maciejewski            2017  -> 87w  in=485+cr=2312 out=178  t=844.2s
+  [123/298] Mackay                 2022  -> 60w  in=332+cr=2312 out=118  t=849.3s
+  [124/298] MacMullan              2019  -> 69w  in=267+cr=2312 out=127  t=854.6s
+  [125/298] Maffia                 2020  -> 88w  in=369+cr=2312 out=170  t=861.0s
+  [flush] saved 237 notes to relevance_notes.json
+  [126/298] Mahdavi                2019  -> 76w  in=498+cr=2312 out=185  t=866.8s
+  [127/298] Majidi                 2021  -> 77w  in=422+cr=2312 out=167  t=872.6s
+  [128/298] Majumder               2021  -> 63w  in=366+cr=2312 out=118  t=878.4s
+  [129/298] Makino                 2001  -> 81w  in=453+cr=2312 out=175  t=884.8s
+  [130/298] Makita                 2021  -> 86w  in=446+cr=2312 out=175  t=892.8s
+  [131/298] Mann                   2005  -> 74w  in=406+cr=2312 out=161  t=898.6s
+  [132/298] Mann                   2008  -> 66w  in=352+cr=2312 out=132  t=904.2s
+  [133/298] Mardis                 2018  -> 83w  in=210+cr=2312 out=153  t=912.1s
+  [134/298] Marguerat              2010  -> 71w  in=237+cr=2312 out=134  t=917.1s
+  [135/298] Marshall               2019  -> 80w  in=329+cr=2312 out=183  t=923.5s
+  [136/298] Martelotto             2014  -> 81w  in=328+cr=2312 out=153  t=929.1s
+  [137/298] Martínez-Calle         2019  -> 85w  in=446+cr=2312 out=178  t=935.7s
+  [138/298] McArdle                2021  -> 58w  in=240+cr=2312 out=118  t=940.9s
+  [139/298] McCart                 2019  -> 74w  in=281+cr=2312 out=147  t=945.9s
+  [140/298] McKiernan              2011  -> 78w  in=435+cr=2312 out=174  t=952.0s
+  [141/298] Melchor                2013  -> 86w  in=300+cr=2312 out=164  t=958.1s
+  [142/298] Mirabello              2009  -> 78w  in=245+cr=2312 out=143  t=963.8s
+  [143/298] Moraes                 2016  -> 86w  in=458+cr=2312 out=157  t=969.7s
+  [144/298] Mukherjee              2014  -> 80w  in=505+cr=2312 out=191  t=976.7s
+  [145/298] Muley                  2020  -> 87w  in=385+cr=2312 out=174  t=982.6s
+  [146/298] Murayama               2019  -> 88w  in=248+cr=2312 out=156  t=988.6s
+  [147/298] Nasir                  2012  -> 92w  in=505+cr=2312 out=196  t=995.6s
+  [148/298] Nedeljković            2019  -> 86w  in=385+cr=2312 out=169  t=1001.6s
+  [149/298] Nik-Zainal             2016  -> 84w  in=159+cr=2312 out=160  t=1007.8s
+  [150/298] Niklas                 2015  -> 78w  in=380+cr=2312 out=141  t=1013.5s
+  [flush] saved 262 notes to relevance_notes.json
+  [151/298] Nowell                 1976  -> 76w  in=271+cr=2312 out=144  t=1019.5s
+  [152/298] Nugoli                 2003  -> 101w  in=614+cr=2312 out=205  t=1026.7s
+  [153/298] Nurchis                2024  -> 79w  in=678+cr=2312 out=162  t=1033.2s
+  [154/298] Nurk                   2022  -> 81w  in=257+cr=2312 out=164  t=1039.4s
+  [155/298] Obeagu                 2024  -> 82w  in=361+cr=2312 out=138  t=1044.8s
+  [156/298] Oberle                 1991  -> 85w  in=362+cr=2312 out=162  t=1051.8s
+  [157/298] Ong                    2011  -> 89w  in=244+cr=2312 out=166  t=1058.0s
+  [158/298] Otsuka                 2019  -> 87w  in=473+cr=2312 out=178  t=1064.0s
+  [159/298] Otsuka                 2020  -> 75w  in=537+cr=2312 out=159  t=1069.8s
+  [160/298] Ottaviani              2009  -> 84w  in=839+cr=2312 out=156  t=1075.7s
+  [161/298] Ovejero                2021  -> 86w  in=328+cr=2312 out=147  t=1081.5s
+  [162/298] Ozeri-Galai            2014  -> 87w  in=310+cr=2312 out=170  t=1088.5s
+  [163/298] Pagni                  2022  -> 85w  in=342+cr=2312 out=153  t=1094.1s
+  [164/298] Palumbo                2019  -> 86w  in=311+cr=2312 out=185  t=1101.3s
+  [165/298] Papasavva              2019  -> 86w  in=409+cr=2312 out=152  t=1107.2s
+  [166/298] Parakatselaki          2021  -> 92w  in=376+cr=2312 out=163  t=1113.5s
+  [167/298] Pareek                 2011  -> 83w  in=440+cr=2312 out=156  t=1119.6s
+  [168/298] Park                   2009  -> 76w  in=540+cr=2312 out=169  t=1125.4s
+  [169/298] Parthasarathi          2022  -> 82w  in=410+cr=2312 out=164  t=1131.0s
+  [170/298] Patra                  2022  -> 71w  in=439+cr=2312 out=124  t=1136.1s
+  [171/298] Paul                   2014  -> 80w  in=313+cr=2312 out=162  t=1142.4s
+  [172/298] Pecorino               2021  -> 70w  in=202+cr=2312 out=137  t=1149.6s
+  [173/298] Pedersen               2019  -> 86w  in=375+cr=2312 out=153  t=1155.4s
+  [174/298] Pignataro              2017  -> 85w  in=427+cr=2312 out=172  t=1162.1s
+  [175/298] Pilet                  2023  -> 69w  in=365+cr=2312 out=148  t=1167.9s
+  [flush] saved 287 notes to relevance_notes.json
+  [176/298] Pinto                  2020  -> 78w  in=315+cr=2312 out=142  t=1173.7s
+  [177/298] Pinu                   2019  -> 73w  in=358+cr=2312 out=150  t=1179.7s
+  [178/298] Pittayapruek           2016  -> 69w  in=421+cr=2312 out=124  t=1185.3s
+  [179/298] Ponten                 1967  -> 83w  in=400+cr=2312 out=173  t=1192.4s
+  [180/298] Pourcel                2005  -> 86w  in=435+cr=2312 out=171  t=1199.6s
+  [181/298] Prindull               2004  -> 73w  in=352+cr=2312 out=144  t=1205.3s
+  [182/298] Pruitt                 2007  -> 80w  in=554+cr=2312 out=155  t=1211.6s
+  [183/298] Péqueux                2012  -> 79w  in=511+cr=2312 out=151  t=1217.4s
+  [184/298] Rabanal-Ruiz           2017  -> 83w  in=442+cr=2312 out=154  t=1223.4s
+  [185/298] Rajagopal              2003  -> 78w  in=391+cr=2312 out=180  t=1229.9s
+  [186/298] Rehm                   2020  -> 41w  in=541+cr=2312 out=74  t=1233.9s
+  [187/298] Ren                    2024  -> 87w  in=800+cr=2312 out=186  t=1240.3s
+  [188/298] Rice                   2018  -> 79w  in=379+cr=2312 out=160  t=1246.7s
+  [189/298] Riggio                 2021  -> 78w  in=212+cr=2312 out=126  t=1252.2s
+  [190/298] Rinschen               2019  -> 71w  in=269+cr=2312 out=126  t=1257.9s
+  [191/298] Risha                  2020  -> 81w  in=503+cr=2312 out=183  t=1264.0s
+  [192/298] Ross                   2012  -> 83w  in=354+cr=2312 out=176  t=1271.1s
+  [193/298] Rounbehler             2012  -> 85w  in=375+cr=2312 out=184  t=1277.3s
+  [194/298] Ruiz de Sabando        2019  -> 83w  in=720+cr=2312 out=157  t=1283.6s
+  [195/298] Rusli                  2022  -> 56w  in=329+cr=2312 out=96  t=1288.3s
+  [196/298] Saatci                 2021  -> 82w  in=555+cr=2312 out=164  t=1294.1s
+  [197/298] Saini                  2020  -> 82w  in=446+cr=2312 out=177  t=1300.0s
+  [198/298] Saleem                 2006  -> 64w  in=567+cr=2312 out=113  t=1305.4s
+  [199/298] Salih                  2021  -> 78w  in=287+cr=2312 out=132  t=1311.1s
+  [200/298] Samanta                2014  -> 82w  in=495+cr=2312 out=176  t=1316.6s
+  [flush] saved 312 notes to relevance_notes.json
+  [201/298] Samsom                 2022  -> 81w  in=536+cr=2312 out=156  t=1322.4s
+  [202/298] Sansregret             2017  -> 88w  in=211+cr=2312 out=179  t=1328.9s
+  [203/298] Santoni de Sio         2014  -> 82w  in=307+cr=2312 out=172  t=1334.9s
+  [204/298] Sarni                  2016  -> 84w  in=186+cr=2312 out=175  t=1341.2s
+  [205/298] Sarni                  2019  -> 90w  in=364+cr=2312 out=172  t=1347.8s
+  [206/298] Satam                  2023  -> 88w  in=330+cr=2312 out=154  t=1354.2s
+  [207/298] Savage                 2014  -> 80w  in=430+cr=2312 out=170  t=1360.0s
+  [208/298] Saxena                 2022  -> 82w  in=233+cr=2312 out=159  t=1366.3s
+  [209/298] Schaffer               2019  -> 64w  in=190+cr=2312 out=117  t=1371.3s
+  [210/298] Schlam                 2021  -> 83w  in=471+cr=2312 out=160  t=1377.2s
+  [211/298] Schuijers              2018  -> 82w  in=352+cr=2312 out=169  t=1383.5s
+  [212/298] Schwartz               2006  -> 85w  in=186+cr=2312 out=171  t=1390.0s
+  [213/298] Schäfer                2000  -> 46w  in=446+cr=2312 out=99  t=1394.8s
+  [214/298] Selvakumar             2022  -> 86w  in=425+cr=2312 out=195  t=1401.6s
+  [215/298] Senchenko              2004  -> 85w  in=599+cr=2312 out=191  t=1407.8s
+  [216/298] Seo                    2005  -> 88w  in=375+cr=2312 out=180  t=1414.2s
+  [217/298] Serhii                 2022  -> 88w  in=350+cr=2312 out=167  t=1420.2s
+  [218/298] Shah                   2012  -> 91w  in=422+cr=2312 out=199  t=1426.8s
+  [219/298] Shaikh                 2022  -> 83w  in=458+cr=2312 out=173  t=1433.6s
+  [220/298] Sharma                 2024  -> 83w  in=317+cr=2312 out=164  t=1439.3s
+  [221/298] Shendure               2017  -> 90w  in=201+cr=2312 out=156  t=1445.8s
+  [222/298] Shi                    2015  -> 67w  in=335+cr=2312 out=140  t=1451.3s
+  [223/298] Shiovitz               2015  -> 75w  in=426+cr=2312 out=164  t=1456.5s
+  [224/298] Sidali                 2021  -> 84w  in=433+cr=2312 out=179  t=1463.1s
+  [225/298] Siegel                 2019  -> 82w  in=480+cr=2312 out=145  t=1468.9s
+  [flush] saved 337 notes to relevance_notes.json
+  [226/298] Simpson                2021  -> 100w  in=240+cr=2312 out=196  t=1475.8s
+  [227/298] Smith                  2006  -> 77w  in=854+cr=2312 out=170  t=1482.6s
+  [228/298] Smith                  2007  -> 84w  in=460+cr=2312 out=150  t=1488.9s
+  [229/298] Smith                  2021  -> 40w  in=88+cr=2312 out=78  t=1492.8s
+  [230/298] Sobocińska             2021  -> 97w  in=435+cr=2312 out=200  t=1499.7s
+  [231/298] Sobolewski             2022  -> 87w  in=369+cr=2312 out=192  t=1506.3s
+  [232/298] Song                   2021  -> 77w  in=407+cr=2312 out=157  t=1512.5s
+  [233/298] Srikrishna             2009  -> 82w  in=242+cr=2312 out=158  t=1518.7s
+  [234/298] Srinivasan             2013  -> 86w  in=292+cr=2312 out=175  t=1525.2s
+  [235/298] Stastna                2012  -> 72w  in=280+cr=2312 out=135  t=1530.9s
+  [236/298] Stauber                2012  -> 85w  in=286+cr=2312 out=164  t=1537.2s
+  [237/298] Stauber                2012  -> 80w  in=679+cr=2312 out=175  t=1543.9s
+  [238/298] Steele                 2022  -> 87w  in=429+cr=2312 out=178  t=1550.0s
+  [239/298] Sternlicht             2005  -> 79w  in=348+cr=2312 out=141  t=1555.6s
+  [240/298] Stewart                2021  -> 84w  in=226+cr=2312 out=168  t=1561.9s
+  [241/298] Stingl                 2007  -> 75w  in=194+cr=2312 out=159  t=1567.3s
+  [242/298] Stumpo                 2010  -> 82w  in=345+cr=2312 out=179  t=1574.0s
+  [243/298] Sugino                 2022  -> 77w  in=253+cr=2312 out=153  t=1580.3s
+  [244/298] Sun                    2025  -> 86w  in=520+cr=2312 out=162  t=1586.2s
+  [245/298] Sung                   2021  -> 78w  in=531+cr=2312 out=135  t=1591.6s
+  [246/298] Sweeney                2017  -> 65w  in=315+cr=2312 out=128  t=1597.2s
+  [247/298] Szymonowicz            2020  -> 90w  in=445+cr=2312 out=179  t=1604.4s
+  [248/298] Tao                    2019  -> 60w  in=423+cr=2312 out=123  t=1609.7s
+  [249/298] Taymaz-Nikerel         2018  -> 74w  in=420+cr=2312 out=154  t=1615.6s
+  [250/298] Thorvaldsdóttir        2013  -> 90w  in=329+cr=2312 out=163  t=1622.1s
+  [flush] saved 362 notes to relevance_notes.json
+  [251/298] Timofeeva              2015  -> 88w  in=559+cr=2312 out=177  t=1628.8s
+  [252/298] Tinsley                2024  -> 94w  in=303+cr=2312 out=197  t=1635.4s
+  [253/298] Tock                   2005  -> 41w  in=200+cr=2312 out=84  t=1639.6s
+  [254/298] Tufail                 2022  -> 76w  in=224+cr=2312 out=130  t=1644.9s
+  [255/298] Técher                 2017  -> 84w  in=247+cr=2312 out=165  t=1651.1s
+  [256/298] Uboveja                2020  -> 82w  in=551+cr=2312 out=153  t=1657.1s
+  [257/298] Velten                 2021  -> 80w  in=312+cr=2312 out=166  t=1663.2s
+  [258/298] Vinik                  2020  -> 81w  in=113+cr=2312 out=139  t=1668.8s
+  [259/298] Vogel                  2016  -> 95w  in=372+cr=2312 out=216  t=1675.3s
+  [260/298] Vollger                2023  -> 89w  in=463+cr=2312 out=169  t=1681.7s
+  [261/298] Voss                   2014  -> 82w  in=284+cr=2312 out=158  t=1687.8s
+  [262/298] Wang                   2005  -> 82w  in=295+cr=2312 out=184  t=1694.5s
+  [263/298] Wang                   2015  -> 75w  in=319+cr=2312 out=173  t=1700.4s
+  [264/298] Wang                   2020  -> 69w  in=396+cr=2312 out=123  t=1705.9s
+  [265/298] Wang                   2021  -> 75w  in=581+cr=2312 out=157  t=1712.8s
+  [266/298] Wang                   2025  -> 76w  in=577+cr=2312 out=147  t=1718.6s
+  [267/298] Wasinger               1995  -> 54w  in=410+cr=2312 out=120  t=1724.1s
+  [268/298] Watson                 2013  -> 85w  in=226+cr=2312 out=161  t=1730.3s
+  [269/298] Weigelt                2010  -> 77w  in=470+cr=2312 out=171  t=1735.8s
+  [270/298] Welch                  2013  -> 74w  in=292+cr=2312 out=125  t=1741.4s
+  [271/298] Whittaker              2019  -> 67w  in=196+cr=2312 out=114  t=1746.7s
+  [272/298] Wilczyński             2021  -> 85w  in=416+cr=2312 out=176  t=1752.9s
+  [273/298] Woodward               2021  -> 80w  in=452+cr=2312 out=163  t=1758.4s
+  [274/298] Wu                     2014  -> 78w  in=315+cr=2312 out=154  t=1763.8s
+  [275/298] Wu                     2022  -> 72w  in=193+cr=2312 out=135  t=1769.1s
+  [flush] saved 387 notes to relevance_notes.json
+  [276/298] Xiong                  2025  -> 82w  in=386+cr=2312 out=150  t=1774.7s
+  [277/298] Xu                     2011  -> 92w  in=498+cr=2312 out=199  t=1782.1s
+  [278/298] Xu                     2024  -> 84w  in=523+cr=2312 out=178  t=1788.5s
+  [279/298] Yang                   2019  -> 86w  in=649+cr=2312 out=191  t=1795.4s
+  [280/298] Yao                    2019  -> 60w  in=433+cr=2312 out=128  t=1800.6s
+  [281/298] Yin                    2020  -> 86w  in=279+cr=2312 out=154  t=1806.4s
+  [282/298] Yue                    2013  -> 77w  in=339+cr=2312 out=170  t=1812.4s
+  [283/298] Zechel                 2019  -> 38w  in=337+cr=2312 out=80  t=1816.6s
+  [284/298] Zekavati               2014  -> 81w  in=640+cr=2312 out=191  t=1824.0s
+  [285/298] Zeman                  2014  -> 82w  in=190+cr=2312 out=160  t=1830.1s
+  [286/298] Zhang                  2013  -> 68w  in=721+cr=2312 out=139  t=1835.8s
+  [287/298] Zhang                  2013  -> 92w  in=586+cr=2312 out=176  t=1842.4s
+  [288/298] Zhang                  2020  -> 39w  in=113+cr=2312 out=80  t=1846.7s
+  [289/298] Zhang                  2020  -> 78w  in=457+cr=2312 out=151  t=1853.1s
+  [290/298] Zhang                  2021  -> 80w  in=268+cr=2312 out=185  t=1859.2s
+  [291/298] Zhang                  2021  -> 78w  in=356+cr=2312 out=158  t=1865.4s
+  [292/298] Zhao                   2017  -> 90w  in=621+cr=2312 out=191  t=1872.7s
+  [293/298] Zhou                   2009  -> 43w  in=244+cr=2312 out=81  t=1876.9s
+  [294/298] Zhu                    2017  -> 78w  in=418+cr=2312 out=139  t=1882.9s
+  [295/298] Zimmer                 2003  -> 82w  in=589+cr=2312 out=152  t=1889.1s
+  [296/298] Zimmer                 2013  -> 73w  in=443+cr=2312 out=144  t=1895.4s
+  [297/298] Zou                    2020  -> 74w  in=458+cr=2312 out=135  t=1901.0s
+  [298/298] Álvarez-Fernández      2017  -> 77w  in=439+cr=2312 out=163  t=1907.0s
+
+API usage summary:
+  Calls succeeded     : 298
+  Calls failed        : 0
+  Input tokens        :    115,819
+  Cache creation      :      2,687 (written once per cache miss; reused thereafter)
+  Cache reads         :    686,664 (billed at 10% of base)
+  Output tokens       :     46,936
+  Cost (simple, $3/M input + $15/M output, ignoring cache):     $3.1196
+  Cost (actual, incl. cache_write @ 1.25× and cache_read @ 0.1×):    $1.2676
+  Caching saved        : $1.8520 (59.4% of simple cost)
+End: 11:36:06  Wall-clock: 1909s
